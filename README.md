@@ -66,3 +66,9 @@ Minecraft Forge MODの日本語化リソースパックを配布しています�
 
 - 配布サイト: https://ykpiece.github.io/minecraft-ja-packs/
 - GitHub: https://github.com/ykpiece/minecraft-ja-packs
+
+## 寄付・サポート
+
+もしこの日本語化パックが役に立ったら、支援していただけると励みになります。
+
+**https://buymeacoffee.com/piece**
