@@ -1,0 +1,6 @@
+{
+  "Use /locate structure betteroceanmonuments:ocean_monument instead!": "代わりに、/locate structure betteroceanmonuments:ocean_monument を使用してください！",
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.title": "YUNG's Better Ocean Monuments",
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.option.general.disableVanillaMonuments": "バニラの海底神殿を無効化する",
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.option.general.disableVanillaMonuments.@Tooltip": "バニラの海底神殿を無効化するかどうか"
+}

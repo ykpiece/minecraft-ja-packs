@@ -237,11 +237,9 @@ function generateReadme(modId, version) {
 - MOD ID: ${modId}
 
 ## 導入方法
-1. このzipファイルをMinecraftの「リソースパック」フォルダに入れる
-   - Windowsの場合: %appdata%\\.minecraft\\resourcepacks
-   - Macの場合: ~/Library/Application Support/minecraft/resourcepacks
-2. Minecraftを起動し、「設定」→「リソースパック」を開く
-3. このパックを「使用中」に移動して適用
+1. タイトル画面から「設定」を開き、「リソースパック」をクリックする。
+2. 画面下の「パックフォルダーを開く」をクリックし、開いたresourcepacksフォルダの中にzipファイルごと入れる
+3. このパックを「選択可能」から「使用中」に移動して適用する
 
 ## ビルド情報
 - ビルド日: ${buildDate}
@@ -254,5 +252,9 @@ function generateReadme(modId, version) {
 ## 問題報告
 不具合や翻訳の改善提案は以下へお願いします：
 https://github.com/ykpiece/minecraft-ja-packs/issues
+
+# 寄付
+もしこの日本語化パックが役に立ったら、支援していただけると励みになります。
+https://buymeacoffee.com/piece
 `;
 }
