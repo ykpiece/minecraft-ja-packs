@@ -346,6 +346,12 @@
                 <button class="filter-btn" data-version="1.18.2">1.18.2</button>
             </div>
             
+            <div class="filter-group">
+                <span class="filter-label">並び替え:</span>
+                <button class="filter-btn active" data-sort="name">五十音順</button>
+                <button class="filter-btn" data-sort="date">更新順</button>
+            </div>
+            
             <div class="result-info" id="result-info"></div>
         </div>
         
@@ -402,6 +408,7 @@
         let currentSearchTerm = ''; // 現在の検索ワード
         let currentModLoader = 'all'; // 現在のMod Loaderフィルター
         let currentVersion = 'all'; // 現在のバージョンフィルター
+        let currentSort = 'name'; // 現在のソート順（name=五十音順, date=更新順）
         
         const PACKS_PER_PAGE = 20; // 1回に表示する件数
         let displayedCount = 0; // 現在表示されている件数
@@ -530,6 +537,21 @@
                     applyFilters();
                 });
             });
+
+            // ソート
+            const sortButtons = document.querySelectorAll('[data-sort]');
+            
+            sortButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // アクティブ状態を切り替え
+                    sortButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // ソート適用
+                    currentSort = button.dataset.sort;
+                    applyFilters();
+                });
+            });
         }
 
         function setupLoadMore() {
@@ -559,6 +581,19 @@
                 
                 return matchesSearch && matchesLoader && matchesVersion;
             });
+            
+            // ソート処理
+            if (currentSort === 'name') {
+                // 五十音順（displayNameでソート）
+                filteredPacks.sort((a, b) => a.displayName.localeCompare(b.displayName, 'ja'));
+            } else if (currentSort === 'date') {
+                // 更新順（lastUpdateで降順ソート）
+                filteredPacks.sort((a, b) => {
+                    const dateA = new Date(a.lastUpdate);
+                    const dateB = new Date(b.lastUpdate);
+                    return dateB - dateA; // 新しい順
+                });
+            }
             
             displayedCount = 0;
             renderPacks(false); // 最初からリセット表示
