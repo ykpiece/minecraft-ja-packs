@@ -38,11 +38,13 @@ VERSIONS.forEach(version => {
 
     files.forEach(file => {
         const filePath = path.join(versionDir, file);
-        const stats = fs.statSync(filePath);
-
-        // ファイル名から MOD ID を抽出
-        // 例: "beautify-ja-1.20.1.zip" → "beautify"
-        const modId = file.replace(`-ja-${version}.zip`, '');
+    const stats = fs.statSync(filePath);
+    
+    const modId = file.replace(`-ja-${version}.zip`, '');
+    
+    // jsonファイルの日時を取得
+    const jsonPath = path.join(sourceDir, `${modId} ja_jp.json`);
+    const jsonStats = fs.existsSync(jsonPath) ? fs.statSync(jsonPath) : stats;
 
         // パック情報を作成
         const packInfo = {
@@ -55,7 +57,7 @@ VERSIONS.forEach(version => {
             downloadUrl: `downloads/${version}/${file}`,
             fileSize: formatFileSize(stats.size),
             fileSizeBytes: stats.size,
-            lastUpdate: stats.mtime.toISOString().split('T')[0]  // YYYY-MM-DD
+            lastUpdate: jsonStats.mtime.toISOString().split('T')[0]  // ← jsonの日時
         };
 
         allPacks.push(packInfo);
