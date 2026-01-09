@@ -1,0 +1,4 @@
+{
+  "commands.polymorph.conflicts.starting": "レシピの競合を検索...",
+  "commands.polymorph.conflicts.success": "競合の可能性が %d 件見つかりました。詳細はlogs/conflicts.logを確認してください。"
+}

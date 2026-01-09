@@ -1,0 +1,7 @@
+{
+  "command.silentlib.nbt.noItemInHand": "メインハンドにアイテムがない",
+  "command.silentlib.nbt.noItemTag": "%sはNBTを持っていません",
+  "command.silentlib.nbt.notBlockEntity": "%sはブロックエンティティではありません",
+  "item.silentlib.lootContainer.itemReceived": "受け取り: %dx %s",
+  "item.silentlib.lootContainer.table": "戦利品テーブル: %s"
+}

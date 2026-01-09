@@ -1,0 +1,14 @@
+{
+  "entity.ragnagoblin.ragna_goblin": "ラグナゴブリン",
+  "item.ragnagoblin.ragna_goblin_spawn_egg": "ラグナゴブリンのスポーンエッグ",
+  "advancements.ragnagoblin.interact_with_goblin.title": "なんて苦労だ！",
+  "advancements.ragnagoblin.interact_with_goblin.description": "ラグナゴブリンと\"取引\"を試みる",
+  "advancements.ragnagoblin.hurt_goblin.title": "ドラコニック退行",
+  "advancements.ragnagoblin.hurt_goblin.description": "ラグナゴブリンと間違った方法で対話する",
+  "advancements.ragnagoblin.kill_goblin.title": "ドラコニック進化",
+  "advancements.ragnagoblin.kill_goblin.description": "ラグナゴブリンを永遠に黙らせる",
+  "advancements.ragnagoblin.spawn_dragoon.title": "ゴブリン・オン・ドラグーン…",
+  "advancements.ragnagoblin.spawn_dragoon.description": "ドラコニックナイトとドラグーンをスポーンさせる",
+  "advancements.ragnagoblin.kill_dragoon.title": "この沈黙は私のもの",
+  "advancements.ragnagoblin.kill_dragoon.description": "ドラコニックナイトの\"計画\"に終止符を打つ"
+}

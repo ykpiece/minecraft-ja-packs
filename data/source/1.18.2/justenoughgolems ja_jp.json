@@ -1,0 +1,18 @@
+{
+  "itemGroup.jeg_itemgroup": "JustEnoughGolems",
+
+  "entity.justenoughgolems.plant_golem": "プラントゴーレム",
+  "block.justenoughgolems.precious_mossy_cobblestone": "貴重な苔むした丸石",
+  "block.justenoughgolems.mossy_observer": "苔むしたオブザーバー",
+  "entity.plant_golem_hurts.sub": "プラントゴーレムが痛がる",
+  "entity.plant_golem_dies.sub": "プラントゴーレムが死ぬ",
+
+  "entity.justenoughgolems.magmatic_golem": "溶岩ゴーレム",
+  "entity.justenoughgolems.enraged_magmatic_golem": "激怒した溶岩ゴーレム",
+  "block.justenoughgolems.magmatic_obsidian": "溶岩黒曜石",
+  "block.justenoughgolems.charging_table": "充電台",
+  "item.justenoughgolems.magmatic_obsidian_shard": "溶岩黒曜石の欠片",
+  "item.justenoughgolems.magmatic_charm": "溶岩チャーム",
+  "item.justenoughgolems.magmatic_pendant": "溶岩ペンダント",
+  "item.justenoughgolems.nether_core": "ネザーコア"
+}

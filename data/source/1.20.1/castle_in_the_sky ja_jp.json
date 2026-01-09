@@ -1,0 +1,47 @@
+{
+  "block.castle_in_the_sky.blue_door": "青いドア",
+  "block.castle_in_the_sky.yellow_door": "黄色いドア",
+  "block.castle_in_the_sky.red_door": "赤いドア",
+  "block.castle_in_the_sky.laputa_core": "浮遊のクリスタル",
+  "block.castle_in_the_sky.fake_beacon": "ベーコン",
+  "block.castle_in_the_sky.laputa_miniature": "天空の城のトロフィー",
+
+  "item.castle_in_the_sky.blue_key": "青い鍵",
+  "item.castle_in_the_sky.yellow_key": "黄色い鍵",
+  "item.castle_in_the_sky.red_key": "赤い鍵",
+  "item.castle_in_the_sky.levitation_stone": "浮遊石",
+
+  "tooltip.castle_in_the_sky.levitation_stone.line1": "この石はあなたを*天空の城*へ導きます。",
+  "tooltip.castle_in_the_sky.levitation_stone.line2": "製図家と交易してアイテムを手に入れましょう。",
+  "tooltip.castle_in_the_sky.levitation_stone.line3": "右クリックで有効/無効を切り替えます。",
+  "tooltip.castle_in_the_sky.keys": "城内のチェストを略奪したり、モブを倒して入手できます。",
+  "tooltip.castle_in_the_sky.laputa_miniature": "城内で破壊の呪文を唱えて入手します。",
+
+  "advancements.castle_in_the_sky.trade.title": "雲の上に城がある",
+  "advancements.castle_in_the_sky.trade.description": "伝説によると、神秘的な石が宝物で満ちた城へ導いてくれると言われています。",
+  "advancements.castle_in_the_sky.get_levitation_stone.title": "石の飛行の謎",
+  "advancements.castle_in_the_sky.get_levitation_stone.description": "製図家と交易して浮遊の石を手に入れましょう。",
+  "advancements.castle_in_the_sky.find_castle.title": "天空の城",
+  "advancements.castle_in_the_sky.find_castle.description": "浮遊石に従って*天空の城*を見つけましょう。",
+  "advancements.castle_in_the_sky.conquer_castle.title": "城を征服する",
+  "advancements.castle_in_the_sky.conquer_castle.description": "城のダンジョンを進み、浮遊のクリスタルを見つけましょう。",
+  "advancements.castle_in_the_sky.fake_beacon.title": "ビーコンは嘘",
+  "advancements.castle_in_the_sky.fake_beacon.description": "城内でビーコンの光を略奪しましょう。",
+  "advancements.castle_in_the_sky.destroy_castle.title": "地面に根を下ろす",
+  "advancements.castle_in_the_sky.destroy_castle.description": "破壊の呪文を唱えて城を破壊し、トロフィーを手に入れましょう。",
+
+
+  "effect.castle_in_the_sky.sacred_castle_effect": "神聖な城",
+
+  "info.castle_in_the_sky.sacred_castle_effect.place": "まず城を征服する必要があります。",
+  "info.castle_in_the_sky.sacred_castle_effect.break": "まず城を征服する必要があります。",
+  "info.castle_in_the_sky.locked_doors": "対応する色の鍵で解除されます。モブを倒したりチェストを略奪して入手しましょう。",
+  "info.castle_in_the_sky.destruction_warning": "破壊の呪文を唱えています。確認のためにもう一度唱えてください。",
+  "info.castle_in_the_sky.crystal_not_found": "何も起こりませんでした...無効化されたクリスタルの近くに立つ必要があります。",
+  "info.castle_in_the_sky.item_not_hold": "何も起こりませんでした...浮遊石を持っていることを確認してください。",
+  "info.castle_in_the_sky.incantation_casted": "%sが破壊の呪文を唱えました。",
+  "info.castle_in_the_sky.destruction_disabled": "サーバーで破壊の呪文が無効化されています",
+  "info.castle_in_the_sky.too_close_to_spawn": "スポーン地点から%dブロック以内に城はスポーンしません。この石を使うには少なくとも%dブロック移動する必要があります。",
+
+  "item_group.castle_in_the_sky.item_group": "天空の城"
+}

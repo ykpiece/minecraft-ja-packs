@@ -1,0 +1,19 @@
+{
+  "entity.bakery_villager_trader.bread_fly": "空飛ぶパン",
+  "item.bakery_villager_trader.bread_armor_helmet": "パンのヘルメット",
+  "entity.minecraft.villager.bakery_villager_trader.baker": "パン屋",
+  "item.bakery_villager_trader.bread_armor_chestplate": "パンのチェストプレート",
+  "item.bakery_villager_trader.sweetberry_pie": "スイートベリーパイ",
+  "item.bakery_villager_trader.apple_pie": "アップルパイ",
+  "advancements.cover_me_in_bread.descr": "パンのチェストプレートを手に入れる",
+  "advancements.cover_me_in_bread.title": "パンで私を覆って",
+  "item.bakery_villager_trader.bread_armor_boots": "パンのブーツ",
+  "item.bakery_villager_trader.bread_sword": "パンの剣",
+  "item_group.bakery_villager_trader.bakery_villager_trader": "Bakery Villager Trader",
+  "item.bakery_villager_trader.bread_armor_leggings": "パン防具のレギンス",
+  "item.bakery_villager_trader.chocolate_cake": "チョコレートケーキ",
+  "item.bakery_villager_trader.croissant": "クロワッサン",
+  "block.bakery_villager_trader.bread_trader_block": "パン屋の取引ブロック",
+  "item.bakery_villager_trader.bread_fly_spawn_egg": "空飛ぶパンのスポーンエッグ",
+  "item.bakery_villager_trader.bread_axe": "パンの斧"
+}

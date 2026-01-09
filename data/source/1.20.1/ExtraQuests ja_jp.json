@@ -1,0 +1,19 @@
+{
+  "ftbquests.task.extraquests.key_value": "キーと値",
+  "ftbquests.reward.extraquests.key_value": "キーと値",
+  "extraquests.key_value.title": "%s: %s",
+  "extraquests.key_value.key": "キー",
+  "extraquests.key_value.key.tooltip": "値を保存するためのキー",
+  "extraquests.key_value.value": "値",
+  "extraquests.key_value.value.tooltip": "キーの値",
+
+  "ftbquests.reward.extraquests.timer": "タイマー",
+  "extraquests.timer.title": "毎%s秒ごとにリセット",
+  "extraquests.timer.questid": "リセットするクエストID",
+  "extraquests.timer.questid.tooltip": "現在のクエストをリセットする場合は空白のまま",
+  "extraquests.timer.time": "クエストのリセット時間",
+  "extraquests.timer.time.tooltip": "クエストがリセットされるまでの秒数。タスクがチームベースの場合は、報酬もチームベースにする必要があります。",
+
+  "extraquests.reward.command.console": "コンソール",
+  "extraquests.reward.command.console.tooltip": "コンソールからコマンドを実行"
+}

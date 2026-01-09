@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft MOD 日本語化パック配布所</title>
+    <style>
+        /* リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ヘッダー */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* ローディング表示 */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* 検索・フィルターエリア */
+        .search-container {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            transition: border-color 0.2s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-box::placeholder {
+            color: #999;
+        }
+
+        /* 結果表示 */
+        .result-info {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .result-info strong {
+            color: #667eea;
+        }
+
+        /* もっと見るボタン */
+        .load-more-container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .load-more-btn {
+            padding: 0.8rem 2rem;
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .load-more-btn:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .load-more-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* フィルターボタン */
+        .filter-group {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: #666;
+            margin-right: 0.5rem;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* パック一覧テーブル */
+        .pack-table-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .pack-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .pack-table thead {
+            background: #667eea;
+            color: white;
+        }
+
+        .pack-table th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            background: #667eea;
+            z-index: 10;
+        }
+
+        .pack-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .pack-table tbody tr {
+            transition: background-color 0.2s;
+        }
+
+        .pack-table tbody tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        /* MOD名 */
+        .mod-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* バージョンバッジ */
+        .version-badge {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Mod Loaderバッジ */
+        .mod-loader-badge {
+            display: inline-block;
+            background: #fff3e0;
+            color: #e65100;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* ファイルサイズ */
+        .file-size {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* ダウンロードボタン */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #666;
+            margin-top: 3rem;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .pack-table {
+                font-size: 0.85rem;
+            }
+
+            .pack-table th,
+            .pack-table td {
+                padding: 0.7rem 0.5rem;
+            }
+
+            /* スマホではMod Loaderとサイズ列を非表示 */
+            .pack-table th:nth-child(2),
+            .pack-table td:nth-child(2),
+            .pack-table th:nth-child(4),
+            .pack-table td:nth-child(4) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 Minecraft MOD 日本語化パック配布所</h1>
+        <p class="stats" id="stats">読み込み中...</p>
+    </header>
+
+    <main>
+        <div class="loading" id="loading">
+            パック情報を読み込んでいます...
+        </div>
+        
+        <!-- 検索エリア -->
+        <div class="search-container" id="search-container" style="display: none;">
+            <input 
+                type="text" 
+                id="search-box" 
+                class="search-box" 
+                placeholder="🔍 MOD名で検索... (例: create, jei, aqua)"
+            >
+            
+            <!-- フィルター -->
+            <div class="filter-group">
+                <span class="filter-label">Mod Loader:</span>
+                <button class="filter-btn active" data-loader="all">全て</button>
+                <button class="filter-btn" data-loader="Forge">Forge</button>
+                <button class="filter-btn" data-loader="Fabric">Fabric</button>
+            </div>
+            
+            <div class="filter-group">
+                <span class="filter-label">バージョン:</span>
+                <button class="filter-btn active" data-version="all">全て</button>
+                <button class="filter-btn" data-version="1.20.1">1.20.1</button>
+                <button class="filter-btn" data-version="1.18.2">1.18.2</button>
+            </div>
+            
+            <div class="result-info" id="result-info"></div>
+        </div>
+        
+        <div class="pack-table-container" id="table-container" style="display: none;">
+            <table class="pack-table">
+                <thead>
+                    <tr>
+                        <th>MOD名</th>
+                        <th>Mod Loader</th>
+                        <th>バージョン</th>
+                        <th>サイズ</th>
+                        <th>ダウンロード</th>
+                    </tr>
+                </thead>
+                <tbody id="pack-list"></tbody>
+            </table>
+        </div>
+
+        <!-- もっと見るボタン -->
+        <div class="load-more-container" id="load-more-container" style="display: none;">
+            <button id="load-more-btn" class="load-more-btn">
+                もっと見る (残り<span id="remaining-count">0</span>個)
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>このサイトで配布している日本語化パックは個人利用・配信・動画投稿すべてOKです</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">最終更新: <span id="last-update">-</span></p>
+    </footer>
+
+    <script>
+        let allPacks = []; // 全パックデータ
+        let filteredPacks = []; // フィルター後のデータ
+        let currentSearchTerm = ''; // 現在の検索ワード
+        let currentModLoader = 'all'; // 現在のMod Loaderフィルター
+        let currentVersion = 'all'; // 現在のバージョンフィルター
+        
+        const PACKS_PER_PAGE = 20; // 1回に表示する件数
+        let displayedCount = 0; // 現在表示されている件数
+
+        // packs.jsonを読み込んで表示
+        fetch('data/packs.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('データの読み込みに失敗しました');
+                }
+                return response.json();
+            })
+            .then(data => {
+                allPacks = data.packs;
+                filteredPacks = allPacks;
+                displayPacks(data);
+                setupSearch();
+                setupFilters();
+                setupLoadMore();
+            })
+            .catch(error => {
+                document.getElementById('loading').innerHTML = `
+                    <p style="color: red;">❌ エラー: ${error.message}</p>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">
+                        data/packs.json が見つかりません。<br>
+                        generate-index.js を実行してください。
+                    </p>
+                `;
+            });
+
+        function displayPacks(data) {
+            // ローディング非表示、検索エリアとテーブル表示
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('search-container').style.display = 'block';
+            document.getElementById('table-container').style.display = 'block';
+            
+            // 統計情報を更新
+            const statsText = `現在 ${data.meta.totalPacks} 個のパックを配布中 ` +
+                `(${Object.entries(data.meta.versionStats).map(([v, c]) => `${v}: ${c}個`).join(' | ')})`;
+            document.getElementById('stats').textContent = statsText;
+            document.getElementById('last-update').textContent = data.meta.lastUpdate;
+            
+            // パック一覧を表示
+            displayedCount = 0;
+            renderPacks(false); // 初回表示
+            updateResultInfo();
+            updateLoadMoreButton();
+        }
+
+        function renderPacks(append = false) {
+            const tbody = document.getElementById('pack-list');
+            
+            if (!append) {
+                tbody.innerHTML = ''; // クリア
+                displayedCount = 0;
+            }
+            
+            // 表示する範囲を計算
+            const start = displayedCount;
+            const end = Math.min(start + PACKS_PER_PAGE, filteredPacks.length);
+            const packsToShow = filteredPacks.slice(start, end);
+            
+            // パックを追加
+            packsToShow.forEach(pack => {
+                const row = createPackRow(pack);
+                tbody.appendChild(row);
+            });
+            
+            displayedCount = end;
+        }
+
+        function createPackRow(pack) {
+            const tr = document.createElement('tr');
+            
+            tr.innerHTML = `
+                <td class="mod-name">${pack.displayName}</td>
+                <td><span class="mod-loader-badge">${pack.modLoader}</span></td>
+                <td><span class="version-badge">${pack.mcVersion}</span></td>
+                <td class="file-size">${pack.fileSize}</td>
+                <td>
+                    <a href="${pack.downloadUrl}" download class="download-btn">
+                        ⬇️ DL
+                    </a>
+                </td>
+            `;
+            
+            return tr;
+        }
+
+        function setupSearch() {
+            const searchBox = document.getElementById('search-box');
+            
+            searchBox.addEventListener('input', (e) => {
+                currentSearchTerm = e.target.value.toLowerCase().trim();
+                applyFilters();
+            });
+        }
+
+        function setupFilters() {
+            // Mod Loaderフィルター
+            const loaderButtons = document.querySelectorAll('[data-loader]');
+            
+            loaderButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // アクティブ状態を切り替え
+                    loaderButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // フィルター適用
+                    currentModLoader = button.dataset.loader;
+                    applyFilters();
+                });
+            });
+
+            // バージョンフィルター
+            const versionButtons = document.querySelectorAll('[data-version]');
+            
+            versionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // アクティブ状態を切り替え
+                    versionButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // フィルター適用
+                    currentVersion = button.dataset.version;
+                    applyFilters();
+                });
+            });
+        }
+
+        function setupLoadMore() {
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            
+            loadMoreBtn.addEventListener('click', () => {
+                renderPacks(true); // 追加表示
+                updateResultInfo();
+                updateLoadMoreButton();
+            });
+        }
+
+        function applyFilters() {
+            filteredPacks = allPacks.filter(pack => {
+                // 検索フィルター
+                const matchesSearch = currentSearchTerm === '' || 
+                    pack.displayName.toLowerCase().includes(currentSearchTerm) ||
+                    pack.modName.toLowerCase().includes(currentSearchTerm);
+                
+                // Mod Loaderフィルター
+                const matchesLoader = currentModLoader === 'all' || 
+                    pack.modLoader === currentModLoader;
+                
+                // バージョンフィルター
+                const matchesVersion = currentVersion === 'all' || 
+                    pack.mcVersion === currentVersion;
+                
+                return matchesSearch && matchesLoader && matchesVersion;
+            });
+            
+            displayedCount = 0;
+            renderPacks(false); // 最初からリセット表示
+            updateResultInfo();
+            updateLoadMoreButton();
+        }
+
+        function updateResultInfo() {
+            const total = allPacks.length;
+            const showing = filteredPacks.length;
+            const resultInfo = document.getElementById('result-info');
+            
+            if (showing === total) {
+                resultInfo.textContent = `${displayedCount}個を表示中 / 全 ${total} 個`;
+            } else {
+                resultInfo.innerHTML = `<strong>${showing}個</strong> が見つかりました (全${total}個中) - ${displayedCount}個を表示中`;
+            }
+        }
+
+        function updateLoadMoreButton() {
+            const loadMoreContainer = document.getElementById('load-more-container');
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            const remainingCount = document.getElementById('remaining-count');
+            
+            const remaining = filteredPacks.length - displayedCount;
+            
+            if (remaining > 0) {
+                loadMoreContainer.style.display = 'block';
+                remainingCount.textContent = remaining;
+            } else {
+                loadMoreContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

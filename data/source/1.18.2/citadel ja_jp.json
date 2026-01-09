@@ -1,0 +1,20 @@
+{
+  "item.citadel.debug": "シタデルデバッガー",
+  "item.citadel.citadel_book": "シタデルブック",
+  "item.citadel.effect_item": "ポーション効果",
+  "item.citadel.fancy_item": "ファンシーアイテム",
+  "book.citadel_book.root": "シタデルブック!!!",
+  "book.citadel_book.link_example": "リンクの例",
+  "book.citadel_book.hover_text_pillager_example": "エンティティリンクは小さくてかわいいボタンです！",
+  "citadel.gui.patreon_rewards_option": "シタデルパトリオンカスタマイズ...",
+  "citadel.gui.patreon_customization": "シタデルパトリオンカスタマイズ",
+  "citadel.gui.orbit_dist": "回転距離",
+  "citadel.gui.orbit_speed": "回転速度",
+  "citadel.gui.orbit_height": "回転高さ",
+  "citadel.gui.reset": "リセット",
+  "citadel.gui.follower_type": "タイプ: ",
+  "citadel.follower.none": "なし",
+  "citadel.follower.citadel": "宇宙ステーション",
+  "citadel.follower.citadel_red": "宇宙ステーション(赤)",
+  "citadel.follower.citadel_gray": "宇宙ステーション(灰色)"
+}

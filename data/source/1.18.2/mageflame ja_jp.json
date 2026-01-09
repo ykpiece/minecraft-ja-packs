@@ -1,0 +1,21 @@
+{
+  "entity.mageflame.greater_revelation": "偉大な啓示",
+  "entity.mageflame.lesser_revelation": "小さな啓示",
+  "entity.mageflame.mage_flame": "魔法の炎",
+  "entity.mageflame.winged_torch": "翼のある松明",
+  "item.mageflame.greater_revelation_scroll": "偉大な啓示の巻物",
+  "item.mageflame.lesser_revelation_scroll": "小さな啓示の巻物",
+  "item.mageflame.mage_flame_scroll": "魔法の炎の巻物",
+  "item.mageflame.winged_torch_scroll": "翼のある松明の巻物",
+  "tooltip.mageflame.greater_revelation.desc": "最強の魔法の炎",
+  "tooltip.mageflame.greater_revelation.lore": "呪文使いが多くの力を集めて生成する魔法の緑色の大きな炎。松明よりも明るく、持続力がある。また、置き換え可能なブロックを破壊するのに十分な力も持つ。",
+  "tooltip.mageflame.hold_shift": "詳細を見るには[SHIFT]を押してください",
+  "tooltip.mageflame.lesser_revelation.desc": "魔法の炎の強力なバージョン",
+  "tooltip.mageflame.lesser_revelation.lore": "魔法の緑色の火の玉。より強力な光と長い寿命を持つ。",
+  "tooltip.mageflame.lifespan": "寿命: %s",
+  "tooltip.mageflame.light_level": "光のレベル: %s",
+  "tooltip.mageflame.mage_flame.desc": "呪文使いが小さな火の玉を生成することを可能にする。",
+  "tooltip.mageflame.mage_flame.lore": "召喚された炎の中で最も弱いもので、見習い呪文使いに最適。通常の松明ほど明るくはないが、見るために役立つ。ツタやその他の置き換え可能なブロックを通り抜けるのに十分な強さはなく、持ち主に従うことができなければ消えてしまう。",
+  "tooltip.mageflame.winged_torch.desc": "呪文使いが翼のある松明を召喚することを可能にする。",
+  "tooltip.mageflame.winged_torch.lore": "呪文使いが異界に手を伸ばし、翼のある松明を召喚することができる。松明は、あなたが解放するか死ぬまであなたの指揮下にとどまる。"
+}

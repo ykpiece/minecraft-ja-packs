@@ -1,0 +1,39 @@
+{
+  "key.category.brute_force_rendering_culling": "Brute force rendering culling",
+  "brute_force_rendering_culling.key.config": "設定メニュー",
+  "brute_force_rendering_culling.key.debug": "デバッグUI",
+
+  "brute_force_rendering_culling.cull_entity": "エンティティカリング",
+  "brute_force_rendering_culling.cull_block_entity": "ブロックエンティティカリング",
+  "brute_force_rendering_culling.cull_chunk": "チャンクカリング",
+  "brute_force_rendering_culling.async": "非同期チャンク再構築",
+  "brute_force_rendering_culling.sampler": "デプスサンプラーのレート",
+  "brute_force_rendering_culling.culling_map_update_delay": "カリングマップの更新遅延",
+  "brute_force_rendering_culling.entity_culling": "カリングされたエンティティ",
+  "brute_force_rendering_culling.block_culling": "カリングされたブロック",
+  "brute_force_rendering_culling.entity_culling_time": "エンティティカリングのコスト",
+  "brute_force_rendering_culling.block_culling_time": "ブロックカリングのコスト",
+  "brute_force_rendering_culling.entity_culling_init": "エンティティカリングマップの更新コスト",
+  "brute_force_rendering_culling.chunk_culling_init": "チャンクカリングマップの更新コスト",
+
+  "brute_force_rendering_culling.chunk_culling": "カリングされたチャンク",
+  "brute_force_rendering_culling.chunk_culling_time": "チャンクカリングのコスト",
+  "brute_force_rendering_culling.chunk_update_count": "非同期チャンク更新数",
+
+  "brute_force_rendering_culling.enable": "有効",
+  "brute_force_rendering_culling.disable": "無効",
+  "brute_force_rendering_culling.detail.cull_entity": "視覚的に見えないエンティティをカリング",
+  "brute_force_rendering_culling.detail.cull_block_entity": "視覚的に見えないブロックエンティティをカリング",
+  "brute_force_rendering_culling.detail.cull_chunk": "視覚的に見えないチャンクをカリング",
+  "brute_force_rendering_culling.detail.async": "専用スレッドを使用して視覚的に見えるチャンクを非同期に更新し、それをメインレンダリングスレッドと同期させます。これにより移動中のチャンク生成が高速化され、フレームレートが向上します。\n警告: カリング結果をメインスレッドに同期させると遅延が発生し、急な視点移動中に画面端のチャンクの読み込み速度が遅くなる可能性があります。\n\nゲーム設定で複数のスレッドで読み込むチャンクの数を増やして、この機能をサポートできます。この機能はテスト段階にあり、チャンク読み込み中にゲームがクラッシュする場合は、この設定を無効にしてみてください。",
+  "brute_force_rendering_culling.detail.sampler": "カリングに使用される深度テクスチャのスケーリング比率。比率が高いほど、より正確なカリングと良好な効果が得られます。\n\n比率を上げてもフレームレートに悪影響がない場合は、できるだけ高く設定できます。20%以下に設定することは推奨されません。",
+  "brute_force_rendering_culling.detail.culling_map_update_delay": "データ転送の不完全さによるメインスレッドのスタッタリングを防ぐために、カリングテクスチャがCPUに更新される前に遅延されるフレーム数。値が高いほどカリング速度が遅くなります。\n\nデバッグのためにカリングマップの更新時間を観察します。シェーダーを有効にするとデータ転送が遅くなり、自動的にカリングの遅延が1フレーム増加します。",
+  "brute_force_rendering_culling.detail.check_texture": "テスト目的で、データ監視パネルが開いているときに深度とカリングテクスチャの機能をチェックできるようにします。",
+  "brute_force_rendering_culling.detail.debug": "テスト目的で、バニラのMinecraftでのみ有効です。カリングされたチャンクを表示するために使用されます。",
+  "brute_force_rendering_culling.detail.nvidium": "警告: Nvidiumの非同期bfs機能とは互換性がありません",
+  "brute_force_rendering_culling.detail.sodium": "警告: この機能にはSodium（Embeddium）が必要です。",
+  "brute_force_rendering_culling.detail.gl33": "警告: OpenGL 3.3のサポートが必要です",
+
+  "brute_force_rendering_culling.skip_culling_entities": "カリングから除外されたエンティティ",
+  "brute_force_rendering_culling.skip_culling_block_entities": "カリングから除外されたブロックエンティティ"
+}

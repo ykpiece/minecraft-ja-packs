@@ -1,0 +1,11 @@
+{
+  "particle_core.particle_core_config.NONE.desc": "ポーションのパーティクルは無効化されません",
+  "particle_core.particle_core_config.SELF.desc": "あなたが発するポーションのパーティクルが無効化されます",
+  "particle_core.particle_core_config.PLAYER.desc": "すべてのプレイヤー（あなたを含む）が発するポーションのパーティクルが無効化されます",
+  "particle_core.particle_core_config.ALL.desc": "すべてのポーションのパーティクルが無効化されます",
+  "particle_core.particle_core_config.turnOffPotionParticles.desc": "選択に応じて、ポーションのパーティクルをさまざまな程度で無効化します。",
+  "particle_core.particle_core_config.reduceAllChance.desc": "[0.0から1.0の値] すべてのモードでパーティクルを減らします。例えば、0.1に設定すると10%のパーティクルが減少します。要するに、ALLとDECREASEDの間のダイヤルです。",
+  "particle_core.particle_core_config.reduceDecreasedChance.desc": "[0.0から1.0の値] 減少モードでパーティクルを減らします。例えば、0.1に設定すると10%のパーティクルが最小限になります。要するに、DECREASEDとMINIMALの間のダイヤルです。",
+  "particle_core.particle_core_config.disableParticles.desc": "[true or false] クライアントのすべてのパーティクルを完全に無効化します。",
+  "particle_core.particle_core_config.byTypeReductions.desc": "個々のパーティクルタイプの減少/無効化を許可します。例えば、'minecraft:smoke'を0.3に設定すると、煙とキャンプファイヤーのパーティクルが通常の30%の速度で出現します。"
+}

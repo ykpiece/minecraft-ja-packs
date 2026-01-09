@@ -1,0 +1,13 @@
+{
+	"item.display_case.display_case": "ディスプレイケース",
+	"item.display_case.display_case_lid": "ディスプレイケースの蓋",
+	"block.display_case.display_case": "ディスプレイケース",
+	"advancement.display_case.collapse.title": "崩壊",
+	"advancement.display_case.collapse.description": "",
+	"advancement.display_case.colorful.title": "カラフル!",
+	"advancement.display_case.colorful.description": "ディスプレイケースの色を変える",
+	"advancement.display_case.display_item.title": "なんてアイテムだ！",
+	"advancement.display_case.display_item.description": "アイテムをディスプレイケースに入れる",
+	"advancement.display_case.infinity_case.title": "無限の彼方へ",
+	"advancement.display_case.infinity_case.description": "ディスプレイケースをディスプレイケースに入れる"
+}

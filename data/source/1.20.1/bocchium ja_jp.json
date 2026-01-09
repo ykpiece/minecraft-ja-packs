@@ -1,0 +1,8 @@
+{
+  "bocchium.cull_top": "上部のカリングを行う",
+  "bocchium.cull_top.tooltip": "描画ブロックがネザーのような次元の上部にある場合、その上側の描画を無効にします。",
+  "bocchium.cull_bottom": "下部のカリングを行う",
+  "bocchium.cull_bottom.tooltip": "描画ブロックが次元の下部にある場合、その下側の描画を無効にします。",
+  "bocchium.enable": "Bocchiumを有効にする",
+  "bocchium.desc": "Bocchiumは次元内の下部および上部の岩盤をカリングすることで追加のFPSを獲得するパフォーマンスモッドです。"
+}

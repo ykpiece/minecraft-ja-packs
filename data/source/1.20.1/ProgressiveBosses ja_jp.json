@@ -1,0 +1,24 @@
+{
+  "item.progressivebosses.nether_star_shard": "ネザースターの欠片",
+  "item.progressivebosses.elder_guardian_spike": "エルダーガーディアンの棘",
+
+  "entity.progressivebosses.wither_minion": "ウィザーミニオン",
+  "death.attack.progressivebosses:wither_charge": "%1$sは%2$sによってチャージされた",
+
+  "entity.progressivebosses.larva": "ドラゴン幼虫",
+  "progressivebosses:dragon_minion": "ドラゴンミニオン",
+  "death.attack.progressivebosses:dragon_fireball": "%1$sは%2$sによって火球を撃たれた",
+
+  "progressivebosses:elder_minion": "エルダーミニオン",
+
+  "progressivebosses:command.player_get_wither_difficulty": "%sは%d体のウィザーを召喚した",
+  "progressivebosses:command.player_get_dragon_difficulty": "%sは%d体のドラゴンを倒した",
+  "progressivebosses:command.player_set_boss_difficulty": "%sの%sの難易度を%dに設定しました",
+  "progressivebosses:command.player_add_boss_difficulty": "%dの%sの難易度を%sに追加しました (現在 %d)",
+  "progressivebosses:command.summoned_entity": "難易度%dで%sを召喚した",
+  "progressivebosses:command.summon_invalid_entity": "エンティティ%sは無効です",
+
+  "dragon.first_killed": "初めてのドラゴン討伐おめでとうございます。倒すたびに次のドラゴンが強くなることを覚えておいてください。",
+  "wither.first_summon": "初めてのウィザー召喚おめでとうございます。召喚するたびに次のウィザーが強くなることを覚えておいてください。",
+  "elder_guardian.approach": "海底神殿に近づいているようです。すべてのエルダーガーディアンを倒すか、逃げるまでブロックを壊すことはできません。"
+}

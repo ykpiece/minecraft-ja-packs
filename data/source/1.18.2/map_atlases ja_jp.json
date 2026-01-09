@@ -1,0 +1,18 @@
+{
+  "item.map_atlases.atlas": "アトラス",
+  "item.map_atlases.end_atlas": "エンドアトラス",
+  "item.map_atlases.nether_atlas": "ネザーアトラス",
+  "item.map_atlases.atlas.tooltip_1": "地図: %d",
+  "item.map_atlases.atlas.tooltip_2": "空の地図: %d",
+  "item.map_atlases.atlas.tooltip_3": "スケール: 1:%s",
+  "item.map_atlases.atlas.tooltip_err": "無効！",
+  "item.map_atlases.atlas.tooltip_full": "満杯！",
+  "key.map_atlases.open_minimap": "ミニマップGUIを開く",
+  "item.map_atlases.dummy_filled_map": "地図",
+  "item.map_atlases.dummy_filled_map.dummy": "ダミー",
+  "item.map_atlases.dummy_filled_map.desc": "どの埋められた地図でも使用可能",
+  "category.map_atlases.minimap": "マップアトラスキー操作",
+  "subtitles.map_atlases.atlas_open": "アトラスを開く",
+  "subtitles.map_atlases.atlas_page_turn": "アトラスのページがめくれる",
+  "subtitles.map_atlases.atlas_create_map": "アトラスの地図が描かれる"
+}
