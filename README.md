@@ -45,42 +45,7 @@ Minecraft Forge MODの日本語化リソースパックを配布しています�
 3. 「設定」→「リソースパック」を開く
 4. パックを「使用中」に移動して適用
 
-## 開発・ビルド
-
-このプロジェクトは自動化システムで管理されています。
-
-### 必要なもの
-
-- Node.js 20.x以上
-- Git
-
-### セットアップ
-```bash
-# リポジトリをクローン
-git clone https://github.com/ykpiece/minecraft-ja-packs.git
-cd minecraft-ja-packs
-
-# 依存関係をインストール
-npm install
-```
-
-### ビルドコマンド
-```bash
-# 変更されたファイルのみビルド
-npm run build
-
-# すべて強制再ビルド
-npm run build -- --force
-
-# 特定バージョンのみ
-npm run build:1.20.1
-npm run build:1.18.2
-
-# インデックス生成
-npm run generate-index
-```
-
-## コントリビューション
+## バグ報告・要望
 
 バグ報告やMOD追加リクエストは、以下の方法で受け付けています：
 
