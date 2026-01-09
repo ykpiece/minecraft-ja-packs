@@ -1,0 +1,24 @@
+{
+  "block.doapi.standard": "Completionist Banner",
+  "block.doapi.wall_standard": "Completionist Wall Banner",
+
+  "sound.doapi.cabinet_close": "キャビネットを閉じる",
+  "sound.doapi.cabinet_open": "キャビネットを開く",
+  "sound.doapi.drawer_close": "引き出しを閉じる",
+  "sound.doapi.drawer_open": "引き出しを開く",
+  "sound.doapi.cake_cut": "ケーキを切る",
+  "sound.doapi.typewriter": "タイプライターを入力する",
+  "sound.doapi.dinner_bell": "ディナーベルを鳴らす",
+  "sound.doapi.brewstation_ambient": "醸造台の音",
+  "sound.doapi.brewstation_oven": "オーブンのパチパチ音",
+  "sound.doapi.brewstation_timer": "タイマーが時を刻む",
+  "sound.doapi.brewstation_kettle": "泡が弾ける",
+  "sound.doapi.brewstation_whistle": "口笛を吹く",
+  "sound.doapi.breath": "呼吸",
+  "sound.doapi.beer_elemental_death": "ブーズが死ぬ",
+  "sound.doapi.beer_elemental_ambient": "ブーズの放熱",
+  "sound.doapi.beer_elemental_hurt": "ブーズが痛がる",
+  "sound.doapi.beer_elemental_attack": "ブーズの攻撃",
+  "sound.doapi.timer_ticking": "タイマーが時を刻む",
+  "pack.source.builtinMod": "組み込み: %s"
+}

@@ -1,18 +1,90 @@
 {
   "meta": {
     "lastUpdate": "2026-01-09",
-    "totalPacks": 169,
+    "totalPacks": 185,
     "versions": [
       "1.20.1",
       "1.18.2"
     ],
     "versionStats": {
-      "1.20.1": 138,
+      "1.20.1": 154,
       "1.18.2": 31
     },
     "generatedBy": "generate-index.js"
   },
   "packs": [
+    {
+      "id": "doapi-1201",
+      "modName": "doapi",
+      "displayName": "[Let's Do] API",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "doapi-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/doapi-ja-1.20.1.zip",
+      "fileSize": "1.6KB",
+      "fileSizeBytes": 1623,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "beachparty-1201",
+      "modName": "beachparty",
+      "displayName": "[Let's Do] Beachparty",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "beachparty-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/beachparty-ja-1.20.1.zip",
+      "fileSize": "3.1KB",
+      "fileSizeBytes": 3225,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "candlelight-1201",
+      "modName": "candlelight",
+      "displayName": "[Let's Do] Candlelight - Farm&Charm Compat",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "candlelight-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/candlelight-ja-1.20.1.zip",
+      "fileSize": "4.9KB",
+      "fileSizeBytes": 5007,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "herbalbrews-1201",
+      "modName": "herbalbrews",
+      "displayName": "[Let's Do] Herbalbrews",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "herbalbrews-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/herbalbrews-ja-1.20.1.zip",
+      "fileSize": "2.8KB",
+      "fileSizeBytes": 2830,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "meadow-1201",
+      "modName": "meadow",
+      "displayName": "[Let's Do] Meadow",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "meadow-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/meadow-ja-1.20.1.zip",
+      "fileSize": "4.7KB",
+      "fileSizeBytes": 4776,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "nethervinery-1201",
+      "modName": "nethervinery",
+      "displayName": "[Let's Do] NetherVinery (unsupported)",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "nethervinery-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/nethervinery-ja-1.20.1.zip",
+      "fileSize": "2.4KB",
+      "fileSizeBytes": 2425,
+      "lastUpdate": "2026-01-09"
+    },
     {
       "id": "aquamirae_mod_extra_music-1201",
       "modName": "aquamirae_mod_extra_music",
@@ -21,8 +93,8 @@
       "mcVersion": "1.20.1",
       "fileName": "aquamirae_mod_extra_music-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/aquamirae_mod_extra_music-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1380,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1436,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -33,8 +105,8 @@
       "mcVersion": "1.20.1",
       "fileName": "alexsdelight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/alexsdelight-ja-1.20.1.zip",
-      "fileSize": "1.6KB",
-      "fileSizeBytes": 1658,
+      "fileSize": "1.7KB",
+      "fileSizeBytes": 1710,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -46,7 +118,7 @@
       "fileName": "animatedmobsmod-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/animatedmobsmod-ja-1.20.1.zip",
       "fileSize": "2.5KB",
-      "fileSizeBytes": 2520,
+      "fileSizeBytes": 2572,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -58,7 +130,7 @@
       "fileName": "animalistic-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/animalistic-ja-1.20.1.zip",
       "fileSize": "2.9KB",
-      "fileSizeBytes": 2956,
+      "fileSizeBytes": 3009,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -69,8 +141,8 @@
       "mcVersion": "1.18.2",
       "fileName": "animalistic_a-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/animalistic_a-ja-1.18.2.zip",
-      "fileSize": "2.8KB",
-      "fileSizeBytes": 2910,
+      "fileSize": "2.9KB",
+      "fileSizeBytes": 2963,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -81,8 +153,8 @@
       "mcVersion": "1.20.1",
       "fileName": "solapplepie-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/solapplepie-ja-1.20.1.zip",
-      "fileSize": "2.0KB",
-      "fileSizeBytes": 2076,
+      "fileSize": "2.1KB",
+      "fileSizeBytes": 2128,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -94,7 +166,7 @@
       "fileName": "appliedenergistics2-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/appliedenergistics2-ja-1.20.1.zip",
       "fileSize": "14.3KB",
-      "fileSizeBytes": 14620,
+      "fileSizeBytes": 14674,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -105,8 +177,8 @@
       "mcVersion": "1.20.1",
       "fileName": "aquamirae-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/aquamirae-ja-1.20.1.zip",
-      "fileSize": "6.0KB",
-      "fileSizeBytes": 6151,
+      "fileSize": "6.1KB",
+      "fileSizeBytes": 6204,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -117,8 +189,8 @@
       "mcVersion": "1.18.2",
       "fileName": "aquamirae-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/aquamirae-ja-1.18.2.zip",
-      "fileSize": "6.1KB",
-      "fileSizeBytes": 6269,
+      "fileSize": "6.2KB",
+      "fileSizeBytes": 6322,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -129,8 +201,8 @@
       "mcVersion": "1.20.1",
       "fileName": "aquamirae_delight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/aquamirae_delight-ja-1.20.1.zip",
-      "fileSize": "1.6KB",
-      "fileSizeBytes": 1673,
+      "fileSize": "1.7KB",
+      "fileSizeBytes": 1726,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -142,7 +214,7 @@
       "fileName": "bakery_villager_trader-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/bakery_villager_trader-ja-1.20.1.zip",
       "fileSize": "1.6KB",
-      "fileSizeBytes": 1614,
+      "fileSizeBytes": 1669,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -154,7 +226,7 @@
       "fileName": "beautify-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/beautify-ja-1.20.1.zip",
       "fileSize": "2.9KB",
-      "fileSizeBytes": 2930,
+      "fileSizeBytes": 2982,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -166,7 +238,19 @@
       "fileName": "beautify-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/beautify-ja-1.18.2.zip",
       "fileSize": "2.7KB",
-      "fileSizeBytes": 2731,
+      "fileSizeBytes": 2783,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "betteradvancements-1201",
+      "modName": "betteradvancements",
+      "displayName": "Better Advancements",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "betteradvancements-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/betteradvancements-ja-1.20.1.zip",
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1220,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -178,7 +262,7 @@
       "fileName": "biomemakeover-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/biomemakeover-ja-1.20.1.zip",
       "fileSize": "9.2KB",
-      "fileSizeBytes": 9418,
+      "fileSizeBytes": 9471,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -189,8 +273,8 @@
       "mcVersion": "1.18.2",
       "fileName": "biomeoplenty-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/biomeoplenty-ja-1.18.2.zip",
-      "fileSize": "5.2KB",
-      "fileSizeBytes": 5331,
+      "fileSize": "5.3KB",
+      "fileSizeBytes": 5384,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -201,8 +285,8 @@
       "mcVersion": "1.20.1",
       "fileName": "blueprint-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/blueprint-ja-1.20.1.zip",
-      "fileSize": "1.6KB",
-      "fileSizeBytes": 1663,
+      "fileSize": "1.7KB",
+      "fileSizeBytes": 1716,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -214,7 +298,7 @@
       "fileName": "bocchium-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/bocchium-ja-1.20.1.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1392,
+      "fileSizeBytes": 1443,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -226,7 +310,7 @@
       "fileName": "bountiful-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/bountiful-ja-1.20.1.zip",
       "fileSize": "2.4KB",
-      "fileSizeBytes": 2432,
+      "fileSizeBytes": 2485,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -237,8 +321,8 @@
       "mcVersion": "1.20.1",
       "fileName": "breezy-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/breezy-ja-1.20.1.zip",
-      "fileSize": "1.1KB",
-      "fileSizeBytes": 1165,
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1217,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -250,7 +334,7 @@
       "fileName": "brute_force_rendering_culling-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/brute_force_rendering_culling-ja-1.20.1.zip",
       "fileSize": "2.6KB",
-      "fileSizeBytes": 2626,
+      "fileSizeBytes": 2681,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -262,7 +346,7 @@
       "fileName": "caelus-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/caelus-ja-1.20.1.zip",
       "fileSize": "1.1KB",
-      "fileSizeBytes": 1116,
+      "fileSizeBytes": 1169,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -274,7 +358,7 @@
       "fileName": "call_of_yucatan-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/call_of_yucatan-ja-1.20.1.zip",
       "fileSize": "4.7KB",
-      "fileSizeBytes": 4788,
+      "fileSizeBytes": 4841,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -285,8 +369,8 @@
       "mcVersion": "1.20.1",
       "fileName": "camera-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/camera-ja-1.20.1.zip",
-      "fileSize": "1.8KB",
-      "fileSizeBytes": 1878,
+      "fileSize": "1.9KB",
+      "fileSizeBytes": 1930,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -297,8 +381,8 @@
       "mcVersion": "1.20.1",
       "fileName": "carryon-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/carryon-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1436,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1488,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -310,7 +394,7 @@
       "fileName": "carryon-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/carryon-ja-1.18.2.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1429,
+      "fileSizeBytes": 1482,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -322,7 +406,7 @@
       "fileName": "castle_in_the_sky-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/castle_in_the_sky-ja-1.20.1.zip",
       "fileSize": "2.3KB",
-      "fileSizeBytes": 2345,
+      "fileSizeBytes": 2398,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -333,8 +417,8 @@
       "mcVersion": "1.20.1",
       "fileName": "chargedcharms-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/chargedcharms-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1358,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1408,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -346,7 +430,7 @@
       "fileName": "chefsdelight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/chefsdelight-ja-1.20.1.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1189,
+      "fileSizeBytes": 1241,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -357,8 +441,8 @@
       "mcVersion": "1.20.1",
       "fileName": "chipped-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/chipped-ja-1.20.1.zip",
-      "fileSize": "70.6KB",
-      "fileSizeBytes": 72335,
+      "fileSize": "70.7KB",
+      "fileSizeBytes": 72388,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -369,8 +453,8 @@
       "mcVersion": "1.18.2",
       "fileName": "citadel-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/citadel-ja-1.18.2.zip",
-      "fileSize": "1.5KB",
-      "fileSizeBytes": 1534,
+      "fileSize": "1.6KB",
+      "fileSizeBytes": 1588,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -382,7 +466,7 @@
       "fileName": "cmdcam-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/cmdcam-ja-1.18.2.zip",
       "fileSize": "2.3KB",
-      "fileSizeBytes": 2347,
+      "fileSizeBytes": 2400,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -394,7 +478,7 @@
       "fileName": "comforts-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/comforts-ja-1.20.1.zip",
       "fileSize": "2.8KB",
-      "fileSizeBytes": 2835,
+      "fileSizeBytes": 2886,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -406,7 +490,7 @@
       "fileName": "corpse-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/corpse-ja-1.18.2.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1514,
+      "fileSizeBytes": 1567,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -417,8 +501,8 @@
       "mcVersion": "1.20.1",
       "fileName": "creativecore-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/creativecore-ja-1.20.1.zip",
-      "fileSize": "1.7KB",
-      "fileSizeBytes": 1741,
+      "fileSize": "1.8KB",
+      "fileSizeBytes": 1794,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -430,7 +514,7 @@
       "fileName": "creativecore-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/creativecore-ja-1.18.2.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1497,
+      "fileSizeBytes": 1550,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -441,8 +525,8 @@
       "mcVersion": "1.20.1",
       "fileName": "davespotioneering-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/davespotioneering-ja-1.20.1.zip",
-      "fileSize": "2.9KB",
-      "fileSizeBytes": 3004,
+      "fileSize": "3.0KB",
+      "fileSizeBytes": 3059,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -453,8 +537,8 @@
       "mcVersion": "1.20.1",
       "fileName": "deeperdarkerdelight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/deeperdarkerdelight-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1354,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1407,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -466,7 +550,7 @@
       "fileName": "diamethyst_arrows-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/diamethyst_arrows-ja-1.20.1.zip",
       "fileSize": "3.2KB",
-      "fileSizeBytes": 3241,
+      "fileSizeBytes": 3295,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -478,7 +562,7 @@
       "fileName": "diamethyst_mw-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/diamethyst_mw-ja-1.20.1.zip",
       "fileSize": "2.3KB",
-      "fileSizeBytes": 2345,
+      "fileSizeBytes": 2398,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -489,8 +573,8 @@
       "mcVersion": "1.20.1",
       "fileName": "diamethysts-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/diamethysts-ja-1.20.1.zip",
-      "fileSize": "8.5KB",
-      "fileSizeBytes": 8741,
+      "fileSize": "8.6KB",
+      "fileSizeBytes": 8793,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -501,8 +585,8 @@
       "mcVersion": "1.20.1",
       "fileName": "difficult_spawners-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/difficult_spawners-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1247,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1302,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -513,8 +597,8 @@
       "mcVersion": "1.20.1",
       "fileName": "displaycase-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/displaycase-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1356,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1409,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -525,8 +609,8 @@
       "mcVersion": "1.20.1",
       "fileName": "dramaticdoors-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/dramaticdoors-ja-1.20.1.zip",
-      "fileSize": "20.9KB",
-      "fileSizeBytes": 21421,
+      "fileSize": "21.0KB",
+      "fileSizeBytes": 21474,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -538,7 +622,7 @@
       "fileName": "ecologics-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ecologics-ja-1.20.1.zip",
       "fileSize": "3.7KB",
-      "fileSizeBytes": 3777,
+      "fileSizeBytes": 3829,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -550,7 +634,7 @@
       "fileName": "ecologicsdelight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ecologicsdelight-ja-1.20.1.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1383,
+      "fileSizeBytes": 1435,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -562,7 +646,7 @@
       "fileName": "embeddium-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/embeddium-ja-1.20.1.zip",
       "fileSize": "1.8KB",
-      "fileSizeBytes": 1834,
+      "fileSizeBytes": 1886,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -573,8 +657,8 @@
       "mcVersion": "1.20.1",
       "fileName": "endertrigon-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/endertrigon-ja-1.20.1.zip",
-      "fileSize": "2.0KB",
-      "fileSizeBytes": 2098,
+      "fileSize": "2.1KB",
+      "fileSizeBytes": 2150,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -585,8 +669,8 @@
       "mcVersion": "1.20.1",
       "fileName": "outerenddelight-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/outerenddelight-ja-1.20.1.zip",
-      "fileSize": "1.1KB",
-      "fileSizeBytes": 1166,
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1219,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -597,8 +681,8 @@
       "mcVersion": "1.20.1",
       "fileName": "enderitemod-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/enderitemod-ja-1.20.1.zip",
-      "fileSize": "3.6KB",
-      "fileSizeBytes": 3686,
+      "fileSize": "3.7KB",
+      "fileSizeBytes": 3739,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -610,7 +694,7 @@
       "fileName": "entityculling-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/entityculling-ja-1.20.1.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1194,
+      "fileSizeBytes": 1247,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -621,8 +705,8 @@
       "mcVersion": "1.20.1",
       "fileName": "exoticbirds-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/exoticbirds-ja-1.20.1.zip",
-      "fileSize": "6.6KB",
-      "fileSizeBytes": 6805,
+      "fileSize": "6.7KB",
+      "fileSizeBytes": 6858,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -633,8 +717,8 @@
       "mcVersion": "1.20.1",
       "fileName": "expandedstorage-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/expandedstorage-ja-1.20.1.zip",
-      "fileSize": "4.3KB",
-      "fileSizeBytes": 4410,
+      "fileSize": "4.4KB",
+      "fileSizeBytes": 4463,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -646,7 +730,7 @@
       "fileName": "extraquests-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/extraquests-ja-1.20.1.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1518,
+      "fileSizeBytes": 1572,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -657,8 +741,8 @@
       "mcVersion": "1.20.1",
       "fileName": "faded_conquest-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/faded_conquest-ja-1.20.1.zip",
-      "fileSize": "4.0KB",
-      "fileSizeBytes": 4108,
+      "fileSize": "4.1KB",
+      "fileSizeBytes": 4161,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -669,8 +753,8 @@
       "mcVersion": "1.20.1",
       "fileName": "fantasy_armor-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fantasy_armor-ja-1.20.1.zip",
-      "fileSize": "3.2KB",
-      "fileSizeBytes": 3288,
+      "fileSize": "3.3KB",
+      "fileSizeBytes": 3341,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -682,7 +766,7 @@
       "fileName": "fantasyfauna-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fantasyfauna-ja-1.20.1.zip",
       "fileSize": "1.7KB",
-      "fileSizeBytes": 1727,
+      "fileSizeBytes": 1780,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -693,8 +777,8 @@
       "mcVersion": "1.20.1",
       "fileName": "fantasy_weapons-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fantasy_weapons-ja-1.20.1.zip",
-      "fileSize": "1.8KB",
-      "fileSizeBytes": 1846,
+      "fileSize": "1.9KB",
+      "fileSizeBytes": 1899,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -705,8 +789,8 @@
       "mcVersion": "1.20.1",
       "fileName": "fantasycraft-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fantasycraft-ja-1.20.1.zip",
-      "fileSize": "3.1KB",
-      "fileSizeBytes": 3215,
+      "fileSize": "3.2KB",
+      "fileSizeBytes": 3267,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -718,7 +802,7 @@
       "fileName": "framework-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/framework-ja-1.20.1.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1188,
+      "fileSizeBytes": 1240,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -729,8 +813,8 @@
       "mcVersion": "1.20.1",
       "fileName": "fromtheshadowsredux-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fromtheshadowsredux-ja-1.20.1.zip",
-      "fileSize": "2.6KB",
-      "fileSizeBytes": 2674,
+      "fileSize": "2.7KB",
+      "fileSizeBytes": 2729,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -742,7 +826,7 @@
       "fileName": "fromtheshadowsreborn-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fromtheshadowsreborn-ja-1.20.1.zip",
       "fileSize": "2.6KB",
-      "fileSizeBytes": 2655,
+      "fileSizeBytes": 2709,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -754,7 +838,7 @@
       "fileName": "ftblibrary-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ftblibrary-ja-1.20.1.zip",
       "fileSize": "2.8KB",
-      "fileSizeBytes": 2854,
+      "fileSizeBytes": 2909,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -765,8 +849,8 @@
       "mcVersion": "1.20.1",
       "fileName": "ftb-quests-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ftb-quests-ja-1.20.1.zip",
-      "fileSize": "11.0KB",
-      "fileSizeBytes": 11266,
+      "fileSize": "11.1KB",
+      "fileSizeBytes": 11318,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -778,7 +862,7 @@
       "fileName": "ftb-teams-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ftb-teams-ja-1.20.1.zip",
       "fileSize": "2.9KB",
-      "fileSizeBytes": 2933,
+      "fileSizeBytes": 2984,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -790,7 +874,7 @@
       "fileName": "fzzy_config-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/fzzy_config-ja-1.20.1.zip",
       "fileSize": "5.7KB",
-      "fileSizeBytes": 5824,
+      "fileSizeBytes": 5875,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -802,7 +886,7 @@
       "fileName": "gaggle_of_golems-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/gaggle_of_golems-ja-1.18.2.zip",
       "fileSize": "3.0KB",
-      "fileSizeBytes": 3027,
+      "fileSizeBytes": 3079,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -814,7 +898,7 @@
       "fileName": "goblintraders-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/goblintraders-ja-1.20.1.zip",
       "fileSize": "1.3KB",
-      "fileSizeBytes": 1321,
+      "fileSizeBytes": 1374,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -826,7 +910,7 @@
       "fileName": "goblins_tyranny-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/goblins_tyranny-ja-1.20.1.zip",
       "fileSize": "12.1KB",
-      "fileSizeBytes": 12354,
+      "fileSizeBytes": 12406,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -838,7 +922,7 @@
       "fileName": "goblins-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/goblins-ja-1.20.1.zip",
       "fileSize": "1.6KB",
-      "fileSizeBytes": 1635,
+      "fileSizeBytes": 1687,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -850,7 +934,7 @@
       "fileName": "goldenhopper-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/goldenhopper-ja-1.20.1.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1220,
+      "fileSizeBytes": 1274,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -862,7 +946,7 @@
       "fileName": "goldenhopper-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/goldenhopper-ja-1.18.2.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1222,
+      "fileSizeBytes": 1275,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -873,8 +957,8 @@
       "mcVersion": "1.20.1",
       "fileName": "guardribbits-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/guardribbits-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1231,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1284,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -886,7 +970,7 @@
       "fileName": "dragonseeker-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/dragonseeker-ja-1.20.1.zip",
       "fileSize": "1.3KB",
-      "fileSizeBytes": 1293,
+      "fileSizeBytes": 1345,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -898,7 +982,7 @@
       "fileName": "illageandspillage-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/illageandspillage-ja-1.18.2.zip",
       "fileSize": "2.8KB",
-      "fileSizeBytes": 2832,
+      "fileSizeBytes": 2884,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -910,7 +994,7 @@
       "fileName": "illager_invasion-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/illager_invasion-ja-1.20.1.zip",
       "fileSize": "2.8KB",
-      "fileSizeBytes": 2840,
+      "fileSizeBytes": 2895,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -922,7 +1006,7 @@
       "fileName": "idas-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/idas-ja-1.20.1.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1209,
+      "fileSizeBytes": 1262,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -933,8 +1017,8 @@
       "mcVersion": "1.20.1",
       "fileName": "integrated_stronghold-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/integrated_stronghold-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1267,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1321,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -945,8 +1029,8 @@
       "mcVersion": "1.20.1",
       "fileName": "invtweaks-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/invtweaks-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1255,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1308,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -958,7 +1042,7 @@
       "fileName": "takeapillage-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/takeapillage-ja-1.20.1.zip",
       "fileSize": "2.1KB",
-      "fileSizeBytes": 2107,
+      "fileSizeBytes": 2159,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -969,8 +1053,8 @@
       "mcVersion": "1.20.1",
       "fileName": "jeed-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/jeed-ja-1.20.1.zip",
-      "fileSize": "9.6KB",
-      "fileSizeBytes": 9833,
+      "fileSize": "9.7KB",
+      "fileSizeBytes": 9884,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -982,7 +1066,7 @@
       "fileName": "justenoughgolems-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/justenoughgolems-ja-1.18.2.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1508,
+      "fileSizeBytes": 1561,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -994,7 +1078,7 @@
       "fileName": "justleveling-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/justleveling-ja-1.18.2.zip",
       "fileSize": "7.2KB",
-      "fileSizeBytes": 7362,
+      "fileSizeBytes": 7415,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1005,8 +1089,8 @@
       "mcVersion": "1.20.1",
       "fileName": "koboldscommunity-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/koboldscommunity-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1474,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1527,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1018,7 +1102,31 @@
       "fileName": "kobolds-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/kobolds-ja-1.20.1.zip",
       "fileSize": "2.1KB",
-      "fileSizeBytes": 2108,
+      "fileSizeBytes": 2160,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "bakery-1201",
+      "modName": "bakery",
+      "displayName": "Legacy: [Let's Do] Bakery",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "bakery-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/bakery-ja-1.20.1.zip",
+      "fileSize": "4.1KB",
+      "fileSizeBytes": 4169,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "brewery-1201",
+      "modName": "brewery",
+      "displayName": "Legacy: [Let's Do] Brewery",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "brewery-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/brewery-ja-1.20.1.zip",
+      "fileSize": "4.4KB",
+      "fileSizeBytes": 4467,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1030,7 +1138,7 @@
       "fileName": "legionary-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/legionary-ja-1.20.1.zip",
       "fileSize": "1.9KB",
-      "fileSizeBytes": 1930,
+      "fileSizeBytes": 1983,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1042,7 +1150,7 @@
       "fileName": "libraryferret-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/libraryferret-ja-1.20.1.zip",
       "fileSize": "2.4KB",
-      "fileSizeBytes": 2410,
+      "fileSizeBytes": 2466,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1054,7 +1162,7 @@
       "fileName": "lightmanscurrency-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/lightmanscurrency-ja-1.20.1.zip",
       "fileSize": "21.1KB",
-      "fileSizeBytes": 21598,
+      "fileSizeBytes": 21651,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1066,7 +1174,7 @@
       "fileName": "lionfishapi-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/lionfishapi-ja-1.20.1.zip",
       "fileSize": "1.3KB",
-      "fileSizeBytes": 1324,
+      "fileSizeBytes": 1376,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1078,7 +1186,7 @@
       "fileName": "lost_skeleton-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/lost_skeleton-ja-1.20.1.zip",
       "fileSize": "1.3KB",
-      "fileSizeBytes": 1327,
+      "fileSizeBytes": 1379,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1089,8 +1197,68 @@
       "mcVersion": "1.18.2",
       "fileName": "luggage-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/luggage-ja-1.18.2.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1344,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1397,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "luminous_depths-1201",
+      "modName": "luminous_depths",
+      "displayName": "Luminous Depths [RETIRED]",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "luminous_depths-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/luminous_depths-ja-1.20.1.zip",
+      "fileSize": "7.3KB",
+      "fileSizeBytes": 7434,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "luminoustag-1201",
+      "modName": "luminoustag",
+      "displayName": "LUMINOUS TAG",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "luminoustag-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/luminoustag-ja-1.20.1.zip",
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1200,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "luminous_beasts-1201",
+      "modName": "luminous_beasts",
+      "displayName": "LUMINOUS: BEASTS",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "luminous_beasts-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/luminous_beasts-ja-1.20.1.zip",
+      "fileSize": "7.5KB",
+      "fileSizeBytes": 7648,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "luminous_halloween-1201",
+      "modName": "luminous_halloween",
+      "displayName": "LUMINOUS: HALLOWEEN",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "luminous_halloween-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/luminous_halloween-ja-1.20.1.zip",
+      "fileSize": "1.8KB",
+      "fileSizeBytes": 1892,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "luminous_monsters-1201",
+      "modName": "luminous_monsters",
+      "displayName": "LUMINOUS: MONSTERS",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "luminous_monsters-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/luminous_monsters-ja-1.20.1.zip",
+      "fileSize": "1.7KB",
+      "fileSizeBytes": 1716,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1102,7 +1270,7 @@
       "fileName": "mageflame-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/mageflame-ja-1.18.2.zip",
       "fileSize": "1.9KB",
-      "fileSizeBytes": 1899,
+      "fileSizeBytes": 1952,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1113,8 +1281,8 @@
       "mcVersion": "1.18.2",
       "fileName": "map_atlases-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/map_atlases-ja-1.18.2.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1475,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1527,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1126,7 +1294,7 @@
       "fileName": "mimic-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/mimic-ja-1.18.2.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1196,
+      "fileSizeBytes": 1249,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1138,7 +1306,7 @@
       "fileName": "dummmmmmy-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/dummmmmmy-ja-1.18.2.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1214,
+      "fileSizeBytes": 1266,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1150,7 +1318,7 @@
       "fileName": "mob-ai-tweaks-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mob-ai-tweaks-ja-1.20.1.zip",
       "fileSize": "3.2KB",
-      "fileSizeBytes": 3255,
+      "fileSizeBytes": 3308,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1162,7 +1330,7 @@
       "fileName": "mofus_broken_constellation-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mofus_broken_constellation-ja-1.20.1.zip",
       "fileSize": "12.9KB",
-      "fileSizeBytes": 13194,
+      "fileSizeBytes": 13251,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1173,8 +1341,8 @@
       "mcVersion": "1.20.1",
       "fileName": "mokels_adventure-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mokels_adventure-ja-1.20.1.zip",
-      "fileSize": "2.7KB",
-      "fileSizeBytes": 2800,
+      "fileSize": "2.8KB",
+      "fileSizeBytes": 2854,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1185,8 +1353,8 @@
       "mcVersion": "1.20.1",
       "fileName": "mokels_bossfight_saphyra-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mokels_bossfight_saphyra-ja-1.20.1.zip",
-      "fileSize": "5.6KB",
-      "fileSizeBytes": 5733,
+      "fileSize": "5.7KB",
+      "fileSizeBytes": 5786,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1197,8 +1365,8 @@
       "mcVersion": "1.20.1",
       "fileName": "monobank-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/monobank-ja-1.20.1.zip",
-      "fileSize": "2.0KB",
-      "fileSizeBytes": 2053,
+      "fileSize": "2.1KB",
+      "fileSizeBytes": 2104,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1210,7 +1378,7 @@
       "fileName": "selene-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/selene-ja-1.18.2.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1218,
+      "fileSizeBytes": 1271,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1222,7 +1390,7 @@
       "fileName": "morebowsandarrows-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/morebowsandarrows-ja-1.20.1.zip",
       "fileSize": "3.7KB",
-      "fileSizeBytes": 3739,
+      "fileSizeBytes": 3792,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1234,7 +1402,7 @@
       "fileName": "more_bows_and_arrows-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/more_bows_and_arrows-ja-1.20.1.zip",
       "fileSize": "3.7KB",
-      "fileSizeBytes": 3753,
+      "fileSizeBytes": 3807,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1246,7 +1414,7 @@
       "fileName": "morebows-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/morebows-ja-1.20.1.zip",
       "fileSize": "2.1KB",
-      "fileSizeBytes": 2139,
+      "fileSizeBytes": 2191,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1257,8 +1425,8 @@
       "mcVersion": "1.20.1",
       "fileName": "moretotems-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/moretotems-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1441,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1493,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1269,8 +1437,8 @@
       "mcVersion": "1.20.1",
       "fileName": "morevillagers-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/morevillagers-ja-1.20.1.zip",
-      "fileSize": "2.5KB",
-      "fileSizeBytes": 2601,
+      "fileSize": "2.6KB",
+      "fileSizeBytes": 2654,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1281,8 +1449,8 @@
       "mcVersion": "1.20.1",
       "fileName": "mutantmonsters-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mutantmonsters-ja-1.20.1.zip",
-      "fileSize": "3.2KB",
-      "fileSizeBytes": 3279,
+      "fileSize": "3.3KB",
+      "fileSizeBytes": 3331,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1293,8 +1461,8 @@
       "mcVersion": "1.20.1",
       "fileName": "mysticpotions-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/mysticpotions-ja-1.20.1.zip",
-      "fileSize": "2.3KB",
-      "fileSizeBytes": 2358,
+      "fileSize": "2.4KB",
+      "fileSizeBytes": 2412,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1305,8 +1473,8 @@
       "mcVersion": "1.18.2",
       "fileName": "mysticaloaktree-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/mysticaloaktree-ja-1.18.2.zip",
-      "fileSize": "1.1KB",
-      "fileSizeBytes": 1168,
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1220,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1317,8 +1485,8 @@
       "mcVersion": "1.20.1",
       "fileName": "notenoughanimations-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/notenoughanimations-ja-1.20.1.zip",
-      "fileSize": "3.0KB",
-      "fileSizeBytes": 3087,
+      "fileSize": "3.1KB",
+      "fileSizeBytes": 3142,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1330,7 +1498,7 @@
       "fileName": "nullscape-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/nullscape-ja-1.18.2.zip",
       "fileSize": "1.2KB",
-      "fileSizeBytes": 1191,
+      "fileSizeBytes": 1245,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1341,8 +1509,8 @@
       "mcVersion": "1.20.1",
       "fileName": "obscure_api-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/obscure_api-ja-1.20.1.zip",
-      "fileSize": "2.5KB",
-      "fileSizeBytes": 2609,
+      "fileSize": "2.6KB",
+      "fileSizeBytes": 2662,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1353,8 +1521,8 @@
       "mcVersion": "1.18.2",
       "fileName": "obscure_api-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/obscure_api-ja-1.18.2.zip",
-      "fileSize": "4.1KB",
-      "fileSizeBytes": 4198,
+      "fileSize": "4.2KB",
+      "fileSizeBytes": 4252,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1365,8 +1533,8 @@
       "mcVersion": "1.20.1",
       "fileName": "ogres-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ogres-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1461,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1512,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1377,8 +1545,8 @@
       "mcVersion": "1.20.1",
       "fileName": "origins-classes-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/origins-classes-ja-1.20.1.zip",
-      "fileSize": "4.2KB",
-      "fileSizeBytes": 4339,
+      "fileSize": "4.3KB",
+      "fileSizeBytes": 4391,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1389,8 +1557,8 @@
       "mcVersion": "1.20.1",
       "fileName": "pfm-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/pfm-ja-1.20.1.zip",
-      "fileSize": "13.5KB",
-      "fileSizeBytes": 13864,
+      "fileSize": "13.6KB",
+      "fileSizeBytes": 13915,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1402,7 +1570,7 @@
       "fileName": "palladium-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/palladium-ja-1.20.1.zip",
       "fileSize": "4.0KB",
-      "fileSizeBytes": 4057,
+      "fileSizeBytes": 4110,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1413,8 +1581,8 @@
       "mcVersion": "1.20.1",
       "fileName": "pamhc2foodcore-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/pamhc2foodcore-ja-1.20.1.zip",
-      "fileSize": "3.4KB",
-      "fileSizeBytes": 3528,
+      "fileSize": "3.5KB",
+      "fileSizeBytes": 3579,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1425,8 +1593,8 @@
       "mcVersion": "1.20.1",
       "fileName": "pamhc2foodextended-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/pamhc2foodextended-ja-1.20.1.zip",
-      "fileSize": "12.5KB",
-      "fileSizeBytes": 12841,
+      "fileSize": "12.6KB",
+      "fileSizeBytes": 12894,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1438,7 +1606,7 @@
       "fileName": "particle_core-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/particle_core-ja-1.20.1.zip",
       "fileSize": "1.7KB",
-      "fileSizeBytes": 1709,
+      "fileSizeBytes": 1762,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1449,8 +1617,8 @@
       "mcVersion": "1.20.1",
       "fileName": "patchouli-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/patchouli-ja-1.20.1.zip",
-      "fileSize": "3.4KB",
-      "fileSizeBytes": 3507,
+      "fileSize": "3.5KB",
+      "fileSizeBytes": 3560,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1461,8 +1629,8 @@
       "mcVersion": "1.18.2",
       "fileName": "patchouli-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/patchouli-ja-1.18.2.zip",
-      "fileSize": "3.4KB",
-      "fileSizeBytes": 3522,
+      "fileSize": "3.5KB",
+      "fileSizeBytes": 3576,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1473,8 +1641,8 @@
       "mcVersion": "1.20.1",
       "fileName": "piglinproliferation-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/piglinproliferation-ja-1.20.1.zip",
-      "fileSize": "3.1KB",
-      "fileSizeBytes": 3200,
+      "fileSize": "3.2KB",
+      "fileSizeBytes": 3255,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1486,7 +1654,7 @@
       "fileName": "pizzacraft-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/pizzacraft-ja-1.20.1.zip",
       "fileSize": "3.4KB",
-      "fileSizeBytes": 3462,
+      "fileSizeBytes": 3514,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1497,8 +1665,8 @@
       "mcVersion": "1.20.1",
       "fileName": "polymorph-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/polymorph-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1275,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1328,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1509,8 +1677,8 @@
       "mcVersion": "1.20.1",
       "fileName": "potion_amulets-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/potion_amulets-ja-1.20.1.zip",
-      "fileSize": "1.5KB",
-      "fileSizeBytes": 1586,
+      "fileSize": "1.6KB",
+      "fileSizeBytes": 1641,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1522,7 +1690,7 @@
       "fileName": "potionsmaster-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/potionsmaster-ja-1.20.1.zip",
       "fileSize": "3.6KB",
-      "fileSizeBytes": 3659,
+      "fileSizeBytes": 3713,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1534,7 +1702,7 @@
       "fileName": "progressivebosses-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/progressivebosses-ja-1.20.1.zip",
       "fileSize": "1.8KB",
-      "fileSizeBytes": 1832,
+      "fileSizeBytes": 1884,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1545,8 +1713,8 @@
       "mcVersion": "1.20.1",
       "fileName": "quickstack-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/quickstack-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1259,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1311,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1558,7 +1726,7 @@
       "fileName": "ragnagoblin-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ragnagoblin-ja-1.20.1.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1487,
+      "fileSizeBytes": 1540,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1570,7 +1738,19 @@
       "fileName": "ribbits-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/ribbits-ja-1.20.1.zip",
       "fileSize": "1.9KB",
-      "fileSizeBytes": 1937,
+      "fileSizeBytes": 1989,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "rpg_better_elder_guardian-1201",
+      "modName": "rpg_better_elder_guardian",
+      "displayName": "RPG: Better Elder Guardian",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "rpg_better_elder_guardian-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/rpg_better_elder_guardian-ja-1.20.1.zip",
+      "fileSize": "1.9KB",
+      "fileSizeBytes": 1985,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1581,8 +1761,8 @@
       "mcVersion": "1.18.2",
       "fileName": "rubidium-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/rubidium-ja-1.18.2.zip",
-      "fileSize": "4.4KB",
-      "fileSizeBytes": 4541,
+      "fileSize": "4.5KB",
+      "fileSizeBytes": 4594,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1594,7 +1774,7 @@
       "fileName": "seasonals-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/seasonals-ja-1.20.1.zip",
       "fileSize": "1.7KB",
-      "fileSizeBytes": 1708,
+      "fileSizeBytes": 1761,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1605,8 +1785,8 @@
       "mcVersion": "1.20.1",
       "fileName": "sereneseasons-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/sereneseasons-ja-1.20.1.zip",
-      "fileSize": "1.5KB",
-      "fileSizeBytes": 1587,
+      "fileSize": "1.6KB",
+      "fileSizeBytes": 1639,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1618,7 +1798,7 @@
       "fileName": "shroom_dealers-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/shroom_dealers-ja-1.18.2.zip",
       "fileSize": "1.5KB",
-      "fileSizeBytes": 1533,
+      "fileSizeBytes": 1586,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1629,8 +1809,8 @@
       "mcVersion": "1.20.1",
       "fileName": "silentlib-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/silentlib-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1335,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1387,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1642,7 +1822,7 @@
       "fileName": "silentlib-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/silentlib-ja-1.18.2.zip",
       "fileSize": "1.3KB",
-      "fileSizeBytes": 1326,
+      "fileSizeBytes": 1379,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1654,7 +1834,7 @@
       "fileName": "silents-gems-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/silents-gems-ja-1.20.1.zip",
       "fileSize": "2.8KB",
-      "fileSizeBytes": 2822,
+      "fileSizeBytes": 2875,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1666,7 +1846,7 @@
       "fileName": "simplefarming-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/simplefarming-ja-1.20.1.zip",
       "fileSize": "5.4KB",
-      "fileSizeBytes": 5487,
+      "fileSizeBytes": 5539,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1677,8 +1857,8 @@
       "mcVersion": "1.20.1",
       "fileName": "simplecorelib-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/simplecorelib-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1439,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1491,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1690,7 +1870,7 @@
       "fileName": "simpleores2-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/simpleores2-ja-1.20.1.zip",
       "fileSize": "3.4KB",
-      "fileSizeBytes": 3437,
+      "fileSizeBytes": 3489,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1702,7 +1882,7 @@
       "fileName": "simplycats-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/simplycats-ja-1.20.1.zip",
       "fileSize": "5.0KB",
-      "fileSizeBytes": 5078,
+      "fileSizeBytes": 5130,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1714,7 +1894,7 @@
       "fileName": "smallships-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/smallships-ja-1.20.1.zip",
       "fileSize": "2.3KB",
-      "fileSizeBytes": 2314,
+      "fileSizeBytes": 2366,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1726,7 +1906,7 @@
       "fileName": "sound_physics_remastered-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/sound_physics_remastered-ja-1.20.1.zip",
       "fileSize": "3.6KB",
-      "fileSizeBytes": 3660,
+      "fileSizeBytes": 3715,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1738,7 +1918,7 @@
       "fileName": "solcarrot-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/solcarrot-ja-1.20.1.zip",
       "fileSize": "2.6KB",
-      "fileSizeBytes": 2642,
+      "fileSizeBytes": 2695,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1749,8 +1929,8 @@
       "mcVersion": "1.20.1",
       "fileName": "stoneworks-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/stoneworks-ja-1.20.1.zip",
-      "fileSize": "5.4KB",
-      "fileSizeBytes": 5533,
+      "fileSize": "5.5KB",
+      "fileSizeBytes": 5586,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1761,8 +1941,8 @@
       "mcVersion": "1.18.2",
       "fileName": "strawgolem-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/strawgolem-ja-1.18.2.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1437,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1491,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1773,8 +1953,8 @@
       "mcVersion": "1.20.1",
       "fileName": "strictly_origins-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/strictly_origins-ja-1.20.1.zip",
-      "fileSize": "9.1KB",
-      "fileSizeBytes": 9356,
+      "fileSize": "9.2KB",
+      "fileSizeBytes": 9409,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1785,8 +1965,8 @@
       "mcVersion": "1.20.1",
       "fileName": "talk_ballons-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/talk_ballons-ja-1.20.1.zip",
-      "fileSize": "1.3KB",
-      "fileSizeBytes": 1357,
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1410,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1797,8 +1977,8 @@
       "mcVersion": "1.20.1",
       "fileName": "taxtg-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/taxtg-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1236,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1288,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1809,8 +1989,8 @@
       "mcVersion": "1.20.1",
       "fileName": "terrablender-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/terrablender-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1232,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1285,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1821,8 +2001,8 @@
       "mcVersion": "1.18.2",
       "fileName": "terrablender-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/terrablender-ja-1.18.2.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1231,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1284,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1834,7 +2014,7 @@
       "fileName": "guild_mod-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/guild_mod-ja-1.20.1.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1401,
+      "fileSizeBytes": 1454,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1845,8 +2025,8 @@
       "mcVersion": "1.20.1",
       "fileName": "outer_end-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/outer_end-ja-1.20.1.zip",
-      "fileSize": "3.5KB",
-      "fileSizeBytes": 3630,
+      "fileSize": "3.6KB",
+      "fileSizeBytes": 3683,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1858,7 +2038,7 @@
       "fileName": "the_pillager_legion-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/the_pillager_legion-ja-1.20.1.zip",
       "fileSize": "3.6KB",
-      "fileSizeBytes": 3654,
+      "fileSizeBytes": 3708,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1870,7 +2050,7 @@
       "fileName": "treasure2-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/treasure2-ja-1.20.1.zip",
       "fileSize": "5.6KB",
-      "fileSizeBytes": 5692,
+      "fileSizeBytes": 5745,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1882,7 +2062,7 @@
       "fileName": "trolldom-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/trolldom-ja-1.20.1.zip",
       "fileSize": "2.5KB",
-      "fileSizeBytes": 2549,
+      "fileSizeBytes": 2601,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1894,7 +2074,7 @@
       "fileName": "trollscommunity-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/trollscommunity-ja-1.20.1.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1385,
+      "fileSizeBytes": 1438,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1905,8 +2085,8 @@
       "mcVersion": "1.20.1",
       "fileName": "villagergolemhealer-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/villagergolemhealer-ja-1.20.1.zip",
-      "fileSize": "1.2KB",
-      "fileSizeBytes": 1258,
+      "fileSize": "1.3KB",
+      "fileSizeBytes": 1311,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1917,8 +2097,8 @@
       "mcVersion": "1.20.1",
       "fileName": "villagersplus-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/villagersplus-ja-1.20.1.zip",
-      "fileSize": "1.5KB",
-      "fileSizeBytes": 1573,
+      "fileSize": "1.6KB",
+      "fileSizeBytes": 1627,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1929,8 +2109,8 @@
       "mcVersion": "1.20.1",
       "fileName": "warden_slayer-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/warden_slayer-ja-1.20.1.zip",
-      "fileSize": "1.1KB",
-      "fileSizeBytes": 1171,
+      "fileSize": "1.2KB",
+      "fileSizeBytes": 1224,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1942,7 +2122,7 @@
       "fileName": "waystones-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/waystones-ja-1.20.1.zip",
       "fileSize": "6.2KB",
-      "fileSizeBytes": 6320,
+      "fileSizeBytes": 6372,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1953,8 +2133,8 @@
       "mcVersion": "1.18.2",
       "fileName": "waystones-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/waystones-ja-1.18.2.zip",
-      "fileSize": "3.8KB",
-      "fileSizeBytes": 3909,
+      "fileSize": "3.9KB",
+      "fileSizeBytes": 3961,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1965,8 +2145,8 @@
       "mcVersion": "1.20.1",
       "fileName": "wegotrunners-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/wegotrunners-ja-1.20.1.zip",
-      "fileSize": "1.4KB",
-      "fileSizeBytes": 1433,
+      "fileSize": "1.5KB",
+      "fileSizeBytes": 1487,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1978,7 +2158,7 @@
       "fileName": "dungeons_arise-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/dungeons_arise-ja-1.20.1.zip",
       "fileSize": "3.0KB",
-      "fileSizeBytes": 3059,
+      "fileSizeBytes": 3112,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -1989,8 +2169,8 @@
       "mcVersion": "1.18.2",
       "fileName": "dungeons_arise-ja-1.18.2.zip",
       "downloadUrl": "downloads/1.18.2/dungeons_arise-ja-1.18.2.zip",
-      "fileSize": "1.7KB",
-      "fileSizeBytes": 1771,
+      "fileSize": "1.8KB",
+      "fileSizeBytes": 1825,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -2001,8 +2181,8 @@
       "mcVersion": "1.20.1",
       "fileName": "witchs_with_a_use-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/witchs_with_a_use-ja-1.20.1.zip",
-      "fileSize": "2.0KB",
-      "fileSizeBytes": 2084,
+      "fileSize": "2.1KB",
+      "fileSizeBytes": 2137,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -2014,19 +2194,31 @@
       "fileName": "wood_enjoyer-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/wood_enjoyer-ja-1.20.1.zip",
       "fileSize": "3.1KB",
-      "fileSizeBytes": 3164,
+      "fileSizeBytes": 3217,
       "lastUpdate": "2026-01-09"
     },
     {
       "id": "betterfortresses-1201",
       "modName": "betterfortresses",
-      "displayName": "YUNG's Better Nether Fortresses",
+      "displayName": "YUNG's Better Nether Fortresses (Forge/NeoForge)",
       "modLoader": "Forge",
       "mcVersion": "1.20.1",
       "fileName": "betterfortresses-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/betterfortresses-ja-1.20.1.zip",
       "fileSize": "1.4KB",
-      "fileSizeBytes": 1386,
+      "fileSizeBytes": 1438,
+      "lastUpdate": "2026-01-09"
+    },
+    {
+      "id": "betteroceanmonuments-1201",
+      "modName": "betteroceanmonuments",
+      "displayName": "YUNG's Better Ocean Monuments (Forge/NeoForge)",
+      "modLoader": "Forge",
+      "mcVersion": "1.20.1",
+      "fileName": "betteroceanmonuments-ja-1.20.1.zip",
+      "downloadUrl": "downloads/1.20.1/betteroceanmonuments-ja-1.20.1.zip",
+      "fileSize": "1.4KB",
+      "fileSizeBytes": 1456,
       "lastUpdate": "2026-01-09"
     },
     {
@@ -2038,7 +2230,7 @@
       "fileName": "zettergallery-ja-1.20.1.zip",
       "downloadUrl": "downloads/1.20.1/zettergallery-ja-1.20.1.zip",
       "fileSize": "1.8KB",
-      "fileSizeBytes": 1836,
+      "fileSizeBytes": 1888,
       "lastUpdate": "2026-01-09"
     }
   ]
