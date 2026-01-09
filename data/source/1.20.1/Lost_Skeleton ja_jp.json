@@ -1,0 +1,8 @@
+{
+  "gui.skele.skeletrade.button_trade": "取引",
+  "entity.skele.lostskeleton": "放浪するスケルトン",
+  "item_group.skele.lostskeletin": "Lost Skeleton",
+  "gui.skele.skeletrade.label_lost_skeleton": "放浪するスケルトン",
+  "item.skele.lostskeleton_spawn_egg": "放浪するスケルトンのスポーンエッグ",
+  "gui.skele.skeletrade.label_you_dont_know_what_you_get": "何が得られるかわからない"
+}

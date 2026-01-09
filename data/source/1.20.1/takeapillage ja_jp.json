@@ -1,0 +1,55 @@
+{
+
+	"item.takesapillage.archer_spawn_egg": "アーチャーのスポーンエッグ",
+	"item.takesapillage.skirmisher_spawn_egg": "スカーミッシャーのスポーンエッグ",
+	"item.takesapillage.legioner_spawn_egg": "レギオナーのスポーンエッグ",
+
+	"item.takesapillage.ravager_horn": "ラヴェジャーの角笛",
+	"item.takesapillage.bastille_blues_music_disc": "レコード",
+	"item.takesapillage.bastille_blues_music_disc.desc": "izofar - Bastille Blues",
+
+	"entity.takesapillage.clay_golem": "粘土ゴーレム",
+	"entity.takesapillage.archer": "アーチャー",
+	"entity.takesapillage.skirmisher": "スカーミッシャー",
+	"entity.takesapillage.legioner": "レギオナー",
+
+	"subtitle.takesapillage.entity.clay_golem.attack": "粘土ゴーレムが攻撃する",
+	"subtitle.takesapillage.entity.clay_golem.damage": "粘土ゴーレムが壊れる",
+	"subtitle.takesapillage.entity.clay_golem.death": "粘土ゴーレムが死ぬ",
+	"subtitle.takesapillage.entity.clay_golem.hurt": "粘土ゴーレムが痛がる",
+	"subtitle.takesapillage.entity.clay_golem.repair": "粘土ゴーレムが修理される",
+	"subtitle.takesapillage.entity.clay_golem.step": "粘土ゴーレムが歩く",
+
+	"subtitle.takesapillage.entity.legioner.ambient": "レギオナーがつぶやく",
+	"subtitle.takesapillage.entity.legioner.celebrate": "レギオナーが祝う",
+	"subtitle.takesapillage.entity.legioner.death": "レギオナーが死ぬ",
+	"subtitle.takesapillage.entity.legioner.hurt": "レギオナーが痛がる",
+
+	"advancements.takesapillage.root.title": "It Takes A Pillage",
+	"advancements.takesapillage.root.description": "オーバーワールドで新しい構造を探検しよう！",
+	"advancements.takesapillage.bastille.title": "エーエーオー、エーオー",
+	"advancements.takesapillage.bastille.description": "要塞を見つける",
+	"advancements.takesapillage.pillager_camp.title": "キャンプファイヤーソングソング",
+	"advancements.takesapillage.pillager_camp.description": "略奪者のキャンプを見つける",
+
+	"death.attack.clay_golem": "%1$sは%2$sによって殴られた",
+	"death.attack.clay_golem.item": "%1$sは%2$sによって%3$sを使用して殴られた",
+	"death.attack.archer": "%1$sは%2$sに狙撃された",
+	"death.attack.archer.item": "%1$sは%2$sによって%3$sを使用して狙撃された",
+	"death.attack.skirmisher": "%1$sは%2$sによって細かく切り刻まれた",
+	"death.attack.skirmisher.item": "%1$sは%2$sによって%3$sを振るいながら細かく切り刻まれた",
+	"death.attack.legioner": "%1$sは%2$sによって打ち倒された",
+	"death.attack.legioner.item": "%1$sは%2$sによって%3$sを振るいながら打ち倒された",
+
+	"takesapillage.configGui.title": "It Takes a Pillage - 設定",
+	"takesapillage.configGui.replaceIronGolems.title": "粘土ゴーレムのスポーン",
+	"takesapillage.configGui.peacefulGolemRate.title": "ピースフルモードの粘土ゴーレムの置き換え",
+	"takesapillage.configGui.easyGolemRate.title": "イージーモードの粘土ゴーレムの置き換え",
+	"takesapillage.configGui.normalGolemRate.title": "ノーマルモードの粘土ゴーレムの置き換え",
+	"takesapillage.configGui.hardGolemRate.title": "ハードモードの粘土ゴーレムの置き換え",
+	"takesapillage.configGui.removeBadOmen.title": "ミルクが不吉な予感を取り除く",
+	"takesapillage.configGui.pillageSiegesOccur.title": "略奪の包囲",
+
+	"instrument.takesapillage.raid_horn": "襲撃の角笛"
+
+}

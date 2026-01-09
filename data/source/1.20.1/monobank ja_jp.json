@@ -1,0 +1,44 @@
+{
+  "block.monobank.monobank": "モノバンク",
+  "item.monobank.replacement_lock": "交換ロック",
+  "effect.monobank.thief": "泥棒",
+
+  "monobank.filled_map.ruined_portal": "荒廃したポータルの地図",
+
+  "monobank.tooltip.locked": "ロックされています",
+  "monobank.tooltip.loot_table": "戦利品一覧表: %s",
+  "monobank.tooltip.combination_table": "組合せ表: %s",
+
+  "monobank.gui.monobank": "モノバンク",
+  "monobank.gui.monobank.unlocking": "%sをアンロック中",
+  "monobank.gui.monobank.lock_replacement": "%sのロックを交換中",
+  "monobank.gui.monobank.lock_replacement.confirm.tooltip": "ロックを交換",
+  "monobank.gui.monobank.count": "数: %s",
+  "monobank.gui.monobank.tooltip.ctrl_take_single": "CTRL: 単一アイテムを取る",
+  "monobank.gui.monobank.tooltip.ctrl_shift_take_single": "CTRL+SHIFT: すべてのアイテムを取る",
+  "monobank.gui.monobank.tooltip.owner": "あなたがこのモノバンクの所有者です",
+  "monobank.gui.monobank.tooltip.break_in_attempted": "誰かがこのモノバンクを開けようとして失敗しました",
+  "monobank.gui.monobank.tooltip.break_in_succeeded": "誰かがモノバンクを開けました",
+
+  "monobank.message.lock_replaced": "ロックが交換されました",
+  "monobank.message.monobank.locking.monobank_is_locked": "ロックされています。%sでアンロックしてみてください。",
+  "monobank.message.monobank.unlocking": "モノバンクをアンロック中...",
+  "monobank.message.replacement_lock.cannot_replace_not_owner": "このモノバンクのロックを交換できません。",
+  "monobank.message.replacement_lock.cannot_replace_when_locked": "ロックを交換できません：まずモノバンクをアンロックする必要があります。",
+  "monobank.message.thief.you_were_seen": "犯罪を犯しているのが見られました。",
+
+  "monobank.advancement.monobank.title": "安全な賭け",
+  "monobank.advancement.monobank.description": "財産を安全に保管するためにモノバンクを手に入れよう",
+  "monobank.advancement.unlock.title": "正しい鍵があれば",
+  "monobank.advancement.unlock.description": "正しい組み合わせを入力してモノバンクをアンロックしよう",
+  "monobank.advancement.replace_lock.title": "ロックオン",
+  "monobank.advancement.replace_lock.description": "モノバンクのロックを交換しよう",
+  "monobank.advancement.monobank_full.title": "富に溢れて",
+  "monobank.advancement.monobank_full.description": "モノバンクを最大限に埋めよう",
+
+  "monobank.subtitles.monobank.lock": "モノバンクがロックされる",
+  "monobank.subtitles.monobank.unlock": "モノバンクがアンロックされる",
+  "monobank.subtitles.monobank.click": "モノバンクのロックがクリックされます",
+  "monobank.subtitles.monobank.open": "モノバンクが開く",
+  "monobank.subtitles.monobank.close": "モノバンクが閉じる"
+}

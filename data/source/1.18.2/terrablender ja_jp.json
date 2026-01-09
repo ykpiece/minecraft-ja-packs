@@ -1,0 +1,4 @@
+{
+  "commands.terrablender.biomeparams.success": "座標 %s %s %s のパラメーター: %s",
+  "commands.terrablender.biomeparams.failed": "パラメーターを特定できませんでした"
+}

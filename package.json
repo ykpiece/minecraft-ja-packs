@@ -1,0 +1,19 @@
+{
+  "name": "minecraft-ja-packs",
+  "version": "1.0.0",
+  "description": "Minecraft MOD日本語化パック自動ビルドシステム",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:1.20.1": "node scripts/build.js 1.20.1",
+    "build:1.18.2": "node scripts/build.js 1.18.2",
+    "generate-index": "node scripts/generate-index.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1"
+  },
+  "author": "piece",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
+}

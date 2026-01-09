@@ -1,0 +1,245 @@
+{
+  "itemGroup.moreBowsAndArrows": "More Bows and Arrows!",
+
+  "item.more_bows_and_arrows.oak_bow": "オークの弓",
+  "item.more_bows_and_arrows.stripped_oak_bow": "剥いだオークの弓",
+  "more_bows_and_arrows.text.oak_bow_lore1": "オーク材で作られた地味な弓。",
+  "more_bows_and_arrows.text.oak_bow_lore2": "普通の弓よりあまり強くない...",
+  "more_bows_and_arrows.text.oak_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.dark_oak_bow": "ダークオークの弓",
+  "item.more_bows_and_arrows.stripped_dark_oak_bow": "剥いだダークオークの弓",
+  "more_bows_and_arrows.text.dark_oak_bow_lore1": "ダークオーク材で作られた地味な弓。",
+  "more_bows_and_arrows.text.dark_oak_bow_lore2": "普通の弓よりあまり強くない...",
+  "more_bows_and_arrows.text.dark_oak_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.spruce_bow": "トウヒの弓",
+  "item.more_bows_and_arrows.stripped_spruce_bow": "剥いだトウヒの弓",
+  "more_bows_and_arrows.text.spruce_bow_lore1": "トウヒ材で作られた地味な弓。",
+  "more_bows_and_arrows.text.spruce_bow_lore2": "普通の弓よりあまり強くない..",
+  "more_bows_and_arrows.text.spruce_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.birch_bow": " シラカバの弓",
+  "item.more_bows_and_arrows.stripped_birch_bow": "剥いだシラカバの弓",
+  "more_bows_and_arrows.text.birch_bow_lore1": "シラカバ材で作られた地味な弓。",
+  "more_bows_and_arrows.text.birch_bow_lore2": "普通の弓よりあまり強くない..",
+  "more_bows_and_arrows.text.birch_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.jungle_bow": "ジャングルの弓",
+  "item.more_bows_and_arrows.stripped_jungle_bow": "剥いだジャングルの弓",
+  "more_bows_and_arrows.text.jungle_bow_lore1": "ジャングル材で作られた地味な弓。",
+  "more_bows_and_arrows.text.jungle_bow_lore2": "普通の弓よりあまり強くない...",
+  "more_bows_and_arrows.text.jungle_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.acacia_bow": "アカシアの弓",
+  "item.more_bows_and_arrows.stripped_acacia_bow": "剥いだアカシアの弓",
+  "more_bows_and_arrows.text.acacia_bow_lore1": "アカシア材で作られた地味な弓。",
+  "more_bows_and_arrows.text.acacia_bow_lore2": "普通の弓よりあまり強くない..",
+  "more_bows_and_arrows.text.acacia_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.mangrove_bow": "マングローブの弓",
+  "item.more_bows_and_arrows.stripped_mangrove_bow": "剥いだマングローブの弓",
+  "more_bows_and_arrows.text.mangrove_bow_lore1": "マングローブ材で作られた地味な弓。",
+  "more_bows_and_arrows.text.mangrove_bow_lore2": "普通の弓よりあまり強くない..",
+  "more_bows_and_arrows.text.mangrove_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.cherry_bow": "サクラの弓",
+  "item.more_bows_and_arrows.stripped_cherry_bow": "剥いだサクラの弓",
+  "more_bows_and_arrows.text.cherry_bow_lore1": "サクラ材で作られた地味な弓。",
+  "more_bows_and_arrows.text.cherry_bow_lore2": "普通の弓よりあまり強くない..",
+  "more_bows_and_arrows.text.cherry_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.bamboo_bow": "竹の弓",
+  "item.more_bows_and_arrows.stripped_bamboo_bow": "剥いだ竹の弓",
+  "more_bows_and_arrows.text.bamboo_bow_lore1": "竹で作られた原始的な弓。",
+  "more_bows_and_arrows.text.bamboo_bow_lore2": "似たような矢と相性が良い...",
+  "more_bows_and_arrows.text.bamboo_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.crimson_stem_bow": "真紅の幹の弓",
+  "item.more_bows_and_arrows.stripped_crimson_stem_bow": "剥いだ真紅の幹の弓",
+  "more_bows_and_arrows.text.crimson_stem_bow_lore1": "真紅の幹から作られた地味な弓。",
+  "more_bows_and_arrows.text.crimson_stem_bow_lore2": "普通の弓よりあまり強くない...",
+  "more_bows_and_arrows.text.crimson_stem_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.warped_stem_bow": "歪んだ幹の弓",
+  "item.more_bows_and_arrows.stripped_warped_stem_bow": "剥いだ歪んだ幹の弓",
+  "more_bows_and_arrows.text.warped_stem_bow_lore1": "歪んだ幹から作られた地味な弓。",
+  "more_bows_and_arrows.text.warped_stem_bow_lore2": "普通の弓よりあまり強くない...",
+  "more_bows_and_arrows.text.warped_stem_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.paper_bow": "紙の弓",
+  "more_bows_and_arrows.text.paper_bow_lore1": "紙でできた壊れやすい弓。",
+  "more_bows_and_arrows.text.paper_bow_lore2": "不思議な性質を持つことで知られる...",
+  "more_bows_and_arrows.text.paper_bow_damage": "ボーナスダメージ §2+0",
+
+  "item.more_bows_and_arrows.moss_bow": "苔の弓",
+  "more_bows_and_arrows.text.moss_bow_lore1": "苔でできた弱い弓。",
+  "more_bows_and_arrows.text.moss_bow_lore2": "奇妙な性質で知られる...",
+  "more_bows_and_arrows.text.moss_bow_damage": "ボーナスダメージ §2+0",
+
+  "item.more_bows_and_arrows.lapis_bow": "ラピスボウ",
+  "more_bows_and_arrows.text.lapis_bow_lore1": "ラピスラズリで作られた珍しい弓。",
+  "more_bows_and_arrows.text.lapis_bow_lore2": "あまり知られていないが...",
+  "more_bows_and_arrows.text.lapis_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.amethyst_bow": "アメジストの弓",
+  "more_bows_and_arrows.text.amethyst_bow_lore1": "アメジストで作られた神秘的な弓。",
+  "more_bows_and_arrows.text.amethyst_bow_lore2": "秘術を通じると言われる...",
+  "more_bows_and_arrows.text.amethyst_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.bone_bow": "骨の弓",
+  "more_bows_and_arrows.text.bone_bow_lore1": "彫刻が施された骨の弓。",
+  "more_bows_and_arrows.text.bone_bow_lore2": "黒魔術師が使うという噂のある...",
+  "more_bows_and_arrows.text.bone_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.coal_bow": "石炭弓",
+  "more_bows_and_arrows.text.coal_bow_lore1": "石炭で鍛えたユニークな弓。",
+  "more_bows_and_arrows.text.coal_bow_lore2": "驚くべき耐久性で知られる...",
+  "more_bows_and_arrows.text.coal_bow_damage": "ボーナスダメージ §2+2",
+
+
+
+  "item.more_bows_and_arrows.emerald_bow": "エメラルドの弓",
+  "more_bows_and_arrows.text.emerald_bow_lore1": "エメラルドで飾られたまばゆい弓。",
+  "more_bows_and_arrows.text.emerald_bow_lore2": "幸運をもたらすと言われる...",
+  "more_bows_and_arrows.text.emerald_bow_damage": "ボーナスダメージ §2+3",
+
+  "item.more_bows_and_arrows.blaze_bow": "ブレイズボウ",
+  "more_bows_and_arrows.text.blaze_bow_lore1": "ブレイズを宿した炎の弓。",
+  "more_bows_and_arrows.text.blaze_bow_lore2": "邪悪な攻撃が可能な...",
+  "more_bows_and_arrows.text.blaze_bow_damage": "ボーナスダメージ §2+3",
+
+
+
+  "item.more_bows_and_arrows.obsidian_bow": "黒曜石の弓",
+  "more_bows_and_arrows.text.obsidian_bow_lore1": "黒曜石で作られた弓。",
+  "more_bows_and_arrows.text.obsidian_bow_lore2": "正確さで知られる...",
+  "more_bows_and_arrows.text.obsidian_bow_damage": "ボーナスダメージ §2+4",
+
+  "item.more_bows_and_arrows.iron_bow": "鉄の弓",
+  "more_bows_and_arrows.text.iron_bow_lore1": "鉄でできた頑丈な弓。",
+  "more_bows_and_arrows.text.iron_bow_lore2": "弓手に好まれる...",
+  "more_bows_and_arrows.text.iron_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.copper_bow": "銅の弓",
+  "more_bows_and_arrows.text.copper_bow_lore1": "銅で作られた弓。",
+  "more_bows_and_arrows.text.copper_bow_lore2": "腐食に強いことで知られる...",
+  "more_bows_and_arrows.text.copper_bow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.gold_bow": "金の弓",
+  "more_bows_and_arrows.text.gold_bow_lore1": "金色に輝く弓。",
+  "more_bows_and_arrows.text.gold_bow_lore2": "王者が好むと言われる...",
+  "more_bows_and_arrows.text.gold_bow_damage": "ボーナスダメージ §2+1",
+
+  "item.more_bows_and_arrows.diamond_bow": "ダイヤモンドの弓",
+  "more_bows_and_arrows.text.diamond_bow_lore1": "ダイヤモンドで飾られた弓。",
+  "more_bows_and_arrows.text.diamond_bow_lore2": "その精密さで知られる...",
+  "more_bows_and_arrows.text.diamond_bow_damage": "ボーナスダメージ §2+5",
+
+  "item.more_bows_and_arrows.netherite_bow": "ネザライトの弓",
+  "more_bows_and_arrows.text.netherite_bow_lore1": "ネザライトで作られた完璧な弓。",
+  "more_bows_and_arrows.text.netherite_bow_lore2": "最も頑丈な防具も貫くことができる...",
+  "more_bows_and_arrows.text.netherite_bow_damage": "ボーナスダメージ §2+6",
+
+  "more_bows_and_arrows.text.INTERNAL_ARROW_POINTER": "矢はこの地点を通り過ぎている。",
+
+  "item.more_bows_and_arrows.flint_and_steel_arrow": "火打石と打ち金の矢",
+  "more_bows_and_arrows.text.flint_and_steel_arrow_lore1": "火打石と鋼鉄を先端につけた矢・",
+  "more_bows_and_arrows.text.flint_and_steel_arrow_lore2": "衝撃を与えると火花が散る...",
+  "more_bows_and_arrows.text.flint_and_steel_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.ender_pearl_arrow": "エンダーパールの矢",
+  "more_bows_and_arrows.text.ender_pearl_arrow_lore1": "先端がエンダー・パールの矢。",
+  "more_bows_and_arrows.text.ender_pearl_arrow_lore2": "射手がテレポートできるようにする...",
+  "more_bows_and_arrows.text.ender_pearl_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.tnt_arrow": "TNTの矢",
+  "more_bows_and_arrows.text.tnt_arrow_lore1": "TNTを装填した爆発性の矢。",
+  "more_bows_and_arrows.text.tnt_arrow_lore2": "壊滅的な爆発を引き起こす...",
+  "more_bows_and_arrows.text.tnt_arrow_damage": "ボーナスダメージ §2+5",
+
+  "item.more_bows_and_arrows.paper_arrow": "紙の矢",
+  "more_bows_and_arrows.text.paper_arrow_lore1": "紙製の軽い矢。",
+  "more_bows_and_arrows.text.paper_arrow_lore2": "不思議な性質で知られる...",
+  "more_bows_and_arrows.text.paper_arrow_damage": "ボーナスダメージ §2+0",
+
+  "item.more_bows_and_arrows.moss_arrow": "苔の矢",
+  "more_bows_and_arrows.text.moss_arrow_lore1": "苔で作られた矢。",
+  "more_bows_and_arrows.text.moss_arrow_lore2": "そのユニークな特性で知られる...",
+  "more_bows_and_arrows.text.moss_arrow_damage": "ボーナスダメージ §2+0",
+
+  "item.more_bows_and_arrows.amethyst_arrow": "アメジストの矢",
+  "more_bows_and_arrows.text.amethyst_arrow_lore1": "アメジストを先端につけた矢。",
+  "more_bows_and_arrows.text.amethyst_arrow_lore2": "秘術的な力を利用すると言われる...",
+  "more_bows_and_arrows.text.amethyst_arrow_damage": "ボーナスダメージ §2+3",
+
+  "item.more_bows_and_arrows.bamboo_arrow": "竹の矢",
+  "more_bows_and_arrows.text.bamboo_arrow_lore1": "竹で作られた矢。",
+  "more_bows_and_arrows.text.bamboo_arrow_lore2": "素早く飛ぶことで知られる...",
+  "more_bows_and_arrows.text.bamboo_arrow_damage": "ボーナスダメージ §2+1",
+
+  "item.more_bows_and_arrows.blaze_rod_arrow": "ブレイズロッドの矢",
+  "more_bows_and_arrows.text.blaze_rod_arrow_lore1": "ブレイズロッドが装填された矢。",
+  "more_bows_and_arrows.text.blaze_rod_arrow_lore2": "標的に火をつけることができる...",
+  "more_bows_and_arrows.text.blaze_rod_arrow_damage": "ボーナスダメージ §2+4",
+
+  "item.more_bows_and_arrows.bone_arrow": "骨の矢",
+  "more_bows_and_arrows.text.bone_arrow_lore1": "骨でできた矢。",
+  "more_bows_and_arrows.text.bone_arrow_lore2": "呪いを運ぶと噂される...",
+  "more_bows_and_arrows.text.bone_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.cactus_arrow": "サボテンの矢",
+  "more_bows_and_arrows.text.cactus_arrow_lore1": "先端にトゲのある矢。",
+  "more_bows_and_arrows.text.cactus_arrow_lore2": "刺すことで知られる...",
+  "more_bows_and_arrows.text.cactus_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.coal_arrow": "石炭矢",
+  "more_bows_and_arrows.text.coal_arrow_lore1": "石炭を先端につけた矢。",
+  "more_bows_and_arrows.text.coal_arrow_lore2": "精度のために設計された...",
+  "more_bows_and_arrows.text.coal_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.emerald_arrow": "エメラルドの矢",
+  "more_bows_and_arrows.text.emerald_arrow_lore1": "エメラルドで飾られた矢。",
+  "more_bows_and_arrows.text.emerald_arrow_lore2": "射手に幸運をもたらすと言われている...",
+  "more_bows_and_arrows.text.emerald_arrow_damage": "ボーナスダメージ §2+3",
+
+  "item.more_bows_and_arrows.lapis_arrow": "ラピスアロー",
+  "more_bows_and_arrows.text.lapis_arrow_lore1": "先端がラピスラズリの矢。",
+  "more_bows_and_arrows.text.lapis_arrow_lore2": "その起源は謎に包まれている...",
+  "more_bows_and_arrows.text.lapis_arrow_damage": "ボーナスダメージ §2+3",
+
+  "item.more_bows_and_arrows.obsidian_arrow": "黒曜石の矢",
+  "more_bows_and_arrows.text.obsidian_arrow_lore1": "黒曜石から作られた上質な矢。",
+  "more_bows_and_arrows.text.obsidian_arrow_lore2": "驚異的な正確さで知られる...",
+  "more_bows_and_arrows.text.obsidian_arrow_damage": "ボーナスダメージ §2+5",
+
+  "item.more_bows_and_arrows.flint_arrow": "火打石の矢",
+  "more_bows_and_arrows.text.flint_arrow_lore1": "火打石を先端につけた矢。",
+  "more_bows_and_arrows.text.flint_arrow_lore2": "防具を貫通するように設計されている...",
+  "more_bows_and_arrows.text.flint_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.iron_arrow": "鉄の矢",
+  "more_bows_and_arrows.text.iron_arrow_lore1": "鉄を先端につけた矢。",
+  "more_bows_and_arrows.text.iron_arrow_lore2": "射手に好まれる...",
+  "more_bows_and_arrows.text.iron_arrow_damage": "ボーナスダメージ §2+3",
+
+  "item.more_bows_and_arrows.copper_arrow": "銅の矢",
+  "more_bows_and_arrows.text.copper_arrow_lore1": "銅で作られた矢。",
+  "more_bows_and_arrows.text.copper_arrow_lore2": "その恐ろしい切れ味で知られる...",
+  "more_bows_and_arrows.text.copper_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.gold_arrow": "金の矢",
+  "more_bows_and_arrows.text.gold_arrow_lore1": "豪華に輝く金色の矢。",
+  "more_bows_and_arrows.text.gold_arrow_lore2": "射手に幸運をもたらすと言われる...",
+  "more_bows_and_arrows.text.gold_arrow_damage": "ボーナスダメージ §2+2",
+
+  "item.more_bows_and_arrows.diamond_arrow": "ダイヤモンドの矢",
+  "more_bows_and_arrows.text.diamond_arrow_lore1": "ダイヤモンドで飾られた矢。",
+  "more_bows_and_arrows.text.diamond_arrow_lore2": "その究極の正確さで知られる...",
+  "more_bows_and_arrows.text.diamond_arrow_damage": "ボーナスダメージ §2+4",
+
+  "item.more_bows_and_arrows.netherite_arrow": "ネザライトの矢",
+  "more_bows_and_arrows.text.netherite_arrow_lore1": "ネザーライトから鍛造された究極の矢。",
+  "more_bows_and_arrows.text.netherite_arrow_lore2": "最強の守りも貫く威力...",
+  "more_bows_and_arrows.text.netherite_arrow_damage": "ボーナスダメージ §2+5"
+}

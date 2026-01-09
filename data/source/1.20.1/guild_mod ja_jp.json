@@ -1,0 +1,12 @@
+{
+  "command.guild.check.none": "あなたはどのギルドにも属していません",
+  "command.guild.check.member": "あなたは %s ギルドのメンバーです",
+  "command.quest.complete.success": "クエスト %s 完了！",
+  "command.quest.complete.not_found": "クエスト %s が見つかりません",
+  "command.quest.assign.found": "クエスト %s が %s に割り当てられました",
+  "command.quest.assign.not_found": "クエスト %s が見つかりません",
+  "command.guild.join.not_found": "ギルド '%s' が見つかりません",
+  "command.guild.join.success": "ギルド '%s' への参加に成功しました",
+  "command.guild.join.failed": "ギルドへの参加に失敗しました",
+  "command.guild.check.success": "あなたはギルド '%s' のメンバーです。"
+}

@@ -1,0 +1,160 @@
+{
+  "layer.origins-classes.class.name": "職業",
+  "layer.origins-classes.class.missing_origin.name": "行方不明",
+  "layer.origins-classes.class.missing_origin.description": "職業がありません",
+
+  "attribute.origins_classes.mining_speed": "採掘速度",
+  "attribute.origins_classes.projectile_strength": "飛び道具ダメージ",
+
+  "tooltip.origins_classes.potion_bonus": "洗練された",
+  "tooltip.origins_classes.food": "栄養",
+  "tooltip.origins_classes.saturation_modifier": "満腹",
+
+  "origin.origins-classes.warrior.name": "戦士",
+  "origin.origins-classes.warrior.description": "敵を倒すために剣と盾を好む剣闘士",
+
+  "origin.origins-classes.archer.name": "弓手",
+  "origin.origins-classes.archer.description": "一撃必殺",
+
+  "origin.origins-classes.rogue.name": "ならず者",
+  "origin.origins-classes.rogue.description": "通常泥棒や強盗として知られるならず者は待ち伏せやステルス攻撃に長けている",
+
+  "origin.origins-classes.beastmaster.name": "獣使い",
+  "origin.origins-classes.beastmaster.description": "獣使いは動物との交流を好む孤独な人間",
+
+  "origin.origins-classes.blacksmith.name": "鍛冶屋",
+  "origin.origins-classes.blacksmith.description": "誰にとっても大切な友人である鍛冶屋はより良い道具、武器、鎧を作ることができる",
+
+  "origin.origins-classes.cleric.name": "聖職者",
+  "origin.origins-classes.cleric.description": "彼らは、世界に存在する魔法とつながり、それを利用する方法を学んだ",
+
+  "origin.origins-classes.cook.name": "料理人",
+  "origin.origins-classes.cook.description": "料理を作るのに、料理人以上の適任者はいない",
+
+  "origin.origins-classes.farmer.name": "農夫",
+  "origin.origins-classes.farmer.description": "農民は物心ついたときから、みんなに食べ物を提供することで知られている",
+
+  "origin.origins-classes.merchant.name": "商人",
+  "origin.origins-classes.merchant.description": "常にお金を探している、商人は熟練した貿易業者",
+
+  "origin.origins-classes.rancher.name": "牧場主",
+  "origin.origins-classes.rancher.description": "動物を最大限に活用することで、牧場主は多くの有用な資源を集めることができる",
+
+  "origin.origins-classes.miner.name": "鉱夫",
+  "origin.origins-classes.miner.description": "鉱夫は大地の宝を掘り出すことに最も長けている",
+
+  "origin.origins-classes.lumberjack.name": "木こり",
+  "origin.origins-classes.lumberjack.description": "木こりがいるとき、木に気をつけるべきだ",
+
+  "origin.origins-classes.explorer.name": "探検家",
+  "origin.origins-classes.explorer.description": "探検家は最も困難な地形でも簡単に道を見つけ、隠された名所を発見する",
+
+  "origin.origins-classes.nitwit.name": "愚か者",
+  "origin.origins-classes.nitwit.description": "愚か者は本当に何もできない",
+
+  "power.origins-classes.less_shield_slowdown.name": "盾使い",
+  "power.origins-classes.less_shield_slowdown.description": "盾を使って自分を守る際に減速が少なくなる",
+
+  "power.origins-classes.sneaky.name": "卑怯者",
+  "power.origins-classes.sneaky.description": "スニーキングをしていないときでも、壁越しに名前が見えることはない。",
+
+  "power.origins-classes.stealth.name": "影使い",
+  "power.origins-classes.stealth.description": "10秒間スニーキングを続けると、ステルス状態になる。",
+
+  "power.origins-classes.stealth_core.name": "ステルス",
+  "power.origins-classes.stealth_core.description": "ステルス中は、背後から敵を攻撃する際の音が小さくなり、追加ダメージを与える。スニーキングをやめるとステルスから抜ける。",
+
+  "power.origins-classes.less_bow_slowdown.name": "機敏",
+  "power.origins-classes.less_bow_slowdown.description": "弓を引いている間、他の人よりも素早く動くことができる。",
+
+  "power.origins-classes.no_projectile_divergence.name": "高精度",
+  "power.origins-classes.no_projectile_divergence.description": "すべての弾丸の命中率が上がる。",
+
+  "power.origins-classes.more_attack_damage.name": "武器の知識",
+  "power.origins-classes.more_attack_damage.description": "各武器の潜在能力を最大限に活用できるようになり、与えるダメージが少し増える。",
+
+  "power.origins-classes.tamed_animal_boost.name": "動物の友達",
+  "power.origins-classes.tamed_animal_boost.description": "テイムした動物の体力と筋力に永続的なバフを与える。",
+
+  "power.origins-classes.tamed_potion_diffusal.name": "共感力",
+  "power.origins-classes.tamed_potion_diffusal.description": "あなたがポーションを飲むとき、近くの飼いならされた動物もポーションの効果を受ける。",
+
+  "power.origins-classes.more_smoker_xp.name": "燻製",
+  "power.origins-classes.more_smoker_xp.description": "燻製器で料理をすることでより多くの経験値を得ることができる。",
+
+  "power.origins-classes.better_crafted_food.name": "良い食事",
+  "power.origins-classes.better_crafted_food.description": "自分で作った料理はお腹を満たしやすい。",
+
+  "power.origins-classes.potion_bonus.name": "洗練されたポーション",
+  "power.origins-classes.potion_bonus.description": "ポーション醸造の最後の段階として、大釜の水でポーションを精製することができる。精製されたポーションは即効性が強化され、より長い効果が持続するようになる。",
+
+  "power.origins-classes.better_enchanting.name": "エンチャント・マスター",
+  "power.origins-classes.better_enchanting.description": "エンチャントテーブルでより高いエンチャントレベルを達成できる。",
+
+  "power.origins-classes.quality_equipment.name": "高品質装備",
+  "power.origins-classes.quality_equipment.description": "作成した装備品は小さなバフを与える。",
+
+  "power.origins-classes.efficient_repairs.name": "修理の達人",
+  "power.origins-classes.efficient_repairs.description": "金床での修理は材料費が少なくて済む。装備を組み合わせて修理すると、より耐久性が回復する。",
+
+  "power.origins-classes.more_crop_drops.name": "豊作",
+  "power.origins-classes.more_crop_drops.description": "作物を収穫するとき、2倍の収穫が得られる可能性がある。",
+
+  "power.origins-classes.better_bone_meal.name": "肥料技術",
+  "power.origins-classes.better_bone_meal.description": "骨粉は作物や植物に使用する場合、経験豊富なあなたの手にかかれば2倍の効果を発揮します。",
+
+  "power.origins-classes.twin_breeding.name": "双子の出産",
+  "power.origins-classes.twin_breeding.description": "あなたが繁殖させた動物は、2匹の赤ちゃんを産むチャンスがある。",
+
+  "power.origins-classes.more_animal_loot.name": "解体業者",
+  "power.origins-classes.more_animal_loot.description": "動物を倒すと、より多くのドロップ品を得られることがある。",
+
+  "power.origins-classes.trade_availability.name": "再入荷",
+  "power.origins-classes.trade_availability.description": "交易相手の村人が、交易に必要な資源を使い果たすことがない。",
+
+  "power.origins-classes.rare_wandering_loot.name": "カリスマ",
+  "power.origins-classes.rare_wandering_loot.description": "放浪している商人に、レアアイテムを提供するよう説得することができる。",
+
+  "power.origins-classes.no_sprint_exhaustion.name": "健脚",
+  "power.origins-classes.no_sprint_exhaustion.description": "走ってもお腹が空かない。",
+
+  "power.origins-classes.explorer_kit.name": "探検家キット",
+  "power.origins-classes.explorer_kit.description": "コンパス、時計、9枚の白紙の地図を持ってゲームを開始する。",
+
+  "power.origins-classes.no_mining_exhaustion.name": "経験豊富なショベルカー",
+  "power.origins-classes.no_mining_exhaustion.description": "ブロックを壊してもお腹が空かない。",
+
+  "power.origins-classes.more_stone_break_speed.name": "採掘の専門家",
+  "power.origins-classes.more_stone_break_speed.description": "他の人よりも早く石材を採掘する。",
+
+  "power.origins-classes.tree_felling.name": "木材だ！",
+  "power.origins-classes.tree_felling.description": "スニークしない限り、一括破壊をする。",
+
+  "power.origins-classes.more_planks_from_logs.name": "薪割り",
+  "power.origins-classes.more_planks_from_logs.description": "クラフト時に1本の丸太からさらに2枚の木の板を得る。",
+
+  "power.origins-classes.items/effecient_digger.name": "効率的な掘削機",
+  "power.origins-classes.items/effecient_digger.description": "破壊速度+10%",
+
+  "power.origins-classes.items/sharp_blade.name": "鋭い刃",
+  "power.origins-classes.items/sharp_blade.description": "攻撃ダメージ +0.5",
+
+  "power.origins-classes.items/steady_shield.name": "安定した盾",
+  "power.origins-classes.items/steady_shield.description": "ノックバック耐性+10%",
+
+  "power.origins-classes.items/strong_string.name": "投擲術",
+  "power.origins-classes.items/strong_string.description": "飛び道具ダメージ+2",
+
+  "power.origins-classes.items/tough_helmet.name": "頑強",
+  "power.origins-classes.items/tough_helmet.description": "防具の耐久値 +0.25",
+
+  "power.origins-classes.items/tough_chestplate.name": "頑強",
+  "power.origins-classes.items/tough_chestplate.description": "防具の耐久値 +0.25",
+
+  "power.origins-classes.items/tough_leggings.name": "頑強",
+  "power.origins-classes.items/tough_leggings.description": "防具の耐久値 +0.25",
+
+  "power.origins-classes.items/tough_shoes.name": "頑強",
+  "power.origins-classes.items/tough_shoes.description": "防具の耐久値 +0.25"
+
+}

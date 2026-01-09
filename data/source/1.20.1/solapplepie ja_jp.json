@@ -1,0 +1,44 @@
+{
+	"tooltip.solapplepie.disabled": "この食べ物は食事の多様性には寄与しません。",
+
+	"command.solapplepie.solapplepie.no_permissions": "このコマンドを他のプレイヤーに適用するための権限がありません！",
+
+	"command.solapplepie.solapplepie.clear.success": "食べ物リストがリセットされました！",
+	"command.solapplepie.solapplepie.diversity_feedback": "食事の多様性: %.2f",
+	"command.solapplepie.solapplepie.sync.success": "食べ物リストが同期されました！",
+
+	"item.solapplepie.food_book": "食べ物の本",
+	"item.solapplepie.lunchbox": "弁当箱",
+	"item.solapplepie.container.lunchbox": "弁当箱",
+	"item.solapplepie.golden_lunchbox": "金の弁当箱",
+	"item.solapplepie.container.golden_lunchbox": "金の弁当箱",
+	"item.solapplepie.lunchbag": "弁当袋",
+	"item.solapplepie.container.lunchbag": "弁当袋",
+
+	"key.solapplepie.open_food_book": "食べ物の本を開く",
+	"key.solapplepie.category": "Spice of Life: Apple Pie Edition",
+
+	"gui.solapplepie.food_book.stats": "概要",
+	"gui.solapplepie.food_book.stats.current_diversity": "現在の食事の多様性",
+	"gui.solapplepie.food_book.stats.min_warning1": "効果を発動するにはあと %d 回食べる必要があります",
+	"gui.solapplepie.food_book.stats.min_warning2": "効果を発動するには",
+	"gui.solapplepie.food_book.active_benefits_header": "アクティブな効果",
+	"gui.solapplepie.food_book.inactive_benefits_header": "非アクティブな効果",
+	"gui.solapplepie.food_book.benefits.threshold_label": "閾値",
+	"gui.solapplepie.food_book.benefits.active_tooltip": "あなたの食事の多様性がこの閾値を超えているため、この効果は発動中です。",
+	"gui.solapplepie.food_book.benefits.inactive_tooltip": "あなたの食事の多様性がこの閾値を超えた場合、この効果が発動します。",
+	"gui.solapplepie.food_book.food_queue_label": "食べた食べ物",
+	"gui.solapplepie.food_book.queue.food_queue_tooltip": "過去に食べたすべての食べ物のリストで、食事の多様性に寄与します。",
+
+	"gui.solapplepie.food_book.fraction": "%1$s/%2$s",
+
+	"gui.solapplepie.food_book.queue.tooltip.uneaten_contribution_label": "食事の多様性",
+	"gui.solapplepie.food_book.queue.tooltip.contribution_label": "多様性の寄与",
+	"gui.solapplepie.food_book.queue.tooltip.last_eaten_label": "最後に食べた: %d 食前",
+	"gui.solapplepie.food_book.queue.tooltip.last_eaten_label_singular": "最後に食べた: %d 食前",
+
+	"config.solapplepie.is_food_tooltip_enabled": "食べ物ツールチップを有効にする",
+	"config.solapplepie.food_blacklist": "ブラックリスト",
+	"config.solapplepie.food_whitelist": "ホワイトリスト（ブラックリストを無効にします）",
+	"config.solapplepie.reset_on_death": "死亡時にリセット"
+}

@@ -1,0 +1,9 @@
+{
+  "embeddium.conflicting_mod": "Embeddiumは、レンダリングの問題/クラッシュを引き起こすことが知られているMODの存在を検出しました。それらをアンインストールすることをお勧めします。以下のリストを参照してください。",
+  "embeddium.conflicting_mod_list": "[{2}]",
+  "embeddium.search_bar_empty": "検索オプション...",
+  "embeddium.options.added_by_mod_string": "modによって追加されました: %s",
+  "embeddium.options.fullscreen.resolution.tooltip": "フルスクリーンモードでのゲームの解像度を制御します。",
+  "embeddium.options.use_quad_normals_for_lighting.name": "正確な四辺形のシェーディングを使用する",
+  "embeddium.options.use_quad_normals_for_lighting.tooltip": "「有効にすると、Embeddiumは、軸に対して整列された方向ではなく、実際に向いている方向に基づいて非バニラブロック面にシェーディングを適用します。Forgeの実験的なライトパイプラインを無効にした場合、これにより照明品質が向上します。（最高のパフォーマンスを得るために推奨されます）\n\n実験的なライトパイプラインが有効になっている場合、この設定は影響を及ぼしません。"
+}

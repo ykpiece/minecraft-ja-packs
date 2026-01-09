@@ -1,0 +1,10 @@
+{
+  "text.autoconfig.talk_balloons.option.balloonsHeightOffset": "吹き出しの高さオフセット",
+  "text.autoconfig.talk_balloons.option.distanceBetweenBalloons": "吹き出し間の距離",
+  "text.autoconfig.talk_balloons.option.maxBalloons": "最大吹き出し数",
+  "text.autoconfig.talk_balloons.option.minBalloonWidth": "最小吹き出し幅",
+  "text.autoconfig.talk_balloons.option.maxBalloonWidth": "最大吹き出し幅",
+  "text.autoconfig.talk_balloons.option.balloonAge": "吹き出しの表示時間",
+  "text.autoconfig.talk_balloons.option.textColor": "文字色",
+  "text.autoconfig.talk_balloons.option.showOwnBalloon": "自分の吹き出しを表示"
+}

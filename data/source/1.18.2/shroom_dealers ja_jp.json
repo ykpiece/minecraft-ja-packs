@@ -1,0 +1,22 @@
+{
+  "item.shroom_dealers.toadstool_dealer_spawn_egg": "毒キノコ商人のスポーンエッグ",
+  "item.shroom_dealers.mushroom_poison_dart": "毒キノコダーツ",
+  "item.shroom_dealers.deceiver_power_up_heart": "詐欺師の心臓",
+  "entity.shroom_dealers.bay_bolete_dealer": "ベイボレーテ商人",
+  "item.shroom_dealers.inv_spawn_egg": "インブのスポーンエッグ",
+  "item.shroom_dealers.laccaria_stew": "ラッカリアシチュー",
+  "item.shroom_dealers.champignon_dealer_spawn_egg": "シャンピニオン商人のスポーンエッグ",
+  "item.shroom_dealers.amethyst_deceiver_dealer_spawn_egg": "アメジスト詐欺師商人のスポーンエッグ",
+  "item.shroom_dealers.mini_bay_bolete_bomb": "小型ベイボレーテ爆弾",
+  "item.shroom_dealers.bay_bolete_bomb": "ベイボレーテ爆弾",
+  "item.shroom_dealers.amethyst_deceiver": "アメジスト詐欺師",
+  "item.shroom_dealers.champignon_stew": "シャンピニオンシチュー",
+  "entity.shroom_dealers.amethyst_deceiver_dealer": "アメジスト詐欺師商人",
+  "entity.shroom_dealers.toadstool_dealer": "毒キノコ商人",
+  "item.shroom_dealers.champignon_smoke_bomb": "シャンピニオン煙幕爆弾",
+  "item.shroom_dealers.bay_bolete_dealer_spawn_egg": "ベイボレーテ商人のスポーンエッグ",
+  "entity.shroom_dealers.inv": "インブ",
+  "item.shroom_dealers.champignon": "シャンピニオン",
+  "config.shroom_dealers.shroomfig": "shroom設定",
+  "entity.shroom_dealers.champignon_dealer": "シャンピニオン商人"
+}

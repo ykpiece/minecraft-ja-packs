@@ -1,0 +1,16 @@
+{
+  "entity.strawgolem.strawgolem": "藁ゴーレム",
+  "entity.strawgolem.strawnggolem": "強い藁ゴーレム",
+  "strawgolem.subtitle.golemAmbient": "藁ゴーレムの環境音",
+  "strawgolem.subtitle.golemHurt": "藁ゴーレムが傷ついた",
+  "strawgolem.subtitle.golemDeath": "藁ゴーレムが死んだ",
+  "strawgolem.subtitle.golemHeal": "藁ゴーレムが治癒された",
+  "strawgolem.subtitle.golemScared": "藁ゴーレムが怖がっている",
+  "strawgolem.subtitle.golemInterested": "藁ゴーレムが興味を示している",
+  "strawgolem.lifespan": "寿命: %s days",
+  "strawgolem.hunger": "空腹度: %s",
+  "strawgolem.deliver": "%sがこのコンテナに配達します",
+  "strawgolem.order": "配達順: %s",
+  "item.strawgolem.straw_hat": "藁の帽子",
+  "title.strawgolem.config": "藁ゴーレムの設定"
+}

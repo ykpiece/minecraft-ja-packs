@@ -1,0 +1,6 @@
+{
+  "Use /locate structure betterfortresses:fortress instead!": "代わりに、/locate structure betterfortresses:fortress を使用してください！",
+  "text.autoconfig.betterfortresses-fabric-1_20.title": "YUNG's Better Nether Fortresses",
+  "text.autoconfig.betterfortresses-fabric-1_20.option.general.disableVanillaFortresses": "バニラのネザー要塞を無効化する",
+  "text.autoconfig.betterfortresses-fabric-1_20.option.general.disableVanillaFortresses.@Tooltip": "バニラのネザー要塞を無効化するかどうか。"
+}

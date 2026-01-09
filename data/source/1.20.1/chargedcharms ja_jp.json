@@ -1,0 +1,13 @@
+{
+  "itemGroup.chargedcharms": "Charged Charms",
+  "item.chargedcharms.charged_regeneration_charm": "チャージした再生のチャーム",
+  "item.chargedcharms.charged_absorption_charm": "チャージした吸収のチャーム",
+  "item.chargedcharms.charged_glowup_charm": "チャージした輝きのチャーム",
+  "item.chargedcharms.charged_totem_charm": "チャージしたトーテムチャーム",
+  "item.chargedcharms.charged_enchanted_totem_charm": "チャージしたエンチャントされたトーテムチャーム",
+  "item.chargedcharms.charged_speed_charm": "チャージしたスピードのチャーム",
+  "trinkets.slot.charged_charm.charm": "Charged Charm",
+  "trinkets.slot.charged_charm.alt_charm": "Charged Charm",
+  "curios.identifier.charged_charm": "Charged Charm",
+  "tooltip.charged_charm.charges": "チャージ"
+}
