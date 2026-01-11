@@ -40,29 +40,35 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            background-color: #FAFAFA;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* ヘッダー */
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: #FFFFFF;
+            border-bottom: 1px solid #E5E5E5;
+            padding: 1.5rem 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: 600;
         }
 
         .stats {
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 0.5rem;
         }
 
         /* メインコンテンツ */
@@ -72,78 +78,28 @@
             padding: 0 1rem;
         }
 
-        /* ローディング表示 */
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            font-size: 1.2rem;
-            color: #666;
-        }
-
         /* 検索・フィルターエリア */
         .search-container {
-            background: white;
-            border-radius: 8px;
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
             padding: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-top: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .search-box {
             width: 100%;
-            padding: 0.8rem 1rem;
-            font-size: 1rem;
-            border: 2px solid #e0e0e0;
-            border-radius: 6px;
-            transition: border-color 0.2s;
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            border: 1px solid #D0D0D0;
+            border-radius: 3px;
+            background: #FAFAFA;
         }
 
         .search-box:focus {
             outline: none;
-            border-color: #667eea;
-        }
-
-        .search-box::placeholder {
-            color: #999;
-        }
-
-        /* 結果表示 */
-        .result-info {
-            margin-top: 1rem;
-            color: #666;
-            font-size: 0.95rem;
-        }
-
-        .result-info strong {
-            color: #667eea;
-        }
-
-        /* もっと見るボタン */
-        .load-more-container {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .load-more-btn {
-            padding: 0.8rem 2rem;
-            background: white;
-            border: 2px solid #667eea;
-            color: #667eea;
-            border-radius: 6px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .load-more-btn:hover {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .load-more-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+            border-color: #999;
+            background: #FFFFFF;
         }
 
         /* フィルターボタン */
@@ -156,39 +112,52 @@
         }
 
         .filter-label {
+            font-size: 0.875rem;
             font-weight: 600;
             color: #666;
-            margin-right: 0.5rem;
+            margin-right: 0.25rem;
         }
 
         .filter-btn {
-            padding: 0.5rem 1rem;
-            border: 2px solid #e0e0e0;
-            background: white;
-            border-radius: 6px;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid #D0D0D0;
+            background: #FFFFFF;
+            border-radius: 3px;
             cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-size: 0.875rem;
+            color: #666;
+            transition: all 0.15s;
         }
 
         .filter-btn:hover {
-            border-color: #667eea;
+            background: #F5F5F5;
+            border-color: #999;
         }
 
         .filter-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-color: #667eea;
+            background: #333;
+            color: #FFFFFF;
+            border-color: #333;
+        }
+
+        /* 結果表示 */
+        .result-info {
+            margin-top: 1rem;
+            padding: 0.5rem 0;
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .result-info strong {
+            color: #333;
         }
 
         /* パック一覧テーブル */
         .pack-table-container {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
             overflow: hidden;
-            margin-top: 2rem;
         }
 
         .pack-table {
@@ -197,99 +166,210 @@
         }
 
         .pack-table thead {
-            background: #667eea;
-            color: white;
+            background: #F8F8F8;
+            border-bottom: 1px solid #E5E5E5;
         }
 
         .pack-table th {
-            padding: 1rem;
+            padding: 0.875rem 1rem;
             text-align: left;
             font-weight: 600;
-            position: sticky;
-            top: 0;
-            background: #667eea;
-            z-index: 10;
+            font-size: 0.875rem;
+            color: #666;
         }
 
         .pack-table td {
             padding: 1rem;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid #F5F5F5;
+            font-size: 0.9rem;
         }
 
         .pack-table tbody tr {
-            transition: background-color 0.2s;
+            transition: background-color 0.1s;
         }
 
         .pack-table tbody tr:hover {
-            background-color: #f8f9ff;
+            background-color: #FAFAFA;
+        }
+
+        .pack-table tbody tr:last-child td {
+            border-bottom: none;
         }
 
         /* MOD名 */
         .mod-name {
-            font-weight: 600;
+            font-weight: 500;
             color: #333;
         }
 
-        /* バージョンバッジ */
-        .version-badge {
+        /* バッジ */
+        .version-badge,
+        .mod-loader-badge {
             display: inline-block;
-            background: #e3f2fd;
-            color: #1976d2;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
             font-weight: 500;
         }
 
-        /* Mod Loaderバッジ */
+        .version-badge {
+            background: #E8F4FD;
+            color: #1976D2;
+        }
+
         .mod-loader-badge {
-            display: inline-block;
-            background: #fff3e0;
-            color: #e65100;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 500;
+            background: #FFF3E0;
+            color: #E65100;
         }
 
         /* ファイルサイズ */
         .file-size {
             color: #999;
-            font-size: 0.9rem;
+            font-size: 0.875rem;
         }
 
         /* ダウンロードボタン */
         .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
+            display: inline-block;
             padding: 0.5rem 1rem;
-            border-radius: 6px;
+            background: #4A90E2;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.875rem;
             font-weight: 500;
-            font-size: 0.9rem;
-            transition: opacity 0.2s;
-            white-space: nowrap;
+            transition: background 0.15s;
         }
 
         .download-btn:hover {
-            opacity: 0.9;
+            background: #357ABD;
+        }
+
+        /* もっと見るボタン */
+        .load-more-container {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .load-more-btn {
+            padding: 0.75rem 2rem;
+            background: #FFFFFF;
+            border: 1px solid #D0D0D0;
+            color: #666;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .load-more-btn:hover {
+            background: #F5F5F5;
+            border-color: #999;
+        }
+
+        /* セクション */
+        .section {
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .section p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        /* 寄付ボタン */
+        .donate-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: #FFDD57;
+            color: #000;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: 600;
+            transition: all 0.15s;
+        }
+
+        .donate-btn:hover {
+            background: #FFC107;
+        }
+
+        /* URLコピーボックス */
+        .url-copy-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .url-display {
+            padding: 0.5rem 0.75rem;
+            background: #F5F5F5;
+            border: 1px solid #D0D0D0;
+            border-radius: 3px;
+            font-size: 0.875rem;
+            color: #333;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .copy-btn {
+            padding: 0.5rem 1rem;
+            background: #4A90E2;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .copy-btn:hover {
+            background: #357ABD;
+        }
+
+        .copy-btn.copied {
+            background: #4CAF50;
         }
 
         /* フッター */
         footer {
             text-align: center;
             padding: 2rem 1rem;
-            color: #666;
+            color: #999;
+            font-size: 0.875rem;
             margin-top: 3rem;
+            border-top: 1px solid #E5E5E5;
+        }
+
+        footer p {
+            margin: 0.25rem 0;
+        }
+
+        /* ローディング */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #999;
         }
 
         /* レスポンシブ */
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
             }
 
             .pack-table {
@@ -298,23 +378,33 @@
 
             .pack-table th,
             .pack-table td {
-                padding: 0.7rem 0.5rem;
+                padding: 0.75rem 0.5rem;
             }
 
-            /* スマホではMod Loaderとサイズ列を非表示 */
+            /* スマホでは一部の列を非表示 */
             .pack-table th:nth-child(2),
             .pack-table td:nth-child(2),
             .pack-table th:nth-child(4),
             .pack-table td:nth-child(4) {
                 display: none;
             }
+
+            .section {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>🎮 Minecraft MOD 日本語化パック配布所</h1>
-        <p class="stats" id="stats">読み込み中...</p>
+        <div class="header-container">
+            <div style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;" id="publish-date">-</div>
+            <h1>Minecraft MOD 日本語化パック配布所</h1>
+            <p class="stats" id="stats">最終更新: <span id="last-update-header">-</span></p>
+            <p style="font-size: 0.875rem; color: #E53935; margin-top: 0.75rem; font-weight: 500;">
+                ⚠️ ダウンロードする際は必ず<a href="#terms" style="color: #E53935; text-decoration: underline;">利用規約</a>をご覧ください
+            </p>
+        </div>
     </header>
 
     <main>
@@ -328,7 +418,7 @@
                 type="text" 
                 id="search-box" 
                 class="search-box" 
-                placeholder="🔍 MOD名で検索... (例: beautify, aquamirae, chipped)"
+                placeholder="MOD名で検索..."
             >
             
             <!-- フィルター -->
@@ -376,13 +466,11 @@
                 もっと見る (残り<span id="remaining-count">0</span>個)
             </button>
         </div>
-    </main>
 
-    <!-- コメント・要望セクション -->
-    <section style="max-width: 1200px; margin: 3rem auto; padding: 0 1rem;">
-        <div style="background: white; border-radius: 8px; padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-            <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">💬 コメント・要望</h2>
-            <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">
+        <!-- コメント・要望セクション -->
+        <div class="section">
+            <h2>コメント・要望</h2>
+            <p>
                 バグ報告、MOD追加リクエスト、サイト改善提案など、お気軽にコメントください。<br>
                 コメントにはGitHubアカウントが必要です。
             </p>
@@ -395,25 +483,86 @@
                     async>
             </script>
         </div>
-    </section>
+
+        <!-- 寄付セクション -->
+        <div class="section" style="text-align: center;">
+            <h2>サポートのお願い</h2>
+            <p>このプロジェクトが役に立ったら、コーヒー1杯分の応援をいただけると嬉しいです。</p>
+            <a href="https://buymeacoffee.com/piece" target="_blank" rel="noopener noreferrer" class="donate-btn">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+
+        <!-- 利用規約セクション -->
+        <div class="section" id="terms">
+            <h2>利用規約</h2>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">免責事項</h3>
+            <p>本リソースパックの利用は自己責任でお願いします。本リソースパックを利用したことによるデータ破損やその他のトラブルについて、作成者は一切の責任を負いません。</p>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">再配布の禁止</h3>
+            <p>本リソースパックならびに日本語化ファイル関連の再配布（二次配布）は禁止します。</p>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">利用範囲</h3>
+            <p>個人利用、配信、動画投稿での使用は自由です。ご自由にお使いください。</p>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">改変について</h3>
+            <p>個人で利用する場合の改変は可能です。ただし、改変したものを再配布することは禁止します。</p>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">クレジット表記</h3>
+            <p>クレジット表記は必須ではありませんが、していただけると嬉しいです。</p>
+            
+            <div class="url-copy-container">
+                <span style="font-size: 0.875rem; color: #666;">サイトURL:</span>
+                <input type="text" class="url-display" id="site-url" value="https://ykpiece.github.io/minecraft-ja-packs/" readonly>
+                <button class="copy-btn" id="copy-btn" onclick="copyURL()">コピー</button>
+            </div>
+            
+            <h3 style="font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">ご利用上の注意</h3>
+            <ul style="color: #666; line-height: 1.8; margin-left: 1.5rem;">
+                <li>Mod Loaderが「Forge」や「Fabric」と記載されている場合でも、多くは両環境でご利用できます。</li>
+                <li>バージョンが異なっていても使用できる場合があります。</li>
+                <li>MODのバージョンと日本語化リソースパックのバージョンが異なる場合、翻訳されない箇所や適用されないケースが発生する可能性があります。ご注意ください。</li>
+            </ul>
+        </div>
+    </main>
 
     <footer>
-        <p>このサイトで配布している日本語化パックは個人利用・配信・動画投稿すべてOKです</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">最終更新: <span id="last-update">-</span></p>
+        <p style="font-size: 0.875rem; color: #999;">最終更新: <span id="last-update">-</span></p>
     </footer>
 
     <script>
-        let allPacks = []; // 全パックデータ
-        let filteredPacks = []; // フィルター後のデータ
-        let currentSearchTerm = ''; // 現在の検索ワード
-        let currentModLoader = 'all'; // 現在のMod Loaderフィルター
-        let currentVersion = 'all'; // 現在のバージョンフィルター
-        let currentSort = 'name'; // 現在のソート順（name=五十音順, date=更新順）
+        // URLコピー機能
+        function copyURL() {
+            const urlInput = document.getElementById('site-url');
+            const copyBtn = document.getElementById('copy-btn');
+            
+            urlInput.select();
+            document.execCommand('copy');
+            
+            copyBtn.textContent = 'コピーしました！';
+            copyBtn.classList.add('copied');
+            
+            setTimeout(() => {
+                copyBtn.textContent = 'コピー';
+                copyBtn.classList.remove('copied');
+            }, 2000);
+        }
         
-        const PACKS_PER_PAGE = 20; // 1回に表示する件数
-        let displayedCount = 0; // 現在表示されている件数
+        // サイト情報
+        const SITE_PUBLISH_DATE = '2026/01/09';
+        const SITE_UPDATE_DATE = '2026/01/11';
+        
+        let allPacks = [];
+        let filteredPacks = [];
+        let currentSearchTerm = '';
+        let currentModLoader = 'all';
+        let currentVersion = 'all';
+        let currentSort = 'name';
+        
+        const PACKS_PER_PAGE = 20;
+        let displayedCount = 0;
 
-        // packs.jsonを読み込んで表示
         fetch('data/packs.json')
             .then(response => {
                 if (!response.ok) {
@@ -431,8 +580,8 @@
             })
             .catch(error => {
                 document.getElementById('loading').innerHTML = `
-                    <p style="color: red;">❌ エラー: ${error.message}</p>
-                    <p style="font-size: 0.9rem; margin-top: 1rem;">
+                    <p style="color: #E53935;">エラー: ${error.message}</p>
+                    <p style="font-size: 0.9rem; margin-top: 1rem; color: #999;">
                         data/packs.json が見つかりません。<br>
                         generate-index.js を実行してください。
                     </p>
@@ -440,20 +589,17 @@
             });
 
         function displayPacks(data) {
-            // ローディング非表示、検索エリアとテーブル表示
             document.getElementById('loading').style.display = 'none';
             document.getElementById('search-container').style.display = 'block';
             document.getElementById('table-container').style.display = 'block';
             
-            // 統計情報を更新
-            const statsText = `現在 ${data.meta.totalPacks} 個のパックを配布中 ` +
-                `(${Object.entries(data.meta.versionStats).map(([v, c]) => `${v}: ${c}個`).join(' | ')})`;
-            document.getElementById('stats').textContent = statsText;
-            document.getElementById('last-update').textContent = data.meta.lastUpdate;
+            // サイトの公開日・更新日を表示
+            document.getElementById('publish-date').textContent = SITE_PUBLISH_DATE;
+            document.getElementById('last-update-header').textContent = SITE_UPDATE_DATE;
+            document.getElementById('last-update').textContent = SITE_UPDATE_DATE;
             
-            // パック一覧を表示
             displayedCount = 0;
-            renderPacks(false); // 初回表示
+            renderPacks(false);
             updateResultInfo();
             updateLoadMoreButton();
         }
@@ -462,16 +608,14 @@
             const tbody = document.getElementById('pack-list');
             
             if (!append) {
-                tbody.innerHTML = ''; // クリア
+                tbody.innerHTML = '';
                 displayedCount = 0;
             }
             
-            // 表示する範囲を計算
             const start = displayedCount;
             const end = Math.min(start + PACKS_PER_PAGE, filteredPacks.length);
             const packsToShow = filteredPacks.slice(start, end);
             
-            // パックを追加
             packsToShow.forEach(pack => {
                 const row = createPackRow(pack);
                 tbody.appendChild(row);
@@ -490,7 +634,7 @@
                 <td class="file-size">${pack.fileSize}</td>
                 <td>
                     <a href="${pack.downloadUrl}" download class="download-btn">
-                        ⬇️ DL
+                        ダウンロード
                     </a>
                 </td>
             `;
@@ -508,46 +652,34 @@
         }
 
         function setupFilters() {
-            // Mod Loaderフィルター
             const loaderButtons = document.querySelectorAll('[data-loader]');
             
             loaderButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // アクティブ状態を切り替え
                     loaderButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
-                    
-                    // フィルター適用
                     currentModLoader = button.dataset.loader;
                     applyFilters();
                 });
             });
 
-            // バージョンフィルター
             const versionButtons = document.querySelectorAll('[data-version]');
             
             versionButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // アクティブ状態を切り替え
                     versionButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
-                    
-                    // フィルター適用
                     currentVersion = button.dataset.version;
                     applyFilters();
                 });
             });
 
-            // ソート
             const sortButtons = document.querySelectorAll('[data-sort]');
             
             sortButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    // アクティブ状態を切り替え
                     sortButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
-                    
-                    // ソート適用
                     currentSort = button.dataset.sort;
                     applyFilters();
                 });
@@ -558,7 +690,7 @@
             const loadMoreBtn = document.getElementById('load-more-btn');
             
             loadMoreBtn.addEventListener('click', () => {
-                renderPacks(true); // 追加表示
+                renderPacks(true);
                 updateResultInfo();
                 updateLoadMoreButton();
             });
@@ -566,37 +698,31 @@
 
         function applyFilters() {
             filteredPacks = allPacks.filter(pack => {
-                // 検索フィルター
                 const matchesSearch = currentSearchTerm === '' || 
                     pack.displayName.toLowerCase().includes(currentSearchTerm) ||
                     pack.modName.toLowerCase().includes(currentSearchTerm);
                 
-                // Mod Loaderフィルター
                 const matchesLoader = currentModLoader === 'all' || 
                     pack.modLoader === currentModLoader;
                 
-                // バージョンフィルター
                 const matchesVersion = currentVersion === 'all' || 
                     pack.mcVersion === currentVersion;
                 
                 return matchesSearch && matchesLoader && matchesVersion;
             });
             
-            // ソート処理
             if (currentSort === 'name') {
-                // 五十音順（displayNameでソート）
                 filteredPacks.sort((a, b) => a.displayName.localeCompare(b.displayName, 'ja'));
             } else if (currentSort === 'date') {
-                // 更新順（lastUpdateで降順ソート）
                 filteredPacks.sort((a, b) => {
                     const dateA = new Date(a.lastUpdate);
                     const dateB = new Date(b.lastUpdate);
-                    return dateB - dateA; // 新しい順
+                    return dateB - dateA;
                 });
             }
             
             displayedCount = 0;
-            renderPacks(false); // 最初からリセット表示
+            renderPacks(false);
             updateResultInfo();
             updateLoadMoreButton();
         }
