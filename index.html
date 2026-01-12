@@ -614,8 +614,8 @@ backToTop.addEventListener('click', () => {
         let allPacks = [];
         let filteredPacks = [];
         let currentSearchTerm = '';
-        let currentModLoader = 'all';
-        let currentVersion = 'all';
+        let currentModLoaders = ['all']; // 'all' から配列に
+        let currentVersions = ['all'];   // 'all' から配列に
         let currentSort = 'name';
         
         const PACKS_PER_PAGE = 20;
@@ -737,26 +737,79 @@ backToTop.addEventListener('click', () => {
             
             loaderButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    loaderButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    currentModLoader = button.dataset.loader;
+                    const loader = button.dataset.loader;
+                    if (loader === 'all') {
+                        // 全てボタン押下時
+                        loaderButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        currentModLoaders = ['all'];
+                    } else {
+                        // 個別ボタン押下時
+                        const allBtn = document.querySelector('[data-loader="all"]');
+                        allBtn.classList.remove('active');
+                        
+                        if (button.classList.contains('active')) {
+                            // 既に選択されていれば解除
+                            button.classList.remove('active');
+                            currentModLoaders = currentModLoaders.filter(l => l !== loader);
+                    
+                            // 何も選択されていなければ「全て」に戻す
+                            if (currentModLoaders.length === 0) {
+                                allBtn.classList.add('active');
+                                currentModLoaders = ['all'];
+                            }
+                        } else {
+                            // 選択されていなければ追加
+                            button.classList.add('active');
+                            currentModLoaders = currentModLoaders.filter(l => l !== 'all');
+                            currentModLoaders.push(loader);
+                        }
+                    }
                     applyFilters();
                 });
             });
 
             const versionButtons = document.querySelectorAll('[data-version]');
-            
+    
             versionButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    versionButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    currentVersion = button.dataset.version;
+                    const version = button.dataset.version;
+            
+                    if (version === 'all') {
+                        // 全てボタン押下時
+                        versionButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        currentVersions = ['all'];
+                    } else {
+                        // 個別ボタン押下時
+                        const allBtn = document.querySelector('[data-version="all"]');
+                        allBtn.classList.remove('active');
+                
+                        if (button.classList.contains('active')) {
+                            // 既に選択されていれば解除
+                            button.classList.remove('active');
+                            currentVersions = currentVersions.filter(v => v !== version);
+                    
+                            // 何も選択されていなければ「全て」に戻す
+                            if (currentVersions.length === 0) {
+                                allBtn.classList.add('active');
+                                currentVersions = ['all'];
+                            }
+                        } else {
+                            // 選択されていなければ追加
+                            button.classList.add('active');
+                            currentVersions = currentVersions.filter(v => v !== 'all');
+                            currentVersions.push(version);
+                        }
+                    }
+            
                     applyFilters();
                 });
             });
 
+            // 並び替えボタンは元のまま（単一選択）
             const sortButtons = document.querySelectorAll('[data-sort]');
-            
+    
             sortButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     sortButtons.forEach(btn => btn.classList.remove('active'));
@@ -780,18 +833,18 @@ backToTop.addEventListener('click', () => {
         function applyFilters() {
             filteredPacks = allPacks.filter(pack => {
                 const matchesSearch = currentSearchTerm === '' || 
-                    pack.displayName.toLowerCase().includes(currentSearchTerm) ||
-                    pack.modName.toLowerCase().includes(currentSearchTerm);
-                
-                const matchesLoader = currentModLoader === 'all' || 
-                    pack.modLoader === currentModLoader;
-                
-                const matchesVersion = currentVersion === 'all' || 
-                    pack.mcVersion === currentVersion;
-                
+                pack.displayName.toLowerCase().includes(currentSearchTerm) ||
+                pack.modName.toLowerCase().includes(currentSearchTerm);
+        
+                const matchesLoader = currentModLoaders.includes('all') || 
+                currentModLoaders.includes(pack.modLoader);
+        
+                const matchesVersion = currentVersions.includes('all') || 
+                currentVersions.includes(pack.mcVersion);
+        
                 return matchesSearch && matchesLoader && matchesVersion;
             });
-            
+    
             if (currentSort === 'name') {
                 filteredPacks.sort((a, b) => a.displayName.localeCompare(b.displayName, 'ja'));
             } else if (currentSort === 'date') {
@@ -801,13 +854,13 @@ backToTop.addEventListener('click', () => {
                     return dateB - dateA;
                 });
             }
-            
+    
             displayedCount = 0;
             renderPacks(false);
             updateResultInfo();
             updateLoadMoreButton();
         }
-
+        
         function updateResultInfo() {
             const total = allPacks.length;
             const showing = filteredPacks.length;
