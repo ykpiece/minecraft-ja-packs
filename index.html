@@ -384,8 +384,8 @@
             /* スマホでは一部の列を非表示 */
             .pack-table th:nth-child(2),
             .pack-table td:nth-child(2),
-            .pack-table th:nth-child(4),
-            .pack-table td:nth-child(4) {
+            .pack-table th:nth-child(5),
+            .pack-table td:nth-child(5) {
                 display: none;
             }
 
@@ -393,8 +393,49 @@
                 padding: 1.5rem;
             }
         }
+
+        /* タブレット対応 */
+        @media (max-width: 1024px) {
+            .filter-group {
+                font-size: 0.8rem;
+            }
+    
+            .filter-btn {
+                padding: 0.35rem 0.7rem;
+            }
+        }
+
+        /* 小さいスマホ対応 */
+        @media (max-width: 480px) {
+            .download-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
+
+<button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;">
+    ↑
+</button>
+
+<script>
+// トップに戻るボタン
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
 <body>
     <header>
         <div class="header-container">
@@ -408,6 +449,9 @@
     </header>
 
     <main>
+        <div class="breadcrumb" style="font-size: 0.875rem; margin-bottom: 1.5rem; color: #666;">
+            <span>トップ</span>
+        </div>
         <div class="loading" id="loading">
             パック情報を読み込んでいます...
         </div>
@@ -452,6 +496,7 @@
                         <th>MOD名</th>
                         <th>Mod Loader</th>
                         <th>バージョン</th>
+                        <th>更新日</th>
                         <th>サイズ</th>
                         <th>ダウンロード</th>
                     </tr>
@@ -644,6 +689,7 @@
                 <td class="mod-name">${pack.displayName}</td>
                 <td><span class="mod-loader-badge">${pack.modLoader}</span></td>
                 <td><span class="version-badge">${pack.mcVersion}</span></td>
+                <td class="file-size">${pack.lastUpdate || '-'}</td>
                 <td class="file-size">${pack.fileSize}</td>
                 <td>
                     <a href="${pack.downloadUrl}" download class="download-btn">

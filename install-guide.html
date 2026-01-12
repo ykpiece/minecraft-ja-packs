@@ -279,13 +279,35 @@
         }
     </style>
 </head>
+
+<button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;">
+    ↑
+</button>
+
+<script>
+// トップに戻るボタン
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
 <body>
     <header>
-        <div style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;">2026/01/13</div>
         <div class="header-container">
+            <div style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;">2026/01/13</div>
             <h1>マイクラMOD 日本語化パックの導入ガイド</h1>
+            <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">最終更新: 2026/01/13</p>
         </div>
-        <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">最終更新: 2026/01/13</p>
     </header>
 
     <main>
