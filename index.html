@@ -166,7 +166,8 @@
             transition: background 0.1s;
         }
 
-        .search-history-item:hover {
+        .search-history-item:hover,
+        .search-history-item.keyboard-selected {
             background: #FAFAFA;
         }
 
@@ -186,7 +187,8 @@
             transition: opacity 0.15s;
         }
 
-        .search-history-item:hover .history-delete-btn {
+        .search-history-item:hover .history-delete-btn,
+        .search-history-item.keyboard-selected .history-delete-btn {
             opacity: 1;
         }
 
@@ -292,6 +294,13 @@
         .mod-name {
             font-weight: 500;
             color: #333;
+        }
+
+        /* ハイライト */
+        .highlight {
+            background-color: #FFEB3B;
+            font-weight: 600;
+            padding: 0 0.1rem;
         }
 
         /* バッジ */
@@ -458,6 +467,19 @@
             color: #999;
         }
 
+        /* スクリーンリーダー専用テキスト */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
         /* レスポンシブ */
         @media (max-width: 768px) {
             h1 {
@@ -507,7 +529,7 @@
     </style>
 </head>
 
-<button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;">
+<button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;" aria-label="ページトップへ戻る">
     ↑
 </button>
 
@@ -544,62 +566,70 @@ backToTop.addEventListener('click', () => {
         <div class="breadcrumb" style="font-size: 0.875rem; margin-bottom: 1.5rem; color: #666;">
             <span>トップ</span>
         </div>
-        <div class="loading" id="loading">
+        <div class="loading" id="loading" role="status" aria-live="polite">
             パック情報を読み込んでいます...
         </div>
         
         <!-- 検索エリア -->
         <div class="search-container" id="search-container" style="display: none;">
             <div class="search-box-wrapper">
+                <label for="search-box" class="sr-only">MOD名で検索</label>
                 <input 
                     type="text" 
                     id="search-box" 
                     class="search-box" 
                     placeholder="MOD名で検索..."
+                    aria-label="MOD名で検索"
+                    aria-describedby="search-description"
+                    aria-controls="pack-list"
+                    aria-autocomplete="list"
+                    role="combobox"
+                    aria-expanded="false"
                 >
-                <div class="search-history-dropdown" id="search-history-dropdown">
+                <span id="search-description" class="sr-only">曖昧検索に対応しています。キーボードの上下キーで履歴を選択できます。</span>
+                <div class="search-history-dropdown" id="search-history-dropdown" role="listbox" aria-label="検索履歴">
                     <div class="search-history-header">
                         <span>検索履歴</span>
-                        <button class="clear-history-btn" id="clear-history-btn">すべて削除</button>
+                        <button class="clear-history-btn" id="clear-history-btn" aria-label="検索履歴をすべて削除">すべて削除</button>
                     </div>
                     <div id="search-history-list"></div>
                 </div>
             </div>
             
             <!-- フィルター -->
-            <div class="filter-group">
+            <div class="filter-group" role="group" aria-label="Mod Loaderフィルター">
                 <span class="filter-label">Mod Loader:</span>
-                <button class="filter-btn active" data-loader="all">全て</button>
-                <button class="filter-btn" data-loader="Forge">Forge</button>
-                <button class="filter-btn" data-loader="Fabric">Fabric</button>
+                <button class="filter-btn active" data-loader="all" aria-pressed="true">全て</button>
+                <button class="filter-btn" data-loader="Forge" aria-pressed="false">Forge</button>
+                <button class="filter-btn" data-loader="Fabric" aria-pressed="false">Fabric</button>
             </div>
             
-            <div class="filter-group">
+            <div class="filter-group" role="group" aria-label="バージョンフィルター">
                 <span class="filter-label">バージョン:</span>
-                <button class="filter-btn active" data-version="all">全て</button>
-                <button class="filter-btn" data-version="1.20.1">1.20.1</button>
-                <button class="filter-btn" data-version="1.18.2">1.18.2</button>
+                <button class="filter-btn active" data-version="all" aria-pressed="true">全て</button>
+                <button class="filter-btn" data-version="1.20.1" aria-pressed="false">1.20.1</button>
+                <button class="filter-btn" data-version="1.18.2" aria-pressed="false">1.18.2</button>
             </div>
             
-            <div class="filter-group">
+            <div class="filter-group" role="group" aria-label="並び替え">
                 <span class="filter-label">並び替え:</span>
-                <button class="filter-btn active" data-sort="name">五十音順</button>
-                <button class="filter-btn" data-sort="date">更新順</button>
+                <button class="filter-btn active" data-sort="name" aria-pressed="true">五十音順</button>
+                <button class="filter-btn" data-sort="date" aria-pressed="false">更新順</button>
             </div>
             
-            <div class="result-info" id="result-info"></div>
+            <div class="result-info" id="result-info" role="status" aria-live="polite"></div>
         </div>
         
         <div class="pack-table-container" id="table-container" style="display: none;">
             <table class="pack-table">
                 <thead>
                     <tr>
-                        <th>MOD名</th>
-                        <th>Mod Loader</th>
-                        <th>バージョン</th>
-                        <th>更新日</th>
-                        <th>サイズ</th>
-                        <th>ダウンロード</th>
+                        <th scope="col">MOD名</th>
+                        <th scope="col">Mod Loader</th>
+                        <th scope="col">バージョン</th>
+                        <th scope="col">更新日</th>
+                        <th scope="col">サイズ</th>
+                        <th scope="col">ダウンロード</th>
                     </tr>
                 </thead>
                 <tbody id="pack-list"></tbody>
@@ -608,7 +638,7 @@ backToTop.addEventListener('click', () => {
 
         <!-- もっと見るボタン -->
         <div class="load-more-container" id="load-more-container" style="display: none;">
-            <button id="load-more-btn" class="load-more-btn">
+            <button id="load-more-btn" class="load-more-btn" aria-label="さらに20個のパックを表示">
                 もっと見る (残り<span id="remaining-count">0</span>個)
             </button>
         </div>
@@ -647,8 +677,8 @@ backToTop.addEventListener('click', () => {
             
             <div class="url-copy-container">
                 <span style="font-size: 0.875rem; color: #666;">サイトURL:</span>
-                <input type="text" class="url-display" id="site-url" value="https://ykpiece.github.io/minecraft-ja-packs/" readonly>
-                <button class="copy-btn" id="copy-btn" onclick="copyURL()">コピー</button>
+                <input type="text" class="url-display" id="site-url" value="https://ykpiece.github.io/minecraft-ja-packs/" readonly aria-label="サイトURL">
+                <button class="copy-btn" id="copy-btn" onclick="copyURL()" aria-label="URLをクリップボードにコピー">コピー</button>
             </div>
             
             <h3 style="font-size: 1.1rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #333; font-weight: 600;">ご利用上の注意</h3>
@@ -725,6 +755,36 @@ backToTop.addEventListener('click', () => {
         // 検索履歴管理
         const MAX_HISTORY = 10;
         let searchHistory = [];
+        let historySelectedIndex = -1;
+
+        // JSONキャッシュ
+        let packsCache = null;
+        const CACHE_KEY = 'minecraftPacksCache';
+        const CACHE_VERSION_KEY = 'minecraftPacksCacheVersion';
+        const CACHE_VERSION = '1.0';
+
+        // 曖昧検索用の正規化関数
+        function normalizeString(str) {
+            return str
+                .toLowerCase()
+                .replace(/[ァ-ヴ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60)) // カタカナ→ひらがな
+                .replace(/[\s-_]/g, ''); // スペース、ハイフン、アンダースコアを削除
+        }
+
+        // 曖昧検索関数（部分一致 + 正規化）
+        function fuzzyMatch(searchTerm, targetText) {
+            const normalizedSearch = normalizeString(searchTerm);
+            const normalizedTarget = normalizeString(targetText);
+            return normalizedTarget.includes(normalizedSearch);
+        }
+
+        // テキストハイライト関数
+        function highlightText(text, searchTerm) {
+            if (!searchTerm) return text;
+            
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            return text.replace(regex, '<span class="highlight">$1</span>');
+        }
 
         // ローカルストレージから検索履歴を読み込み
         function loadSearchHistory() {
@@ -786,10 +846,14 @@ backToTop.addEventListener('click', () => {
                 return;
             }
             
-            historyList.innerHTML = searchHistory.map(term => `
-                <div class="search-history-item" data-term="${term}">
+            historyList.innerHTML = searchHistory.map((term, index) => `
+                <div class="search-history-item ${index === historySelectedIndex ? 'keyboard-selected' : ''}" 
+                     data-term="${term}" 
+                     data-index="${index}"
+                     role="option"
+                     aria-selected="${index === historySelectedIndex}">
                     <span>${term}</span>
-                    <button class="history-delete-btn" data-term="${term}">×</button>
+                    <button class="history-delete-btn" data-term="${term}" aria-label="${term}を履歴から削除">×</button>
                 </div>
             `).join('');
             
@@ -821,24 +885,113 @@ backToTop.addEventListener('click', () => {
         // 検索履歴を表示
         function showSearchHistory() {
             const dropdown = document.getElementById('search-history-dropdown');
+            const searchBox = document.getElementById('search-box');
+            historySelectedIndex = -1;
             renderSearchHistory();
             dropdown.classList.add('show');
+            searchBox.setAttribute('aria-expanded', 'true');
         }
 
         // 検索履歴を非表示
         function hideSearchHistory() {
             const dropdown = document.getElementById('search-history-dropdown');
+            const searchBox = document.getElementById('search-box');
             dropdown.classList.remove('show');
+            searchBox.setAttribute('aria-expanded', 'false');
+            historySelectedIndex = -1;
         }
 
-        fetch('data/packs.json')
-            .then(response => {
+        // キーボードナビゲーション（検索履歴）
+        function handleHistoryKeyboard(e) {
+            const dropdown = document.getElementById('search-history-dropdown');
+            if (!dropdown.classList.contains('show') || searchHistory.length === 0) return;
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                historySelectedIndex = Math.min(historySelectedIndex + 1, searchHistory.length - 1);
+                renderSearchHistory();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                historySelectedIndex = Math.max(historySelectedIndex - 1, -1);
+                renderSearchHistory();
+            } else if (e.key === 'Enter' && historySelectedIndex >= 0) {
+                e.preventDefault();
+                const term = searchHistory[historySelectedIndex];
+                document.getElementById('search-box').value = term;
+                currentSearchTerm = term.toLowerCase().trim();
+                applyFilters();
+                hideSearchHistory();
+            } else if (e.key === 'Escape') {
+                hideSearchHistory();
+            }
+        }
+
+        // JSONキャッシュの読み込み
+        function loadCachedPacks() {
+            try {
+                const cachedVersion = localStorage.getItem(CACHE_VERSION_KEY);
+                if (cachedVersion !== CACHE_VERSION) {
+                    // バージョンが異なる場合はキャッシュをクリア
+                    localStorage.removeItem(CACHE_KEY);
+                    return null;
+                }
+
+                const cached = localStorage.getItem(CACHE_KEY);
+                if (cached) {
+                    const data = JSON.parse(cached);
+                    const cacheAge = Date.now() - data.timestamp;
+                    // 24時間以内のキャッシュのみ有効
+                    if (cacheAge < 24 * 60 * 60 * 1000) {
+                        return data.packs;
+                    }
+                }
+            } catch (e) {
+                console.error('キャッシュ読み込みエラー:', e);
+            }
+            return null;
+        }
+
+        // JSONキャッシュの保存
+        function saveCachedPacks(packs) {
+            try {
+                const data = {
+                    packs: packs,
+                    timestamp: Date.now()
+                };
+                localStorage.setItem(CACHE_KEY, JSON.stringify(data));
+                localStorage.setItem(CACHE_VERSION_KEY, CACHE_VERSION);
+            } catch (e) {
+                console.error('キャッシュ保存エラー:', e);
+            }
+        }
+
+        // データ読み込み
+        async function loadPacks() {
+            // まずキャッシュを確認
+            const cached = loadCachedPacks();
+            if (cached) {
+                console.log('キャッシュからデータを読み込みました');
+                allPacks = cached;
+                filteredPacks = allPacks;
+                displayPacks({ packs: cached });
+                setupSearch();
+                setupFilters();
+                setupLoadMore();
+                loadSearchHistory();
+                return;
+            }
+
+            // キャッシュがない場合はfetch
+            try {
+                const response = await fetch('data/packs.json');
                 if (!response.ok) {
                     throw new Error('データの読み込みに失敗しました');
                 }
-                return response.json();
-            })
-            .then(data => {
+                const data = await response.json();
+                
+                // キャッシュに保存
+                saveCachedPacks(data.packs);
+                
                 allPacks = data.packs;
                 filteredPacks = allPacks;
                 displayPacks(data);
@@ -846,8 +999,7 @@ backToTop.addEventListener('click', () => {
                 setupFilters();
                 setupLoadMore();
                 loadSearchHistory();
-            })
-            .catch(error => {
+            } catch (error) {
                 document.getElementById('loading').innerHTML = `
                     <p style="color: #E53935;">エラー: ${error.message}</p>
                     <p style="font-size: 0.9rem; margin-top: 1rem; color: #999;">
@@ -855,7 +1007,11 @@ backToTop.addEventListener('click', () => {
                         generate-index.js を実行してください。
                     </p>
                 `;
-            });
+            }
+        }
+
+        // ページ読み込み時にデータ取得
+        loadPacks();
 
         function displayPacks(data) {
             document.getElementById('loading').style.display = 'none';
@@ -898,14 +1054,19 @@ backToTop.addEventListener('click', () => {
         function createPackRow(pack) {
             const tr = document.createElement('tr');
             
+            // ハイライト適用
+            const highlightedName = currentSearchTerm ? 
+                highlightText(pack.displayName, currentSearchTerm) : 
+                pack.displayName;
+            
             tr.innerHTML = `
-                <td class="mod-name">${pack.displayName}</td>
+                <td class="mod-name">${highlightedName}</td>
                 <td><span class="mod-loader-badge">${pack.modLoader}</span></td>
                 <td><span class="version-badge">${pack.mcVersion}</span></td>
                 <td class="file-size">${pack.lastUpdate || '-'}</td>
                 <td class="file-size">${pack.fileSize}</td>
                 <td>
-                    <a href="${pack.downloadUrl}" download class="download-btn">
+                    <a href="${pack.downloadUrl}" download class="download-btn" aria-label="${pack.displayName}をダウンロード">
                         ダウンロード
                     </a>
                 </td>
@@ -929,7 +1090,6 @@ backToTop.addEventListener('click', () => {
                         'mod_loader': modLoader, 
                         'mc_version': version
                     });
-                    console.log('ダウンロード追跡:', modName); // 動作確認用
                 }
             });
         }
@@ -940,7 +1100,9 @@ backToTop.addEventListener('click', () => {
             
             // 検索ボックスのフォーカス時に履歴を表示
             searchBox.addEventListener('focus', () => {
-                showSearchHistory();
+                if (!searchBox.value.trim()) {
+                    showSearchHistory();
+                }
             });
             
             // 検索ボックスの入力時
@@ -954,8 +1116,16 @@ backToTop.addEventListener('click', () => {
                 }
             });
             
-            // Enterキーで検索履歴に追加
+            // キーボードイベント
             searchBox.addEventListener('keydown', (e) => {
+                // 履歴が表示されている場合はナビゲーション処理
+                const dropdown = document.getElementById('search-history-dropdown');
+                if (dropdown.classList.contains('show')) {
+                    handleHistoryKeyboard(e);
+                    return;
+                }
+                
+                // Enterキーで検索履歴に追加
                 if (e.key === 'Enter') {
                     const term = searchBox.value.trim();
                     if (term) {
@@ -986,28 +1156,31 @@ backToTop.addEventListener('click', () => {
                 button.addEventListener('click', () => {
                     const loader = button.dataset.loader;
                     if (loader === 'all') {
-                        // 全てボタン押下時
-                        loaderButtons.forEach(btn => btn.classList.remove('active'));
+                        loaderButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.setAttribute('aria-pressed', 'false');
+                        });
                         button.classList.add('active');
+                        button.setAttribute('aria-pressed', 'true');
                         currentModLoaders = ['all'];
                     } else {
-                        // 個別ボタン押下時
                         const allBtn = document.querySelector('[data-loader="all"]');
                         allBtn.classList.remove('active');
+                        allBtn.setAttribute('aria-pressed', 'false');
                         
                         if (button.classList.contains('active')) {
-                            // 既に選択されていれば解除
                             button.classList.remove('active');
+                            button.setAttribute('aria-pressed', 'false');
                             currentModLoaders = currentModLoaders.filter(l => l !== loader);
                     
-                            // 何も選択されていなければ「全て」に戻す
                             if (currentModLoaders.length === 0) {
                                 allBtn.classList.add('active');
+                                allBtn.setAttribute('aria-pressed', 'true');
                                 currentModLoaders = ['all'];
                             }
                         } else {
-                            // 選択されていなければ追加
                             button.classList.add('active');
+                            button.setAttribute('aria-pressed', 'true');
                             currentModLoaders = currentModLoaders.filter(l => l !== 'all');
                             currentModLoaders.push(loader);
                         }
@@ -1023,28 +1196,31 @@ backToTop.addEventListener('click', () => {
                     const version = button.dataset.version;
             
                     if (version === 'all') {
-                        // 全てボタン押下時
-                        versionButtons.forEach(btn => btn.classList.remove('active'));
+                        versionButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.setAttribute('aria-pressed', 'false');
+                        });
                         button.classList.add('active');
+                        button.setAttribute('aria-pressed', 'true');
                         currentVersions = ['all'];
                     } else {
-                        // 個別ボタン押下時
                         const allBtn = document.querySelector('[data-version="all"]');
                         allBtn.classList.remove('active');
+                        allBtn.setAttribute('aria-pressed', 'false');
                 
                         if (button.classList.contains('active')) {
-                            // 既に選択されていれば解除
                             button.classList.remove('active');
+                            button.setAttribute('aria-pressed', 'false');
                             currentVersions = currentVersions.filter(v => v !== version);
                     
-                            // 何も選択されていなければ「全て」に戻す
                             if (currentVersions.length === 0) {
                                 allBtn.classList.add('active');
+                                allBtn.setAttribute('aria-pressed', 'true');
                                 currentVersions = ['all'];
                             }
                         } else {
-                            // 選択されていなければ追加
                             button.classList.add('active');
+                            button.setAttribute('aria-pressed', 'true');
                             currentVersions = currentVersions.filter(v => v !== 'all');
                             currentVersions.push(version);
                         }
@@ -1054,13 +1230,16 @@ backToTop.addEventListener('click', () => {
                 });
             });
 
-            // 並び替えボタンは元のまま（単一選択）
             const sortButtons = document.querySelectorAll('[data-sort]');
     
             sortButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    sortButtons.forEach(btn => btn.classList.remove('active'));
+                    sortButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-pressed', 'false');
+                    });
                     button.classList.add('active');
+                    button.setAttribute('aria-pressed', 'true');
                     currentSort = button.dataset.sort;
                     applyFilters();
                 });
@@ -1079,15 +1258,16 @@ backToTop.addEventListener('click', () => {
 
         function applyFilters() {
             filteredPacks = allPacks.filter(pack => {
+                // 曖昧検索を使用
                 const matchesSearch = currentSearchTerm === '' || 
-                pack.displayName.toLowerCase().includes(currentSearchTerm) ||
-                pack.modName.toLowerCase().includes(currentSearchTerm);
+                    fuzzyMatch(currentSearchTerm, pack.displayName) ||
+                    fuzzyMatch(currentSearchTerm, pack.modName);
         
                 const matchesLoader = currentModLoaders.includes('all') || 
-                currentModLoaders.includes(pack.modLoader);
+                    currentModLoaders.includes(pack.modLoader);
         
                 const matchesVersion = currentVersions.includes('all') || 
-                currentVersions.includes(pack.mcVersion);
+                    currentVersions.includes(pack.mcVersion);
         
                 return matchesSearch && matchesLoader && matchesVersion;
             });
@@ -1122,7 +1302,6 @@ backToTop.addEventListener('click', () => {
 
         function updateLoadMoreButton() {
             const loadMoreContainer = document.getElementById('load-more-container');
-            const loadMoreBtn = document.getElementById('load-more-btn');
             const remainingCount = document.getElementById('remaining-count');
             
             const remaining = filteredPacks.length - displayedCount;
