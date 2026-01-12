@@ -87,6 +87,10 @@
             margin-bottom: 1.5rem;
         }
 
+        .search-box-wrapper {
+            position: relative;
+        }
+
         .search-box {
             width: 100%;
             padding: 0.75rem 1rem;
@@ -100,6 +104,94 @@
             outline: none;
             border-color: #999;
             background: #FFFFFF;
+        }
+
+        /* 検索履歴ドロップダウン */
+        .search-history-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #FFFFFF;
+            border: 1px solid #D0D0D0;
+            border-top: none;
+            border-radius: 0 0 3px 3px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .search-history-dropdown.show {
+            display: block;
+        }
+
+        .search-history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: #F8F8F8;
+            border-bottom: 1px solid #E5E5E5;
+            font-size: 0.75rem;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .clear-history-btn {
+            background: none;
+            border: none;
+            color: #E53935;
+            cursor: pointer;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 2px;
+            transition: background 0.15s;
+        }
+
+        .clear-history-btn:hover {
+            background: #FFEBEE;
+        }
+
+        .search-history-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            font-size: 0.875rem;
+            color: #333;
+            border-bottom: 1px solid #F5F5F5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.1s;
+        }
+
+        .search-history-item:hover {
+            background: #FAFAFA;
+        }
+
+        .search-history-item:last-child {
+            border-bottom: none;
+        }
+
+        .history-delete-btn {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            padding: 0.25rem;
+            font-size: 1rem;
+            line-height: 1;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+
+        .search-history-item:hover .history-delete-btn {
+            opacity: 1;
+        }
+
+        .history-delete-btn:hover {
+            color: #E53935;
         }
 
         /* フィルターボタン */
@@ -458,12 +550,21 @@ backToTop.addEventListener('click', () => {
         
         <!-- 検索エリア -->
         <div class="search-container" id="search-container" style="display: none;">
-            <input 
-                type="text" 
-                id="search-box" 
-                class="search-box" 
-                placeholder="MOD名で検索..."
-            >
+            <div class="search-box-wrapper">
+                <input 
+                    type="text" 
+                    id="search-box" 
+                    class="search-box" 
+                    placeholder="MOD名で検索..."
+                >
+                <div class="search-history-dropdown" id="search-history-dropdown">
+                    <div class="search-history-header">
+                        <span>検索履歴</span>
+                        <button class="clear-history-btn" id="clear-history-btn">すべて削除</button>
+                    </div>
+                    <div id="search-history-list"></div>
+                </div>
+            </div>
             
             <!-- フィルター -->
             <div class="filter-group">
@@ -614,12 +715,121 @@ backToTop.addEventListener('click', () => {
         let allPacks = [];
         let filteredPacks = [];
         let currentSearchTerm = '';
-        let currentModLoaders = ['all']; // 'all' から配列に
-        let currentVersions = ['all'];   // 'all' から配列に
+        let currentModLoaders = ['all'];
+        let currentVersions = ['all'];
         let currentSort = 'name';
         
         const PACKS_PER_PAGE = 20;
         let displayedCount = 0;
+
+        // 検索履歴管理
+        const MAX_HISTORY = 10;
+        let searchHistory = [];
+
+        // ローカルストレージから検索履歴を読み込み
+        function loadSearchHistory() {
+            const stored = localStorage.getItem('searchHistory');
+            if (stored) {
+                try {
+                    searchHistory = JSON.parse(stored);
+                } catch (e) {
+                    searchHistory = [];
+                }
+            }
+        }
+
+        // 検索履歴を保存
+        function saveSearchHistory() {
+            localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+        }
+
+        // 検索履歴に追加
+        function addToHistory(term) {
+            if (!term || term.trim() === '') return;
+            
+            // 既存の同じ検索語を削除
+            searchHistory = searchHistory.filter(item => item !== term);
+            
+            // 先頭に追加
+            searchHistory.unshift(term);
+            
+            // 最大件数を超えたら古いものを削除
+            if (searchHistory.length > MAX_HISTORY) {
+                searchHistory = searchHistory.slice(0, MAX_HISTORY);
+            }
+            
+            saveSearchHistory();
+        }
+
+        // 検索履歴から削除
+        function removeFromHistory(term) {
+            searchHistory = searchHistory.filter(item => item !== term);
+            saveSearchHistory();
+            renderSearchHistory();
+        }
+
+        // 検索履歴をすべて削除
+        function clearSearchHistory() {
+            searchHistory = [];
+            saveSearchHistory();
+            renderSearchHistory();
+            hideSearchHistory();
+        }
+
+        // 検索履歴を表示
+        function renderSearchHistory() {
+            const historyList = document.getElementById('search-history-list');
+            const dropdown = document.getElementById('search-history-dropdown');
+            
+            if (searchHistory.length === 0) {
+                historyList.innerHTML = '<div style="padding: 1rem; text-align: center; color: #999; font-size: 0.875rem;">検索履歴はありません</div>';
+                return;
+            }
+            
+            historyList.innerHTML = searchHistory.map(term => `
+                <div class="search-history-item" data-term="${term}">
+                    <span>${term}</span>
+                    <button class="history-delete-btn" data-term="${term}">×</button>
+                </div>
+            `).join('');
+            
+            // 履歴項目のクリックイベント
+            const historyItems = historyList.querySelectorAll('.search-history-item');
+            historyItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (!e.target.classList.contains('history-delete-btn')) {
+                        const term = item.dataset.term;
+                        document.getElementById('search-box').value = term;
+                        currentSearchTerm = term.toLowerCase().trim();
+                        applyFilters();
+                        hideSearchHistory();
+                    }
+                });
+            });
+            
+            // 削除ボタンのクリックイベント
+            const deleteButtons = historyList.querySelectorAll('.history-delete-btn');
+            deleteButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const term = btn.dataset.term;
+                    removeFromHistory(term);
+                });
+            });
+        }
+
+        // 検索履歴を表示
+        function showSearchHistory() {
+            const dropdown = document.getElementById('search-history-dropdown');
+            renderSearchHistory();
+            dropdown.classList.add('show');
+        }
+
+        // 検索履歴を非表示
+        function hideSearchHistory() {
+            const dropdown = document.getElementById('search-history-dropdown');
+            dropdown.classList.remove('show');
+        }
 
         fetch('data/packs.json')
             .then(response => {
@@ -635,6 +845,7 @@ backToTop.addEventListener('click', () => {
                 setupSearch();
                 setupFilters();
                 setupLoadMore();
+                loadSearchHistory();
             })
             .catch(error => {
                 document.getElementById('loading').innerHTML = `
@@ -725,10 +936,46 @@ backToTop.addEventListener('click', () => {
 
         function setupSearch() {
             const searchBox = document.getElementById('search-box');
+            const clearHistoryBtn = document.getElementById('clear-history-btn');
             
+            // 検索ボックスのフォーカス時に履歴を表示
+            searchBox.addEventListener('focus', () => {
+                showSearchHistory();
+            });
+            
+            // 検索ボックスの入力時
             searchBox.addEventListener('input', (e) => {
                 currentSearchTerm = e.target.value.toLowerCase().trim();
                 applyFilters();
+                
+                // 入力中は履歴を非表示
+                if (currentSearchTerm) {
+                    hideSearchHistory();
+                }
+            });
+            
+            // Enterキーで検索履歴に追加
+            searchBox.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    const term = searchBox.value.trim();
+                    if (term) {
+                        addToHistory(term);
+                        hideSearchHistory();
+                    }
+                }
+            });
+            
+            // 検索履歴全削除ボタン
+            clearHistoryBtn.addEventListener('click', () => {
+                clearSearchHistory();
+            });
+            
+            // 検索ボックス外をクリックしたら履歴を閉じる
+            document.addEventListener('click', (e) => {
+                const searchContainer = document.querySelector('.search-box-wrapper');
+                if (!searchContainer.contains(e.target)) {
+                    hideSearchHistory();
+                }
             });
         }
 
