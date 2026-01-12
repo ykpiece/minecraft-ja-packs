@@ -660,6 +660,8 @@ backToTop.addEventListener('click', () => {
             renderPacks(false);
             updateResultInfo();
             updateLoadMoreButton();
+
+            setupDownloadTracking();
         }
 
         function renderPacks(append = false) {
@@ -699,6 +701,26 @@ backToTop.addEventListener('click', () => {
             `;
             
             return tr;
+        }
+
+        // ダウンロードイベントのトラッキング
+        function setupDownloadTracking() {
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('download-btn')) {
+                    const row = e.target.closest('tr');
+                    const modName = row.querySelector('.mod-name').textContent;
+                    const modLoader = row.querySelector('.mod-loader-badge').textContent;
+                    const version = row.querySelector('.version-badge').textContent;
+                    // Google Analyticsにイベント送信
+                    gtag('event', 'download', {
+                        'event_category': 'MOD Download',
+                        'event_label': modName,
+                        'mod_loader': modLoader, 
+                        'mc_version': version
+                    });
+                    console.log('ダウンロード追跡:', modName); // 動作確認用
+                }
+            });
         }
 
         function setupSearch() {
