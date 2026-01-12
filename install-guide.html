@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEP159X6EY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EEP159X6EY');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>マイクラMOD 日本語化パックの導入ガイド</title>
+    <meta name="description" content="Minecraft MODの日本語化パックの導入方法を画像付きで詳しく解説。初心者でも簡単に導入できます。">
+    
+    <style>
+        /* リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+            background-color: #FAFAFA;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* ヘッダー */
+        header {
+            background: #FFFFFF;
+            border-bottom: 1px solid #E5E5E5;
+            padding: 1.5rem 0;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* セクション */
+        .section {
+            background: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #F0F0F0;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .section p,
+        .section li {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .section ol,
+        .section ul {
+            margin-left: 1.5rem;
+        }
+
+        .section li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* 目次 */
+        .toc {
+            background: #F8F9FA;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .toc ol {
+            margin-left: 1.2rem;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .toc a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* 強調ボックス */
+        .highlight-box {
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: white;
+        }
+
+        .highlight-box p {
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            color: white;
+        }
+
+        .highlight-box .btn {
+            display: inline-block;
+            background: white;
+            color: #667EEA;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.15s;
+        }
+
+        .highlight-box .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* コードブロック */
+        code {
+            background: #F5F5F5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-family: "Consolas", "Monaco", monospace;
+        }
+
+        /* 画像 */
+        .img-container {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .img-container img {
+            max-width: 70%;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .img-caption {
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: #999;
+        }
+
+        /* アコーディオン */
+        details {
+            background: #F8F9FA;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: #333;
+            padding: 0.5rem;
+            user-select: none;
+        }
+
+        summary:hover {
+            color: #4A90E2;
+        }
+
+        details[open] summary {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        details .content {
+            padding: 1rem 0.5rem;
+        }
+
+        /* パンくずリスト */
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .breadcrumb a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            color: #999;
+            margin: 0 0.5rem;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #999;
+            font-size: 0.875rem;
+            margin-top: 3rem;
+            border-top: 1px solid #E5E5E5;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+
+            .section h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;">2026/01/12</div>
+        <div class="header-container">
+            <h1>マイクラMOD 日本語化パックの導入ガイド</h1>
+        </div>
+        <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">最終更新: 2026/01/12</p>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="index.html">トップ</a>
+            <span>›</span>
+            <span>導入ガイド</span>
+        </div>
+
+        <div class="section">
+            <p>このガイドでは、Minecraft MODの日本語化パックの導入方法を画像付きで詳しく解説します。</p>
+        </div>
+
+        <!-- 目次 -->
+        <div class="toc">
+            <h2>目次</h2>
+            <ol>
+                <li><a href="#basic">基本的な導入方法</a>
+                    <ol style="margin-left: 1.2rem; margin-top: 0.5rem;">
+                        <li><a href="#basic-1">Minecraftを起動してフォルダを開く</a></li>
+                        <li><a href="#basic-2">日本語化パックをダウンロード</a></li>
+                        <li><a href="#basic-3">resourcepacksフォルダに配置</a></li>
+                        <li><a href="#basic-4">ゲーム内で有効化</a></li>
+                    </ol>
+                </li>
+                <li><a href="#launcher">外部ランチャーからフォルダを開く方法</a></li>
+            </ol>
+        </div>
+
+        <!-- 強調ボックス -->
+        <div class="highlight-box">
+            <h3>日本語化パックのダウンロード</h3>
+            <p>当サイトで175個以上のMOD日本語化パックを配布中！</p>
+            <a href="index.html" class="btn">日本語化パック配布ページへ</a>
+        </div>
+
+        <!-- 基本的な導入方法 -->
+        <div class="section" id="basic">
+            <h2>1. 基本的な導入方法</h2>
+            <p>この方法は、Minecraftを起動してリソースパックフォルダを開く最も簡単な方法です。初心者の方におすすめです。</p>
+
+            <h3 id="basic-1">1-1. Minecraftを起動してフォルダを開く</h3>
+            <ol>
+                <li>Minecraftを起動し、メインメニューから「設定」を開きます</li>
+                <div class="img-container">
+                    <img src="images/install-1-a.png" alt="設定画面" loading="lazy">
+                    <p class="img-caption">「設定」をクリック</p>
+                </div>
+                <li>「リソースパック」をクリックします</li>
+                <div class="img-container">
+                    <img src="images/install-1-b.png" alt="リソースパック設定画面" loading="lazy">
+                    <p class="img-caption">「リソースパック」をクリック</p>
+                </div>
+                <li>画面左下の「パックフォルダーを開く」をクリックします</li>
+                <div class="img-container">
+                    <img src="images/install-1-c.png" alt="パックフォルダーを開く" loading="lazy">
+                    <p class="img-caption">リソースパック設定画面から「パックフォルダーを開く」をクリック</p>
+                </div>
+            </ol>
+
+            <p>このボタンをクリックすると、自動的に <code>.minecraft/resourcepacks</code> フォルダが開きます。</p>
+
+            <h3 id="basic-2">1-2. 日本語化パックをダウンロード</h3>
+            <ol>
+                <li><a href="index.html" style="color: #4A90E2; text-decoration: none;">配布ページ</a>から使いたいMODの日本語化パックを探します</li>
+                <li>「ダウンロード」ボタンをクリックしてzipファイルをダウンロードします</li>
+            </ol>
+
+            <div class="img-container">
+                <img src="images/install-2.png" alt="ダウンロードボタン" loading="lazy">
+                <p class="img-caption">使いたいMODの日本語化パックをダウンロード</p>
+            </div>
+
+            <h3 id="basic-3">1-3. resourcepacksフォルダに配置</h3>
+            <ol>
+                <li>ダウンロードしたzipファイルを、先ほど開いた <code>resourcepacks</code> フォルダにドラッグ＆ドロップします</li>
+                <p><strong>注意：</strong>zipファイルは解凍せずにそのまま入れてください</p>
+            </ol>
+
+            <div class="img-container">
+                <img src="images/install-3.png" alt="resourcepacksフォルダに配置" loading="lazy">
+                <p class="img-caption">zipファイルをresourcepacksフォルダに配置</p>
+            </div>
+
+            <h3 id="basic-4">1-4. ゲーム内で有効化</h3>
+            <ol>
+                <li>Minecraftのリソースパック設定画面に戻ります</li>
+                <li>左側の「利用可能」欄にある日本語化パックのアイコンをクリックします</li>
+                <div class="img-container">
+                    <img src="images/install-1-4-a.png" alt="「選択中」に移動" loading="lazy">
+                    <p class="img-caption">日本語化パックを「選択中」に移動して有効化</p>
+                </div>
+                <li>右側の「選択中」欄に移動すれば有効化完了です</li>
+                <div class="img-container">
+                    <img src="images/install-1-4-b.png" alt="有効化完了" loading="lazy">
+                    <p class="img-caption">有効化完了している状態</p>
+                </div>
+                <li>「完了」をクリックして設定を保存します</li>
+            </ol>
+
+            <p><strong>これで導入完了です。</strong>ゲームを再起動すると日本語化が反映されます。</p>
+
+            <div class="img-container">
+                <img src="images/install-1-4-c.png" alt="日本語化反映" loading="lazy">
+                <p class="img-caption">日本語化が反映</p>
+            </div>
+
+        </div>
+
+        <!-- 外部ランチャー -->
+        <div class="section" id="launcher">
+            <h2>2. 外部ランチャーからフォルダを開く方法</h2>
+            <p>CurseForgeやGDLauncherなどの外部ランチャーを使用している場合は、以下の方法でresourcepacksフォルダを開くことができます。</p>
+            <p>フォルダを開いた後の手順（1-2以降）は基本的な導入方法と同じです。</p>
+
+            <!-- CurseForge -->
+            <details>
+                <summary>CurseForge から開く方法</summary>
+                <div class="content">
+                    <ol>
+                        <li>CurseForgeを起動し、「Minecraft」タブを開きます</li>
+                        <div class="img-container">
+                            <img src="images/curseforge-1.png" alt="「Minecraft」タブを開く" loading="lazy">
+                            <p class="img-caption">「Minecraft」タブを開く</p>
+                        </div>
+                        <li>「My ModPacks」から、適応したいインスタンスをクリックします</li>
+                        <div class="img-container">
+                            <img src="images/curseforge-2.png" alt="インスタンスをクリック" loading="lazy">
+                            <p class="img-caption">適応したいインスタンスをクリック</p>
+                        </div>
+                        <li>インスタンスの右側にある「…」（三点リーダー）をクリックして、「Open Folder」を選択します</li>
+                        <div class="img-container">
+                            <img src="images/curseforge-3.png" alt="CurseForgeでフォルダを開く" loading="lazy">
+                            <p class="img-caption">CurseForgeのインスタンスから「フォルダを開く」を選択</p>
+                        </div>
+                        <li>開いたフォルダ内の <code>resourcepacks</code> フォルダを開きます</li>
+                        <div class="img-container">
+                            <img src="images/curseforge-4.png" alt="resourcepacksフォルダを開く" loading="lazy">
+                            <p class="img-caption">resourcepacksフォルダを開く</p>
+                        </div>
+                    </ol>
+
+                    <p>以降は、<a href="#basic-2" style="color: #4A90E2; text-decoration: none;">1-2. 日本語化パックをダウンロード</a>から同じ手順で進めてください。</p>
+                </div>
+            </details>
+
+            <!-- GDLauncher -->
+            <details>
+                <summary>GDLauncher から開く方法</summary>
+                <div class="content">
+                    <ol>
+                        <li>GDLauncherを起動します</li>
+                        <li>使用しているインスタンスを右クリックして、メニューから「Open Folder」を選択します</li>
+                        <div class="img-container">
+                            <img src="images/gdlauncher-1.png" alt="GDLauncherでフォルダを開く" loading="lazy">
+                            <p class="img-caption">GDLauncherのインスタンスを右クリックして「フォルダを開く」を選択</p>
+                        </div>
+                        <li>開いたフォルダ内の <code>resourcepacks</code> フォルダを開きます</li>
+                        <div class="img-container">
+                            <img src="images/gdlauncher-2.png" alt="resourcepacksフォルダを開く" loading="lazy">
+                            <p class="img-caption">resourcepacksフォルダを開く</p>
+                        </div>
+                    </ol>
+                    <p>以降は、<a href="#basic-2" style="color: #4A90E2; text-decoration: none;">1-2. 日本語化パックをダウンロード</a>から同じ手順で進めてください。</p>
+                </div>
+            </details>
+
+            <!-- Prism Launcher -->
+            <details>
+                <summary>Prism Launcher から開く方法</summary>
+                <div class="content">
+                    <ol>
+                        <li>Prism Launcherを起動します</li>
+                        <li>使用しているインスタンスを右クリックして、メニューから「フォルダ」を選択します</li>
+                        <div class="img-container">
+                            <img src="images/prism-1.png" alt="フォルダを開く" loading="lazy">
+                            <p class="img-caption">フォルダを開く</p>
+                        </div>
+                        <li>開いたフォルダから「minecraft」を選択します</li>
+                        <div class="img-container">
+                            <img src="images/prism-2.png" alt="「minecraft」を選択" loading="lazy">
+                            <p class="img-caption">「minecraft」を選択</p>
+                        </div>
+                        <li>開いたフォルダ内の <code>resourcepacks</code> フォルダを開きます</li>
+                        <div class="img-container">
+                            <img src="images/prism-3.png" alt="resourcepacksフォルダを開く" loading="lazy">
+                            <p class="img-caption">resourcepacksフォルダを開く</p>
+                        </div>
+                    </ol>
+
+                    <p>この後は、<a href="#basic-2" style="color: #4A90E2; text-decoration: none;">1-2. 日本語化パックをダウンロード</a>から同じ手順で進めてください。</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- トラブルシューティング -->
+        <div class="section">
+            <h2>よくある質問</h2>
+            
+            <h3>Q. リソースパックフォルダが見つかりません</h3>
+            <p>A. Windowsの場合、以下のパスに直接アクセスできます：</p>
+            <code style="display: block; padding: 0.75rem; background: #F5F5F5; border-radius: 4px; margin: 0.5rem 0;">
+                C:\Users\[ユーザー名]\AppData\Roaming\.minecraft\resourcepacks
+            </code>
+            <p>Macの場合：</p>
+            <code style="display: block; padding: 0.75rem; background: #F5F5F5; border-radius: 4px; margin: 0.5rem 0;">
+                ~/Library/Application Support/minecraft/resourcepacks
+            </code>
+
+            <h3>Q. 日本語化パックを入れたのに日本語になりません</h3>
+            <p>A. 以下を確認してください：</p>
+            <ul>
+                <li>リソースパック設定で「使用中」に移動しているか</li>
+                <li>MODとバージョンが合っているか</li>
+                <li>ゲームを再起動したか</li>
+                <li>zipファイルを解凍していないか（解凍せずそのまま入れる）</li>
+            </ul>
+
+            <h3>Q. 複数の日本語化パックを同時に使えますか？</h3>
+            <p>A. はい、使えます。複数のMODの日本語化パックを同時に有効化できます。</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html" style="color: #4A90E2; text-decoration: none;">トップページに戻る</a></p>
+        <p style="margin-top: 0.5rem;">最終更新: 2026/01/12</p>
+    </footer>
+</body>
+</html>
