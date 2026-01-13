@@ -13,23 +13,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO対策 -->
-    <title>マイクラMOD 日本語化パック配布所 | 175個のForge MOD対応 (1.20.1/1.18.2)</title>
-    <meta name="description" content="Minecraft Forge MODの日本語化リソースパックを175個配布中。Applied Energistics 2、beautify、Aquamiraeなど人気MODに対応。検索・フィルター機能付きで探しやすく、直接ダウンロード可能。">
+    <!-- SEO対策 - JavaScriptで動的更新 -->
+    <title id="page-title">マイクラMOD 日本語化パック配布所 | Forge MOD対応 (1.20.1/1.18.2)</title>
+    <meta name="description" id="page-description" content="Minecraft Forge MODの日本語化リソースパックを配布中。Applied Energistics 2、beautify、Aquamiraeなど人気MODに対応。検索・フィルター機能付きで探しやすく、直接ダウンロード可能。">
     <meta name="keywords" content="Minecraft,マインクラフト,MOD,日本語化,リソースパック,Forge,1.20.1,1.18.2,AE2,beautify,Aquamirae,翻訳">
     <meta name="author" content="ykpiece">
     
-    <!-- OGP (SNSシェア用) -->
-    <meta property="og:title" content="マイクラMOD 日本語化パック配布所">
-    <meta property="og:description" content="175個のForge MOD日本語化パックを配布中。検索・フィルター機能付き。">
+    <!-- OGP (SNSシェア用) - JavaScriptで動的更新 -->
+    <meta property="og:title" id="og-title" content="マイクラMOD 日本語化パック配布所">
+    <meta property="og:description" id="og-description" content="Forge MOD日本語化パックを配布中。検索・フィルター機能付き。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ykpiece.github.io/minecraft-ja-packs/">
     <meta property="og:site_name" content="マイクラMOD 日本語化パック配布所">
     
-    <!-- Twitter Card -->
+    <!-- Twitter Card - JavaScriptで動的更新 -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="マイクラMOD 日本語化パック配布所">
-    <meta name="twitter:description" content="175個のForge MOD日本語化パックを配布中">
+    <meta name="twitter:title" id="twitter-title" content="マイクラMOD 日本語化パック配布所">
+    <meta name="twitter:description" id="twitter-description" content="Forge MOD日本語化パックを配布中">
     
     <style>
         /* リセット */
@@ -1011,6 +1011,7 @@
                 console.log('キャッシュからデータを読み込みました');
                 allPacks = cached;
                 filteredPacks = allPacks;
+                updateMetaTags(); // メタタグを更新
                 displayPacks({ packs: cached });
                 setupSearch();
                 setupFilters();
@@ -1030,6 +1031,7 @@
                 
                 allPacks = data.packs;
                 filteredPacks = allPacks;
+                updateMetaTags(); // メタタグを更新
                 displayPacks(data);
                 setupSearch();
                 setupFilters();
@@ -1044,6 +1046,28 @@
                     </p>
                 `;
             }
+        }
+
+        // メタタグを動的に更新
+        function updateMetaTags() {
+            const totalCount = allPacks.length;
+            
+            // ページタイトル更新
+            const pageTitle = `マイクラMOD 日本語化パック配布所 | ${totalCount}個のForge MOD対応 (1.20.1/1.18.2)`;
+            document.getElementById('page-title').textContent = pageTitle;
+            document.title = pageTitle;
+            
+            // メタディスクリプション更新
+            const description = `Minecraft Forge MODの日本語化リソースパックを${totalCount}個配布中。Applied Energistics 2、beautify、Aquamiraeなど人気MODに対応。検索・フィルター機能付きで探しやすく、直接ダウンロード可能。`;
+            document.getElementById('page-description').setAttribute('content', description);
+            
+            // OGP更新
+            const ogDescription = `${totalCount}個のForge MOD日本語化パックを配布中。検索・フィルター機能付き。`;
+            document.getElementById('og-description').setAttribute('content', ogDescription);
+            
+            // Twitter Card更新
+            const twitterDescription = `${totalCount}個のForge MOD日本語化パックを配布中`;
+            document.getElementById('twitter-description').setAttribute('content', twitterDescription);
         }
 
         loadPacks();
