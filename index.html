@@ -246,12 +246,31 @@
             color: #333;
         }
 
-        /* パック一覧テーブル */
+        /* パック一覧テーブル - 仮想スクロール対応 */
         .pack-table-container {
             background: #FFFFFF;
             border: 1px solid #E5E5E5;
             border-radius: 4px;
             overflow: hidden;
+            position: relative;
+        }
+
+        .pack-table-scroll-container {
+            overflow-y: auto;
+            overflow-x: auto;
+            max-height: 600px;
+            position: relative;
+        }
+
+        .pack-table-spacer {
+            position: relative;
+        }
+
+        .pack-table-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
         }
 
         .pack-table {
@@ -262,6 +281,9 @@
         .pack-table thead {
             background: #F8F8F8;
             border-bottom: 1px solid #E5E5E5;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         .pack-table th {
@@ -284,10 +306,6 @@
 
         .pack-table tbody tr:hover {
             background-color: #FAFAFA;
-        }
-
-        .pack-table tbody tr:last-child td {
-            border-bottom: none;
         }
 
         /* MOD名 */
@@ -344,28 +362,6 @@
 
         .download-btn:hover {
             background: #357ABD;
-        }
-
-        /* もっと見るボタン */
-        .load-more-container {
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .load-more-btn {
-            padding: 0.75rem 2rem;
-            background: #FFFFFF;
-            border: 1px solid #D0D0D0;
-            color: #666;
-            border-radius: 3px;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.15s;
-        }
-
-        .load-more-btn:hover {
-            background: #F5F5F5;
-            border-color: #999;
         }
 
         /* セクション */
@@ -529,28 +525,11 @@
     </style>
 </head>
 
-<button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;" aria-label="ページトップへ戻る">
-    ↑
-</button>
-
-<script>
-// トップに戻るボタン
-const backToTop = document.getElementById('back-to-top');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
-    } else {
-        backToTop.style.display = 'none';
-    }
-});
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-</script>
-
 <body>
+    <button id="back-to-top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; background: #4A90E2; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s; z-index: 1000;" aria-label="ページトップへ戻る">
+        ↑
+    </button>
+
     <header>
         <div class="header-container">
             <div style="font-size: 0.75rem; color: #999; margin-bottom: 0.5rem;" id="publish-date">-</div>
@@ -617,26 +596,26 @@ backToTop.addEventListener('click', () => {
         </div>
         
         <div class="pack-table-container" id="table-container" style="display: none;">
-            <table class="pack-table">
-                <thead>
-                    <tr>
-                        <th scope="col">MOD名</th>
-                        <th scope="col">Mod Loader</th>
-                        <th scope="col">バージョン</th>
-                        <th scope="col">更新日</th>
-                        <th scope="col">サイズ</th>
-                        <th scope="col">ダウンロード</th>
-                    </tr>
-                </thead>
-                <tbody id="pack-list"></tbody>
-            </table>
-        </div>
-
-        <!-- もっと見るボタン -->
-        <div class="load-more-container" id="load-more-container" style="display: none;">
-            <button id="load-more-btn" class="load-more-btn" aria-label="さらに20個のパックを表示">
-                もっと見る (残り<span id="remaining-count">0</span>個)
-            </button>
+            <div class="pack-table-scroll-container" id="scroll-container">
+                <div class="pack-table-spacer" id="table-spacer">
+                    <div class="pack-table-content" id="table-content">
+                        <table class="pack-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">MOD名</th>
+                                    <th scope="col">Mod Loader</th>
+                                    <th scope="col">バージョン</th>
+                                    <th scope="col">更新日</th>
+                                    <th scope="col">サイズ</th>
+                                    <th scope="col">ダウンロード</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pack-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="sr-only" role="status" aria-live="polite" id="total-items-sr"></div>
         </div>
 
         <!-- インストール方法セクション -->
@@ -717,6 +696,21 @@ backToTop.addEventListener('click', () => {
     </footer>
 
     <script>
+        // トップに戻るボタン
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
         // URLコピー機能
         function copyURL() {
             const urlInput = document.getElementById('site-url');
@@ -744,17 +738,19 @@ backToTop.addEventListener('click', () => {
         let currentModLoaders = ['all'];
         let currentVersions = ['all'];
         let currentSort = 'name';
-        
-        const PACKS_PER_PAGE = 20;
-        let displayedCount = 0;
 
         // 検索履歴管理
         const MAX_HISTORY = 10;
         let searchHistory = [];
         let historySelectedIndex = -1;
 
+        // 仮想スクロール設定
+        const ROW_HEIGHT = 70; // 各行の高さ（px）
+        const BUFFER_SIZE = 5; // 前後に余分に表示する行数
+        let visibleStart = 0;
+        let visibleEnd = 0;
+
         // JSONキャッシュ
-        let packsCache = null;
         const CACHE_KEY = 'minecraftPacksCache';
         const CACHE_VERSION_KEY = 'minecraftPacksCacheVersion';
         const CACHE_VERSION = '1.0';
@@ -795,13 +791,9 @@ backToTop.addEventListener('click', () => {
         function addToHistory(term) {
             if (!term || term.trim() === '') return;
             
-            // 既存の同じ検索語を削除
             searchHistory = searchHistory.filter(item => item !== term);
-            
-            // 先頭に追加
             searchHistory.unshift(term);
             
-            // 最大件数を超えたら古いものを削除
             if (searchHistory.length > MAX_HISTORY) {
                 searchHistory = searchHistory.slice(0, MAX_HISTORY);
             }
@@ -827,7 +819,6 @@ backToTop.addEventListener('click', () => {
         // 検索履歴を表示
         function renderSearchHistory() {
             const historyList = document.getElementById('search-history-list');
-            const dropdown = document.getElementById('search-history-dropdown');
             
             if (searchHistory.length === 0) {
                 historyList.innerHTML = '<div style="padding: 1rem; text-align: center; color: #999; font-size: 0.875rem;">検索履歴はありません</div>';
@@ -845,7 +836,6 @@ backToTop.addEventListener('click', () => {
                 </div>
             `).join('');
             
-            // 履歴項目のクリックイベント
             const historyItems = historyList.querySelectorAll('.search-history-item');
             historyItems.forEach(item => {
                 item.addEventListener('click', (e) => {
@@ -859,13 +849,11 @@ backToTop.addEventListener('click', () => {
                 });
             });
             
-            // 削除ボタンのクリックイベント
             const deleteButtons = historyList.querySelectorAll('.history-delete-btn');
             deleteButtons.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    const term = btn.dataset.term;
-                    removeFromHistory(term);
+                    removeFromHistory(btn.dataset.term);
                 });
             });
         }
@@ -889,7 +877,7 @@ backToTop.addEventListener('click', () => {
             historySelectedIndex = -1;
         }
 
-        // キーボードナビゲーション（検索履歴）
+        // キーボードナビゲーション
         function handleHistoryKeyboard(e) {
             const dropdown = document.getElementById('search-history-dropdown');
             if (!dropdown.classList.contains('show') || searchHistory.length === 0) return;
@@ -919,7 +907,6 @@ backToTop.addEventListener('click', () => {
             try {
                 const cachedVersion = localStorage.getItem(CACHE_VERSION_KEY);
                 if (cachedVersion !== CACHE_VERSION) {
-                    // バージョンが異なる場合はキャッシュをクリア
                     localStorage.removeItem(CACHE_KEY);
                     return null;
                 }
@@ -928,7 +915,6 @@ backToTop.addEventListener('click', () => {
                 if (cached) {
                     const data = JSON.parse(cached);
                     const cacheAge = Date.now() - data.timestamp;
-                    // 24時間以内のキャッシュのみ有効
                     if (cacheAge < 24 * 60 * 60 * 1000) {
                         return data.packs;
                     }
@@ -953,9 +939,73 @@ backToTop.addEventListener('click', () => {
             }
         }
 
+        // 仮想スクロール：表示範囲を計算
+        function calculateVisibleRange() {
+            const container = document.getElementById('scroll-container');
+            const scrollTop = container.scrollTop;
+            const containerHeight = container.clientHeight;
+            
+            const startIndex = Math.floor(scrollTop / ROW_HEIGHT);
+            const endIndex = Math.ceil((scrollTop + containerHeight) / ROW_HEIGHT);
+            
+            visibleStart = Math.max(0, startIndex - BUFFER_SIZE);
+            visibleEnd = Math.min(filteredPacks.length, endIndex + BUFFER_SIZE);
+        }
+
+        // 仮想スクロール：レンダリング
+        function renderVirtualRows() {
+            const tbody = document.getElementById('pack-list');
+            const spacer = document.getElementById('table-spacer');
+            const content = document.getElementById('table-content');
+            
+            const totalHeight = filteredPacks.length * ROW_HEIGHT;
+            spacer.style.height = `${totalHeight}px`;
+            
+            calculateVisibleRange();
+            
+            const offsetY = visibleStart * ROW_HEIGHT;
+            content.style.transform = `translateY(${offsetY}px)`;
+            
+            tbody.innerHTML = '';
+            
+            for (let i = visibleStart; i < visibleEnd; i++) {
+                if (filteredPacks[i]) {
+                    const row = createPackRow(filteredPacks[i]);
+                    tbody.appendChild(row);
+                }
+            }
+        }
+
+        // スロットル関数
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // スクロールイベント設定
+        function setupVirtualScroll() {
+            const container = document.getElementById('scroll-container');
+            container.addEventListener('scroll', throttle(() => {
+                renderVirtualRows();
+            }, 16)); // 約60fps
+            
+            // リサイズ対応
+            const resizeObserver = new ResizeObserver(() => {
+                renderVirtualRows();
+            });
+            resizeObserver.observe(container);
+        }
+
         // データ読み込み
         async function loadPacks() {
-            // まずキャッシュを確認
             const cached = loadCachedPacks();
             if (cached) {
                 console.log('キャッシュからデータを読み込みました');
@@ -964,12 +1014,11 @@ backToTop.addEventListener('click', () => {
                 displayPacks({ packs: cached });
                 setupSearch();
                 setupFilters();
-                setupLoadMore();
+                setupVirtualScroll();
                 loadSearchHistory();
                 return;
             }
 
-            // キャッシュがない場合はfetch
             try {
                 const response = await fetch('data/packs.json');
                 if (!response.ok) {
@@ -977,7 +1026,6 @@ backToTop.addEventListener('click', () => {
                 }
                 const data = await response.json();
                 
-                // キャッシュに保存
                 saveCachedPacks(data.packs);
                 
                 allPacks = data.packs;
@@ -985,7 +1033,7 @@ backToTop.addEventListener('click', () => {
                 displayPacks(data);
                 setupSearch();
                 setupFilters();
-                setupLoadMore();
+                setupVirtualScroll();
                 loadSearchHistory();
             } catch (error) {
                 document.getElementById('loading').innerHTML = `
@@ -998,7 +1046,6 @@ backToTop.addEventListener('click', () => {
             }
         }
 
-        // ページ読み込み時にデータ取得
         loadPacks();
 
         function displayPacks(data) {
@@ -1006,43 +1053,18 @@ backToTop.addEventListener('click', () => {
             document.getElementById('search-container').style.display = 'block';
             document.getElementById('table-container').style.display = 'block';
             
-            // サイトの公開日・更新日を表示
             document.getElementById('publish-date').textContent = SITE_PUBLISH_DATE;
             document.getElementById('last-update-header').textContent = SITE_UPDATE_DATE;
             document.getElementById('last-update').textContent = SITE_UPDATE_DATE;
             
-            displayedCount = 0;
-            renderPacks(false);
+            renderVirtualRows();
             updateResultInfo();
-            updateLoadMoreButton();
-
             setupDownloadTracking();
-        }
-
-        function renderPacks(append = false) {
-            const tbody = document.getElementById('pack-list');
-            
-            if (!append) {
-                tbody.innerHTML = '';
-                displayedCount = 0;
-            }
-            
-            const start = displayedCount;
-            const end = Math.min(start + PACKS_PER_PAGE, filteredPacks.length);
-            const packsToShow = filteredPacks.slice(start, end);
-            
-            packsToShow.forEach(pack => {
-                const row = createPackRow(pack);
-                tbody.appendChild(row);
-            });
-            
-            displayedCount = end;
         }
 
         function createPackRow(pack) {
             const tr = document.createElement('tr');
             
-            // ハイライト適用
             const highlightedName = currentSearchTerm ? 
                 highlightText(pack.displayName, currentSearchTerm) : 
                 pack.displayName;
@@ -1063,7 +1085,6 @@ backToTop.addEventListener('click', () => {
             return tr;
         }
 
-        // ダウンロードイベントのトラッキング
         function setupDownloadTracking() {
             document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('download-btn')) {
@@ -1071,7 +1092,6 @@ backToTop.addEventListener('click', () => {
                     const modName = row.querySelector('.mod-name').textContent;
                     const modLoader = row.querySelector('.mod-loader-badge').textContent;
                     const version = row.querySelector('.version-badge').textContent;
-                    // Google Analyticsにイベント送信
                     gtag('event', 'download', {
                         'event_category': 'MOD Download',
                         'event_label': modName,
@@ -1086,34 +1106,28 @@ backToTop.addEventListener('click', () => {
             const searchBox = document.getElementById('search-box');
             const clearHistoryBtn = document.getElementById('clear-history-btn');
             
-            // 検索ボックスのフォーカス時に履歴を表示
             searchBox.addEventListener('focus', () => {
                 if (!searchBox.value.trim()) {
                     showSearchHistory();
                 }
             });
             
-            // 検索ボックスの入力時
             searchBox.addEventListener('input', (e) => {
                 currentSearchTerm = e.target.value.toLowerCase().trim();
                 applyFilters();
                 
-                // 入力中は履歴を非表示
                 if (currentSearchTerm) {
                     hideSearchHistory();
                 }
             });
             
-            // キーボードイベント
             searchBox.addEventListener('keydown', (e) => {
-                // 履歴が表示されている場合はナビゲーション処理
                 const dropdown = document.getElementById('search-history-dropdown');
                 if (dropdown.classList.contains('show')) {
                     handleHistoryKeyboard(e);
                     return;
                 }
                 
-                // Enterキーで検索履歴に追加
                 if (e.key === 'Enter') {
                     const term = searchBox.value.trim();
                     if (term) {
@@ -1123,12 +1137,10 @@ backToTop.addEventListener('click', () => {
                 }
             });
             
-            // 検索履歴全削除ボタン
             clearHistoryBtn.addEventListener('click', () => {
                 clearSearchHistory();
             });
             
-            // 検索ボックス外をクリックしたら履歴を閉じる
             document.addEventListener('click', (e) => {
                 const searchContainer = document.querySelector('.search-box-wrapper');
                 if (!searchContainer.contains(e.target)) {
@@ -1234,19 +1246,8 @@ backToTop.addEventListener('click', () => {
             });
         }
 
-        function setupLoadMore() {
-            const loadMoreBtn = document.getElementById('load-more-btn');
-            
-            loadMoreBtn.addEventListener('click', () => {
-                renderPacks(true);
-                updateResultInfo();
-                updateLoadMoreButton();
-            });
-        }
-
         function applyFilters() {
             filteredPacks = allPacks.filter(pack => {
-                // シンプルな部分一致検索
                 const matchesSearch = currentSearchTerm === '' ||
                     simpleMatch(currentSearchTerm, pack.displayName) ||
                     simpleMatch(currentSearchTerm, pack.modName);
@@ -1270,35 +1271,25 @@ backToTop.addEventListener('click', () => {
                 });
             }
     
-            displayedCount = 0;
-            renderPacks(false);
+            const container = document.getElementById('scroll-container');
+            container.scrollTop = 0;
+            
+            renderVirtualRows();
             updateResultInfo();
-            updateLoadMoreButton();
         }
         
         function updateResultInfo() {
             const total = allPacks.length;
             const showing = filteredPacks.length;
             const resultInfo = document.getElementById('result-info');
+            const srInfo = document.getElementById('total-items-sr');
             
             if (showing === total) {
-                resultInfo.textContent = `${displayedCount}個を表示中 / 全 ${total} 個`;
+                resultInfo.textContent = `全 ${total} 個`;
+                srInfo.textContent = `全${total}個のパックが表示されています`;
             } else {
-                resultInfo.innerHTML = `<strong>${showing}個</strong> が見つかりました (全${total}個中) - ${displayedCount}個を表示中`;
-            }
-        }
-
-        function updateLoadMoreButton() {
-            const loadMoreContainer = document.getElementById('load-more-container');
-            const remainingCount = document.getElementById('remaining-count');
-            
-            const remaining = filteredPacks.length - displayedCount;
-            
-            if (remaining > 0) {
-                loadMoreContainer.style.display = 'block';
-                remainingCount.textContent = remaining;
-            } else {
-                loadMoreContainer.style.display = 'none';
+                resultInfo.innerHTML = `<strong>${showing}個</strong> が見つかりました (全${total}個中)`;
+                srInfo.textContent = `${showing}個のパックが見つかりました。全${total}個中です`;
             }
         }
     </script>
