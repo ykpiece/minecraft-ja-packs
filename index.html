@@ -581,12 +581,8 @@ backToTop.addEventListener('click', () => {
                     placeholder="MOD名で検索..."
                     aria-label="MOD名で検索"
                     aria-describedby="search-description"
-                    aria-controls="pack-list"
-                    aria-autocomplete="list"
-                    role="combobox"
-                    aria-expanded="false"
                 >
-                <span id="search-description" class="sr-only">曖昧検索に対応しています。キーボードの上下キーで履歴を選択できます。</span>
+                <span id="search-description" class="sr-only">MOD名で部分一致検索できます。</span>
                 <div class="search-history-dropdown" id="search-history-dropdown" role="listbox" aria-label="検索履歴">
                     <div class="search-history-header">
                         <span>検索履歴</span>
@@ -763,19 +759,11 @@ backToTop.addEventListener('click', () => {
         const CACHE_VERSION_KEY = 'minecraftPacksCacheVersion';
         const CACHE_VERSION = '1.0';
 
-        // 曖昧検索用の正規化関数
-        function normalizeString(str) {
-            return str
-                .toLowerCase()
-                .replace(/[ァ-ヴ]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60)) // カタカナ→ひらがな
-                .replace(/[\s-_]/g, ''); // スペース、ハイフン、アンダースコアを削除
-        }
-
-        // 曖昧検索関数（部分一致 + 正規化）
-        function fuzzyMatch(searchTerm, targetText) {
-            const normalizedSearch = normalizeString(searchTerm);
-            const normalizedTarget = normalizeString(targetText);
-            return normalizedTarget.includes(normalizedSearch);
+        // シンプルな部分一致検索
+        function simpleMatch(searchTerm, targetText) {
+            const lowerSearch = searchTerm.toLowerCase();
+            const lowerTarget = targetText.toLowerCase();
+            return lowerTarget.includes(lowerSearch);
         }
 
         // テキストハイライト関数
@@ -1258,10 +1246,10 @@ backToTop.addEventListener('click', () => {
 
         function applyFilters() {
             filteredPacks = allPacks.filter(pack => {
-                // 曖昧検索を使用
-                const matchesSearch = currentSearchTerm === '' || 
-                    fuzzyMatch(currentSearchTerm, pack.displayName) ||
-                    fuzzyMatch(currentSearchTerm, pack.modName);
+                // シンプルな部分一致検索
+                const matchesSearch = currentSearchTerm === '' ||
+                    simpleMatch(currentSearchTerm, pack.displayName) ||
+                    simpleMatch(currentSearchTerm, pack.modName);
         
                 const matchesLoader = currentModLoaders.includes('all') || 
                     currentModLoaders.includes(pack.modLoader);
