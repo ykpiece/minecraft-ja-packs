@@ -123,27 +123,27 @@ function updateIndexHTML(totalCount) {
 
     let html = fs.readFileSync(INDEX_HTML, 'utf8');
     
-    // タイトルを更新
+    // タイトルを更新（数字部分を柔軟にマッチ）
     html = html.replace(
-        /<title[^>]*>.*?<\/title>/,
+        /<title[^>]*>マイクラMOD 日本語化パック配布所 \| \d+個のForge MOD対応[^<]*<\/title>/,
         `<title id="page-title">マイクラMOD 日本語化パック配布所 | ${totalCount}個のForge MOD対応 (1.20.1/1.18.2)</title>`
     );
     
-    // メタディスクリプションを更新
+    // メタディスクリプションを更新（数字部分を柔軟にマッチ）
     html = html.replace(
-        /<meta name="description"[^>]*>/,
+        /<meta name="description"[^>]*content="Minecraft Forge MODの日本語化リソースパックを\d+個配布中[^"]*"[^>]*>/,
         `<meta name="description" id="page-description" content="Minecraft Forge MODの日本語化リソースパックを${totalCount}個配布中。Applied Energistics 2、beautify、Aquamiraeなど人気MODに対応。検索・フィルター機能付きで探しやすく、直接ダウンロード可能。">`
     );
     
-    // OGP descriptionを更新
+    // OGP descriptionを更新（数字部分を柔軟にマッチ）
     html = html.replace(
-        /<meta property="og:description"[^>]*>/,
+        /<meta property="og:description"[^>]*content="\d+個のForge MOD日本語化パックを配布中[^"]*"[^>]*>/,
         `<meta property="og:description" id="og-description" content="${totalCount}個のForge MOD日本語化パックを配布中。検索・フィルター機能付き。">`
     );
     
-    // Twitter descriptionを更新
+    // Twitter descriptionを更新（数字部分を柔軟にマッチ）
     html = html.replace(
-        /<meta name="twitter:description"[^>]*>/,
+        /<meta name="twitter:description"[^>]*content="\d+個のForge MOD日本語化パックを配布中"[^>]*>/,
         `<meta name="twitter:description" id="twitter-description" content="${totalCount}個のForge MOD日本語化パックを配布中">`
     );
     
